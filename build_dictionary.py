@@ -647,7 +647,7 @@ def main():
         first_word = first_line.split('","')[0].strip('"').lower()
         pos = first_line.split(',')[3].strip('"')
         # if pos is 'case' or 'ps' or 'ns', put at end
-        if pos in ['CASE', 'CLASS', 'PLURAL']:
+        if pos in ['CASE', 'CLASS', 'PLURAL', 'MOOD', 'VOICE', 'ASPECT']:
             return 'zzz' + first_word
         if not first_word[0].isdigit():
             return first_word
@@ -667,8 +667,8 @@ def main():
     csv_filename = 'dictionary.csv'
     if args.max_year is not None:
         csv_filename = f'dictionary_{args.max_year}.csv'
-    #also save to pages/
-    pages_filename='pages/'+csv_filename
+    #also save to 
+    pages_filename='docs/'+csv_filename
     for fname in [csv_filename, pages_filename]:
         with open(fname, 'w', encoding='utf-8') as file:
             file.write('English,Tovian,IPA,POS,Roots,Identical\n')

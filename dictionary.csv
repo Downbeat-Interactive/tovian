@@ -125,6 +125,8 @@ end,panor,/pˈanor/,N,_,end/final
 
 evil,yal,/jˈal/,N,_,evil/wickedness/badness
 
+exceeding,ngam,/ŋˈam/,N,_,surpassing/exceeding/overwhelming
+
 existence,sil,/sˈil/,N,_,being/existence/created thing
 
 eye,mril,/mrˈil/,N,_,eye/sight/seeing/watching
@@ -307,6 +309,8 @@ one,lo,/lˈo/,N,_,one/1
 
 opposite,do,/dˈo/,N,_,opposite/not/un-
 
+overwhelming,ngam,/ŋˈam/,N,_,surpassing/exceeding/overwhelming
+
 pain,har,/hˈar/,N,_,_
 
 painting,felor,/fˈelor/,N,show+action,writing/painting
@@ -428,6 +432,8 @@ stone,meron,/mˈeron/,N,_,stone/rock
 stopping,palor,/pˈalor/,N,_,stopping/ceasing
 
 sun,efol,/ˈefol/,N,_,_
+
+surpassing,ngam,/ŋˈam/,N,_,surpassing/exceeding/overwhelming
 
 sword,vekhan,/vˈekhan/,N,killing+tool,_
 
@@ -573,9 +579,21 @@ allative case marker,su-,/sˈu/,CASE,_,ALL/allative case marker
 
 animate noun class,la-,/lˈa/,CLASS,_,_
 
+CAUS,ke-,/kˈe/,VOICE,_,CAUS/CAUSATIVE voice marker
+
+CAUSATIVE voice marker,ke-,/kˈe/,VOICE,_,CAUS/CAUSATIVE voice marker
+
 COM,yi-,/ˈi/,CASE,_,COM/comlative case marker
 
 comlative case marker,yi-,/ˈi/,CASE,_,COM/comlative case marker
+
+COND,ko-,/kˈo/,MOOD,_,COND/CONDITIONAL mood marker
+
+CONDITIONAL mood marker,ko-,/kˈo/,MOOD,_,COND/CONDITIONAL mood marker
+
+COUNTER,ks-o,/ˈo/,MOOD,_,COUNTER/COUNTERFACTUAL mood marker
+
+COUNTERFACTUAL mood marker,ks-o,/ˈo/,MOOD,_,COUNTER/COUNTERFACTUAL mood marker
 
 DAT,mi-,/mˈi/,CASE,_,DAT/dative case marker
 
@@ -589,6 +607,10 @@ GEN,hi-,/hˈi/,CASE,_,GEN/genitive case marker
 
 genitive case marker,hi-,/hˈi/,CASE,_,GEN/genitive case marker
 
+IMP,se-,/sˈe/,MOOD,_,IMP/IMPERATIVE mood marker
+
+IMPERATIVE mood marker,se-,/sˈe/,MOOD,_,IMP/IMPERATIVE mood marker
+
 inanimate noun class,lo-,/lˈo/,CLASS,_,_
 
 INS,si-,/sˈi/,CASE,_,INS/instrumental case marker
@@ -599,15 +621,47 @@ LOC,ti-,/tˈi/,CASE,_,LOC/locative case marker
 
 locative case marker,ti-,/tˈi/,CASE,_,LOC/locative case marker
 
+MID,mo-,/mˈo/,VOICE,_,MID/MIDDLE voice marker
+
+MIDDLE voice marker,mo-,/mˈo/,VOICE,_,MID/MIDDLE voice marker
+
 NOM,i-,/ˈi/,CASE,_,NOM/nomative case marker
 
 nomative case marker,i-,/ˈi/,CASE,_,NOM/nomative case marker
 
+OBL,tl0-,/ƛ0-/,MOOD,_,OBL/OBLIGATIVE mood marker
+
+OBLIGATIVE mood marker,tl0-,/ƛ0-/,MOOD,_,OBL/OBLIGATIVE mood marker
+
+OPT,lhe-,/ɬˈe/,MOOD,_,OPT/OPTATIVE mood marker
+
+OPTATIVE mood marker,lhe-,/ɬˈe/,MOOD,_,OPT/OPTATIVE mood marker
+
+PASS,pa-,/pˈa/,VOICE,_,PASS/PASSIVE voice marker
+
+PASSIVE voice marker,pa-,/pˈa/,VOICE,_,PASS/PASSIVE voice marker
+
 plural marker,-e,/ˈe/,PLURAL,_,_
+
+POT,sho-,/ʃˈo/,MOOD,_,POT/POTENTIAL mood marker
+
+POTENTIAL mood marker,sho-,/ʃˈo/,MOOD,_,POT/POTENTIAL mood marker
 
 PUR,lhu-,/ɬˈu/,CASE,_,PUR/purpose case marker
 
 purpose case marker,lhu-,/ɬˈu/,CASE,_,PUR/purpose case marker
+
+REC,ra-,/rˈa/,VOICE,_,REC/RECIPROCAL voice marker
+
+RECIPROCAL voice marker,ra-,/rˈa/,VOICE,_,REC/RECIPROCAL voice marker
+
+REFL,te-,/tˈe/,VOICE,_,REFL/REFLEXIVE voice marker
+
+REFLEXIVE voice marker,te-,/tˈe/,VOICE,_,REFL/REFLEXIVE voice marker
+
+SUB,wi-,/wˈi/,MOOD,_,SUB/SUBJUNCTIVE mood marker
+
+SUBJUNCTIVE mood marker,wi-,/wˈi/,MOOD,_,SUB/SUBJUNCTIVE mood marker
 
 TEMP,tu-,/tˈu/,CASE,_,TEMP/temporal case marker
 

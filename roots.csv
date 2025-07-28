@@ -15,6 +15,23 @@ Year,Word,Translation,Roots,POS,Note
 -1,la-,animate noun class,_,CLASS,_
 -1,lo-,inanimate noun class,_,CLASS,_
 -1,le-,abstract noun class,_,CLASS,_
+-1,wi-,SUB/SUBJUNCTIVE mood marker,_,MOOD,_
+-1,se-,IMP/IMPERATIVE mood marker,_,MOOD,_
+-1,ko-,COND/CONDITIONAL mood marker,_,MOOD,_
+-1,ks-o,COUNTER/COUNTERFACTUAL mood marker,_,MOOD,_
+-1,ɬe-,OPT/OPTATIVE mood marker,_,MOOD,_
+-1,ƛ0-,OBL/OBLIGATIVE mood marker,_,MOOD,_
+-1,ʃo-,POT/POTENTIAL mood marker,_,MOOD,_
+-1,te-,REFL/REFLEXIVE voice marker,_,VOICE,_
+-1,pa-,PASS/PASSIVE voice marker,_,VOICE,_
+-1,mo-,MID/MIDDLE voice marker,_,VOICE,_
+-1,ke-,CAUS/CAUSATIVE voice marker,_,VOICE,_
+-1,ra-,REC/RECIPROCAL voice marker,_,VOICE,_
+
+
+
+
+
 0,əmel,life,_,N,_
 0,araj,wisdom/truth,_,N,_
 0,ahana,light,_,N,_
@@ -160,3 +177,4 @@ Year,Word,Translation,Roots,POS,Note
 0,roladil,comparison,_,N,_
 0,ɬum,goodness/virtue,_,N,_
 0,ojal,evil/wickedness/badness,_,N,_
+0,ŋoŋabi,surpassing/exceeding/overwhelming,_,N,_

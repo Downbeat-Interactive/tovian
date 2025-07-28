@@ -25,6 +25,7 @@
             <nav>
                 <ul>
                     <li><a href="#Dictionary">Dictionary</a></li>
+                    <li><a href="#Learn">Learn Tovian</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,8 +34,9 @@
     <!-- Wrapper -->
     <div id="wrapper">
         <!-- Dictionary -->
-        <section id="Dictionary" class="wrapper style1 fullscreen fade-up">
+        <section id="Dictionary" style="display: block" class="wrapper style1 fullscreen fade-up">
             <div class="inner">
+                <h2 style="text-align: center;">Tovian to English Dictionary</h2>
                 <!-- <h1>Tovian</h1>
                 <p></p> -->
                 <script>
@@ -42,12 +44,14 @@
                         csvFile: 'dictionary.csv'
                     });
                 </script>
-                <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Translate...">
+                <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search">
                 <p></p>
-                <div id="dictionaryHolder" style="width:100%; height: 80%; overflow-y: scroll;">
+                <div id="dictionaryHolder" style="display:table; max-height:100vh; width: 100%; height: 100%;">
                     <script>
                         csvtotable.run()
                     </script>
+                        <p style="display: table-cell; height: 100%;"
+                      ></p>
                 </div>
 
                 <script>
@@ -55,7 +59,7 @@
                         // Declare variables
                         var input, filter, table, tr, td, i, txtValue;
                         input = document.getElementById("myInput");
-                        filter = input.value.toUpperCase();
+                        filter = input.value.toUpperCase().trim();
                         table = document.getElementById("dictionaryTable");
                         tr = table.getElementsByTagName("tr");
 
@@ -79,12 +83,25 @@
 
 
             </div>
+        </section>
 
+        <section id="Learn" style="display: block; margin:0%" class="wrapper style1 fullscreen fade-up">
+            <div  style="			padding: 1em 5em 2em 2em ;
+			max-width: 100%;
+			width: 75em;
+            vertical-align: top; height: 100vh;">
+                <h2 style="text-align: center;">Learn Tovian</h2>
+                    <iframe src="guide.pdf" frameborder="0" height="90%" width="100%"></iframe>
+                    <p style="display: table-cell; height: 100%;"
+                      >
+                </p>
+            </div>
+        </section>
             <!-- Footer -->
             <footer id="footer" class="wrapper style1-alt">
                 <div class="inner">
                     <ul class="menu">
-                        <li>&copy; Untitled. All rights reserved.</li>
+                        <li>&copy; Jackson Dean. All rights reserved.</li>
                         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
                 </div>
