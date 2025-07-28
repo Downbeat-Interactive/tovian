@@ -6,7 +6,7 @@ Year,Translation,Roots,POS,Note
 50,sword,killing+tool,N,_
 50,knife,small+sharpness+tool,N,_
 2000,hoe,plant+tool,N,_
-10,person-place/home,person+place,N,_
+10,house/home,person+place,N,_
 10,wind/breath,air+movement,N,_
 10,writing/painting,show+action,N,_
 10,tie/bind/knot,joining+action,N,_

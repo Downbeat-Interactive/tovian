@@ -227,6 +227,8 @@ hollow,remen, / rˈemen / ,_
 
 home,drielathil, / drielˈaθil / ,person + place
 
+house,drielathil, / drielˈaθil / ,person + place
+
 how,lhan, / ɬˈan / ,_
 
 I,na, / nˈa / ,_
@@ -332,8 +334,6 @@ person hair,malur, / mˈalur / ,_
 person skin,trel, / trˈel / ,_
 
 person,driel, / drˈiel / ,_
-
-person-place,drielathil, / drielˈaθil / ,person + place
 
 place,thil, / θˈil / ,_
 
@@ -587,7 +587,7 @@ animate noun class,la-, / lˈa / ,_
 
 CAUS,ke-, / kˈe / ,_
 
-CAUSATIVE voice marker,ke-, / kˈe / ,_
+causative voice marker,ke-, / kˈe / ,_
 
 COM,yi-, / ˈi / ,_
 
@@ -595,11 +595,11 @@ comlative case marker,yi-, / ˈi / ,_
 
 COND,ko-, / kˈo / ,_
 
-CONDITIONAL mood marker,ko-, / kˈo / ,_
+conditional mood marker,ko-, / kˈo / ,_
 
 COUNTER,ks-o, / ˈo / ,_
 
-COUNTERFACTUAL mood marker,ks-o, / ˈo / ,_
+counterfactual mood marker,ks-o, / ˈo / ,_
 
 DAT,mi-, / mˈi / ,_
 
@@ -615,7 +615,7 @@ genitive case marker,hi-, / hˈi / ,_
 
 IMP,se-, / sˈe / ,_
 
-IMPERATIVE mood marker,se-, / sˈe / ,_
+imperative mood marker,se-, / sˈe / ,_
 
 inanimate noun class,lo-, / lˈo / ,_
 
@@ -629,7 +629,7 @@ locative case marker,ti-, / tˈi / ,_
 
 MID,mo-, / mˈo / ,_
 
-MIDDLE voice marker,mo-, / mˈo / ,_
+middle voice marker,mo-, / mˈo / ,_
 
 NOM,i-, / ˈi / ,_
 
@@ -637,21 +637,21 @@ nomative case marker,i-, / ˈi / ,_
 
 OBL,tl0-, / ƛ0- / ,_
 
-OBLIGATIVE mood marker,tl0-, / ƛ0- / ,_
+obligative mood marker,tl0-, / ƛ0- / ,_
 
 OPT,lhe-, / ɬˈe / ,_
 
-OPTATIVE mood marker,lhe-, / ɬˈe / ,_
+optative mood marker,lhe-, / ɬˈe / ,_
 
 PASS,pa-, / pˈa / ,_
 
-PASSIVE voice marker,pa-, / pˈa / ,_
+passive voice marker,pa-, / pˈa / ,_
 
 plural marker,-e, / ˈe / ,_
 
 POT,sho-, / ʃˈo / ,_
 
-POTENTIAL mood marker,sho-, / ʃˈo / ,_
+potential mood marker,sho-, / ʃˈo / ,_
 
 PUR,lhu-, / ɬˈu / ,_
 
@@ -659,15 +659,15 @@ purpose case marker,lhu-, / ɬˈu / ,_
 
 REC,ra-, / rˈa / ,_
 
-RECIPROCAL voice marker,ra-, / rˈa / ,_
+reciprocal voice marker,ra-, / rˈa / ,_
 
 REFL,te-, / tˈe / ,_
 
-REFLEXIVE voice marker,te-, / tˈe / ,_
+reflexive voice marker,te-, / tˈe / ,_
 
 SUB,wi-, / wˈi / ,_
 
-SUBJUNCTIVE mood marker,wi-, / wˈi / ,_
+subjunctive mood marker,wi-, / wˈi / ,_
 
 TEMP,tu-, / tˈu / ,_
 

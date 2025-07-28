@@ -15,18 +15,18 @@ Year,Word,Translation,Roots,POS,Note
 -1,la-,animate noun class,_,CLASS,_
 -1,lo-,inanimate noun class,_,CLASS,_
 -1,le-,abstract noun class,_,CLASS,_
--1,wi-,SUB/SUBJUNCTIVE mood marker,_,MOOD,_
--1,se-,IMP/IMPERATIVE mood marker,_,MOOD,_
--1,ko-,COND/CONDITIONAL mood marker,_,MOOD,_
--1,ks-o,COUNTER/COUNTERFACTUAL mood marker,_,MOOD,_
--1,ɬe-,OPT/OPTATIVE mood marker,_,MOOD,_
--1,ƛ0-,OBL/OBLIGATIVE mood marker,_,MOOD,_
--1,ʃo-,POT/POTENTIAL mood marker,_,MOOD,_
--1,te-,REFL/REFLEXIVE voice marker,_,VOICE,_
--1,pa-,PASS/PASSIVE voice marker,_,VOICE,_
--1,mo-,MID/MIDDLE voice marker,_,VOICE,_
--1,ke-,CAUS/CAUSATIVE voice marker,_,VOICE,_
--1,ra-,REC/RECIPROCAL voice marker,_,VOICE,_
+-1,wi-,SUB/subjunctive mood marker,_,MOOD,_
+-1,se-,IMP/imperative mood marker,_,MOOD,_
+-1,ko-,COND/conditional mood marker,_,MOOD,_
+-1,ks-o,COUNTER/counterfactual mood marker,_,MOOD,_
+-1,ɬe-,OPT/optative mood marker,_,MOOD,_
+-1,ƛ0-,OBL/obligative mood marker,_,MOOD,_
+-1,ʃo-,POT/potential mood marker,_,MOOD,_
+-1,te-,REFL/reflexive voice marker,_,VOICE,_
+-1,pa-,PASS/passive voice marker,_,VOICE,_
+-1,mo-,MID/middle voice marker,_,VOICE,_
+-1,ke-,CAUS/causative voice marker,_,VOICE,_
+-1,ra-,REC/reciprocal voice marker,_,VOICE,_
 
 
 
@@ -121,7 +121,8 @@ Year,Word,Translation,Roots,POS,Note
 0,oma,completeness/wholeness,_,N,_
 0,ɬena,dream,_,N,_
 0,driks,blood,_,N,_
-0,ʃot,foot,_,N,_
+0,ʃot,foot,_,N,_            word-wrap: break-word;
+
 0,darun,head,_,N,_
 0,verun,nose,_,N,_
 0,θek,ear,_,N,_
