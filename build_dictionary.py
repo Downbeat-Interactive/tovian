@@ -2,6 +2,7 @@ from collections import OrderedDict
 import re
 
 # USE THIS: https://fiatlingua.org/2014/09/
+# AND THIS: https://chridd.nfshost.com/diachronica/index-diachronica.pdf
 SPACE_BETWEEN_ENTRIES = '15pt'
 FONT_SIZE = '20pt'
 
@@ -20,6 +21,7 @@ liquids = 'lr'
 
 fricatives = 'fvθðszʒʃhɬ'
 affricates = 'ƛ'
+approximates = 'ɹj'
 
 stress_mark = "ˈ"
 
@@ -120,6 +122,11 @@ def no_stops_after_glides(word):
             word = word.replace(pattern, glide)
     return word
 
+def velar_hardening(word):
+    # word_finally or before voiceless consonants
+    pattern = fr'k(?=[{voiceless_consonants}]|$)'
+    return re.sub(pattern, 'k', word)
+
 def no_fricative_clusters(word):
     pattern = f"[{fricatives}][{fricatives}]"
     return re.sub(pattern, lambda x: x.group()[0], word)
@@ -148,6 +155,13 @@ def no_repeated_vowels(word):
         word = word.replace(pattern, vowel)
     return word
 
+def approximate_loss_after_o_or_u(word):
+    pattern = fr'([ou])([{approximates}])'
+    return re.sub(pattern, r'\1', word)
+
+def vowel_loss_before_approximate(word):
+    pattern = fr'([{vowels}])([{approximates}])'
+    return re.sub(pattern, r'\2', word)
 
 def nasal_assimilation(word):
     # Define the replacements
@@ -276,10 +290,44 @@ def no_affricates_after_fricatives(word):
     # Replace the matched pattern with just the fricative
     return re.sub(pattern, r'\1', word)
 
+
+#Stop Cluster Simplification
+def stop_cluster_simplification(word):
+    # /pt/, /kt/, /pk/ → /p/, /k/, /p/
+    pattern = r'pt|kt|pk'
+    return re.sub(pattern, lambda m: m.group()[0], word)
+
+# Fricative Clusters Harden with Epenthetic Stops
+def fricative_cluster_hardening(word):
+    # /sʃ/ → /tsʃ/, /ɬʃ/ → /tɬʃ/
+    pattern = r'sʃ|ɬʃ'
+    return re.sub(pattern, lambda m: 't' + m.group(), word)
+
+#  Nasal Deletion Before Voiceless Obstruents
+def nasal_deletion_before_voiceless_obstruents(word):
+    #/n/ → ∅ / __[p t k f θ ʃ]
+    pattern = fr'n(?=[{voiceless_consonants}])'
+    return re.sub(pattern, '', word)
+
+# Reduplicant Vowel Reduction
+# Rule: CV-CV → Cə-CV
+def reduplicant_vowel_reduction(word):
+    stressed_word = mark_stress(word)
+    # except when stressed
+    stressed_pattern = fr'^([{consonants}]){stress_mark}([{vowels}])\1([{vowels}])'
+    if re.match(stressed_pattern, stressed_word):
+        return word
+    pattern = fr'^([{consonants}])([{vowels}])\1([{vowels}])'
+    return re.sub(pattern, r'\1ə\1\3', word)
+
+
+
 # List of sound changes
 sound_changes = [
     {'rule': 1000, 'description': 'Vowel loss between voiceless consonants in unstressed syllables', 'function': vowel_loss_between_voiceless_consonants_unless_stressed},
     {'rule': 2000, 'description': 'Voiceless stop between voiced sounds become voiced', 'function': voiceless_stop_to_voiced_between_voiced},
+    {'rule': 2100, 'description': 'Vowel loss before affricate', 'function': vowel_loss_before_approximate},
+    {'rule': 2200, 'description': 'Velar hardening k > k', 'function': velar_hardening},
     {'rule': 2300, 'description': 'ə lost', 'function': lambda x: x.replace('ə', '')},
     {'rule': 3000, 'description': 'No voiceless stops in clusters', 'function': no_voiceless_stops_in_clusters},
     {'rule': 3500, 'description': 'ɟ to j', 'function': change_bardotlessj},
@@ -292,20 +340,27 @@ sound_changes = [
     {'rule': 5000, 'description': 'h is lost between vowels and at the end of words', 'function': loss_of_h},
     {'rule': 5500, 'description': 'Vowel combinations', 'function': vowel_combinations},
     {'rule': 6000, 'description': 'Nasal assimilation', 'function': nasal_assimilation},
+    {'rule': 6200, 'description': 'Approximate loss after o or u', 'function': approximate_loss_after_o_or_u},
+    {'rule': 6300, 'description': 'Vowel loss before approximates', 'function': vowel_loss_before_approximate},
+    {'rule': 6400, 'description': 'Nasal deletion before voiceless obstruents', 'function': nasal_deletion_before_voiceless_obstruents}, 
     {'rule': 6500, 'description': 'No double consonants', 'function': no_double_consonants},
     {'rule': 7500, 'description': 'Word-initial vowel loss', 'function': word_initial_vowel_loss_unless_stressed},
     {'rule': 7501, 'description': 'f to ɸ at the end of words', 'function': f_to_phi_at_word_end},
     {'rule': 8000, 'description': 'θr unless stressed', 'function': theta_r},
     {'rule': 8500, 'description': 'No stops after nasals', 'function': no_stops_after_nasals},
     {'rule': 8750, 'description': 'No stops after any sonorant', 'function': no_stops_after_sonorants},
+    {'rule': 9200, 'description': 'Reduplicant vowel reduction', 'function': reduplicant_vowel_reduction}, # big change
     {'rule': 9500, 'description': 'Word-final vowel loss', 'function': word_final_vowel_loss_unless_stressed},
     {'rule': 10000, 'description': 'ae to a', 'function': ae_to_a},
     {'rule': 11000, 'description': 'No coda stops', 'function': no_coda_stops},
+    {'rule': 11500, 'description': 'Stop cluster simplification', 'function': stop_cluster_simplification},
+    {'rule': 11990, 'description': 'ə lost', 'function': lambda x: x.replace('ə', '')},
     {'rule': 12000, 'description': 'z to s', 'function': z_to_s},
     {'rule': 12001, 'description': 'ʒ to ʃ', 'function': y_to_sh},
     {'rule': 12002, 'description': 'ð to θ', 'function': unvoice_th},
     {'rule': 12003, 'description': 'No repeated vowels', 'function': no_repeated_vowels},
     {'rule': 12004, 'description': 'No word-final e', 'function': no_final_e},
+    {'rule': 12005, 'description': 'No repeated consonants', 'function': no_double_consonants},
     {'rule': 13000, 'description': 'No fricative clusters', 'function': no_fricative_clusters},
     {'rule': 14000, 'description': 'No fricatives after affricates', 'function': no_fricatives_after_affricates},
     {'rule': 14001, 'description': 'No affricates after fricatives', 'function': no_affricates_after_fricatives},
@@ -394,6 +449,11 @@ def romanization(word):
     for roman_char, latex_char in replacements.items():
         word = word.replace(roman_char, latex_char)
     return word
+
+def get_dictionary_csv(word_after_changes, translation, stress, rom, pos, notes, roots):
+    csv_lines = []
+    csv_lines.append(f"{translation.strip()},{rom},/{stress}/,{pos},{roots}")
+    return "\n".join(csv_lines)
 
 def get_dictionary_latex(history, translation,roots,pos,notes):
     # Start tabular environment with dynamic number of columns
@@ -533,6 +593,7 @@ def main():
     input_words = roots + compounds + borrowed 
     interactive_dict = {}
     latex_histories = {}
+    csv_histories = []
     for input_word in input_words:
         year = input_word[0]
         translation = input_word[2]
@@ -540,6 +601,7 @@ def main():
         pos = input_word[4]
         notes = input_word[-1]
         word_after_changes, history = apply_sound_changes(input_word, max_year=args.max_year)
+        
         final_word = format_for_latex(word_after_changes)
         if not args.interactive:
             for rule, word in history:
@@ -547,6 +609,9 @@ def main():
         
         rom = romanization(word_after_changes)
         stress = mark_stress(word_after_changes)
+        csv_history = get_dictionary_csv(word_after_changes, translation, stress, rom, pos, notes, roots)
+        csv_histories.append(csv_history)
+        
 
         for definition in translation.split('/'):
             interactive_dict[definition.strip()] = (final_word, pos, history, rom, stress, notes)
@@ -561,6 +626,35 @@ def main():
 
     # sort latex_histories by key
     latex_histories = OrderedDict(sorted(latex_histories.items(), key=lambda x: x[0].lower()))
+    
+    # split csv histories into duplicate entries if multiple definitions with /
+    expanded_csv_histories = []
+    for csv_history in csv_histories:
+       # add identical column as _
+        words = csv_history.strip().split(',')[0].split('/')
+        if len(words) > 1:
+            for w in words:
+                parts = csv_history.strip().split(',')
+                new_csv = f'{w.strip()},' + ','.join(parts[1:])
+                # add to identical column
+                new_csv = new_csv.rsplit(',',0)[0] +","+ "/".join(words)
+                expanded_csv_histories.append(new_csv)
+        else:
+            expanded_csv_histories.append(csv_history.strip()+',_')
+    # sort csv_histories by the first line's final word, numbers at end of list, pos=CASE at end of list 
+    def sort_dict(x):
+        first_line = x.splitlines()[0]
+        first_word = first_line.split('","')[0].strip('"').lower()
+        pos = first_line.split(',')[3].strip('"')
+        # if pos is 'case' or 'ps' or 'ns', put at end
+        if pos in ['CASE', 'CLASS', 'PLURAL']:
+            return 'zzz' + first_word
+        if not first_word[0].isdigit():
+            return first_word
+        else:
+            return 'zzzz' + first_word
+    expanded_csv_histories = sorted(expanded_csv_histories, key=sort_dict)
+    
     filename = 'dictionary.tex'
     if args.max_year is not None:
         filename = f'dictionary_{args.max_year}.tex'
@@ -569,6 +663,18 @@ def main():
         for translation, latex_history in latex_histories.items():
             file.write(latex_history + '\n\n')
         file.write(r'\onecolumn' + '\n')
+    
+    csv_filename = 'dictionary.csv'
+    if args.max_year is not None:
+        csv_filename = f'dictionary_{args.max_year}.csv'
+    #also save to pages/
+    pages_filename='pages/'+csv_filename
+    for fname in [csv_filename, pages_filename]:
+        with open(fname, 'w', encoding='utf-8') as file:
+            file.write('English,Tovian,IPA,POS,Roots,Identical\n')
+            for csv_history in expanded_csv_histories:
+                file.write(csv_history + '\n\n')
+            
         
     if args.interactive:
         print("Interactive mode enabled. Type 'q' to quit.")

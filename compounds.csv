@@ -42,20 +42,20 @@ Year,Translation,Roots,POS,Note
 0,dance,movement+action,N,_
 0,present/demonstrate,action+show,N,_
 0,teaching,knowledge+show,N,_
-14000,thirteen/13,twelve+one,N,_
-14000,fourteen/14,twelve+two,N,_
-14000,fifteen/15,twelve+three,N,_
-14000,sixteen/16,twelve+four,N,_
-14000,twenty/20,twelve+eight,N,_
-14000,twenty four/24,two+twelve,N,_
-14000,twenty five/25,twenty four+one,N,_
-14000,twenty six/26,twenty four+two,N,_
-14000,thirty/30,twenty four+six,N,_
-14000,thirty six/36,three+twelve,N,_
-14000,forty eight/48,four+twelve,N,_
-14000,one hundred forty four/144,twelve+twelve,N,_
-14000,week,ten+day,N,_
-13000,month,small+small+cycle,N,_
+4000,thirteen/13,twelve+one,N,_
+4000,fourteen/14,twelve+two,N,_
+4000,fifteen/15,twelve+three,N,_
+4000,sixteen/16,twelve+four,N,_
+4000,twenty/20,twelve+eight,N,_
+4000,twenty four/24,two+twelve,N,_
+4000,twenty five/25,twenty four+one,N,_
+4000,twenty six/26,twenty four+two,N,_
+4000,thirty/30,twenty four+six,N,_
+4000,thirty six/36,three+twelve,N,_
+4000,forty eight/48,four+twelve,N,_
+4000,one hundred forty four/144,twelve+twelve,N,_
+4000,week,ten+day,N,_
+0,month,small+small+cycle,N,_
 642,grandfather,old+father,N,_
 3024,hat,head+covering,N,_
-402,jealousy,bad+comparison,N,_
+402,jealousy,wickedness+comparison,N,_

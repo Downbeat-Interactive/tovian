@@ -18,7 +18,7 @@ Year,Word,Translation,Roots,POS,Note
 0,əmel,life,_,N,_
 0,araj,wisdom/truth,_,N,_
 0,ahana,light,_,N,_
-0,θrafa,wondering/curiosity,_,N,_
+0,θirafa,wondering/curiosity,_,N,_
 0,lore,action/doing,_,N,_
 0,θile,place,_,N,_
 0,drihela,person,_,N,_
@@ -70,7 +70,6 @@ Year,Word,Translation,Roots,POS,Note
 0,otkele,lake,_,N,_
 0,glar,woods,_,N,_
 0,tid,in (obsolete),_,became locative "ti-",_
-0,θirafa,wondering,_,N,_
 0,seθir,running/moving quickly/rushing,_,N,_
 0,ʃoƛ,flowing,_,N,_
 0,naɬ,thinking/believing/pondering,_,N,_
@@ -104,7 +103,6 @@ Year,Word,Translation,Roots,POS,Note
 0,inga,stickiness,_,N,_
 0,oma,completeness/wholeness,_,N,_
 0,ɬena,dream,_,N,_
-0,turan,becoming,_,N,_
 0,driks,blood,_,N,_
 0,ʃot,foot,_,N,_
 0,darun,head,_,N,_
@@ -120,25 +118,24 @@ Year,Word,Translation,Roots,POS,Note
 0,alius,moon,_,N,_
 0,tot,circle/cycle,_,N,_
 0,panor,end/final,_,N,_
-0,tiθ,beginning/start,_,N,_
 0,elakorim,memory,_,N,_
 -1,elakorim,god of memory,_,N,_
 0,oremen,empty/hollow,_,N,_
 0,do,opposite/not/un-,_,N,_
-0,sil,being/existance/created thing,_,N,_
+0,sil,being/existence/created thing,_,N,_
 0,agata,importance/grandness/greatness,_,N,_
-0,lo,one,_,N,_
-0,lo,two,_,Ns,_
-0,fem,three,_,N,_
-0,tev,four,_,N,_
-0,rep,five,_,N,_
-0,tep,six,_,N,_
-0,pol,seven,_,N,_
-0,aθ,eight,_,N,_
-0,ki,nine,_,N,_
-0,tir,ten,_,N,_
-0,beyar,eleven,_,N,_
-0,ɬiya,twelve,_,N,_
+0,lo,one/1,_,N,_
+0,lo,two/2,_,Ns,_
+0,fem,three/3,_,N,_
+0,tev,four/4,_,N,_
+0,rep,five/5,_,N,_
+0,tep,six/6,_,N,_
+0,pol,seven/7,_,N,_
+0,aθ,eight/8,_,N,_
+0,ki,nine/9,_,N,_
+0,tir,ten/10,_,N,_
+0,beyar,eleven/11,_,N,_
+0,ɬiya,twelve/12,_,N,_
 0,ɬan,who,_,INT,_
 0,ɬan,what,_,INT,_
 0,ɬan,where,_,INT,_
@@ -159,6 +156,7 @@ Year,Word,Translation,Roots,POS,Note
 0,ɬonum,day,_,N,Period of time
 0,benani,shelter/protection/covering,_,N,_
 0,mari,mother,_,N,_
-0,pandor,father,_,N,_
+0,pander,father,_,N,_
 0,roladil,comparison,_,N,_
-
+0,ɬum,goodness/virtue,_,N,_
+0,ojal,evil/wickedness/badness,_,N,_
