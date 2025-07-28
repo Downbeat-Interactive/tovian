@@ -34,7 +34,7 @@
     <!-- Wrapper -->
     <div id="wrapper">
         <!-- Dictionary -->
-        <section id="Dictionary" style="display: block" class="wrapper style1 fullscreen fade-up">
+        <section id="Dictionary" style="display: block; max-width:100%" class="wrapper style1 fullscreen fade-up">
             <div class="inner">
                 <h2 style="text-align: center;">Tovian to English Dictionary</h2>
                 <!-- <h1>Tovian</h1>
@@ -43,6 +43,7 @@
                     var csvtotable = new CsvToTable({
                         csvFile: 'dictionary.csv'
                     });
+
                 </script>
                 <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search">
                 <p></p>

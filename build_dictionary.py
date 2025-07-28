@@ -631,16 +631,19 @@ def main():
     expanded_csv_histories = []
     for csv_history in csv_histories:
        # add identical column as _
+        csv_history = csv_history.replace("+", " + ")
         words = csv_history.strip().split(',')[0].split('/')
+        csv_history = csv_history.replace("/", " / ")
         if len(words) > 1:
             for w in words:
                 parts = csv_history.strip().split(',')
                 new_csv = f'{w.strip()},' + ','.join(parts[1:])
                 # add to identical column
-                new_csv = new_csv.rsplit(',',0)[0] +","+ "/".join(words)
+                new_csv = new_csv.rsplit(',',0)[0] +","+ " / ".join(words)
                 expanded_csv_histories.append(new_csv)
         else:
             expanded_csv_histories.append(csv_history.strip()+',_')
+            
     # sort csv_histories by the first line's final word, numbers at end of list, pos=CASE at end of list 
     def sort_dict(x):
         first_line = x.splitlines()[0]
@@ -654,6 +657,10 @@ def main():
         else:
             return 'zzzz' + first_word
     expanded_csv_histories = sorted(expanded_csv_histories, key=sort_dict)
+    # remove columns 'POS' and 'Identical' from csv histories (columns 3 and 5)
+    expanded_csv_histories = [','.join(line.split(',')[:-1]) for line in expanded_csv_histories]
+    expanded_csv_histories = [','.join(line.split(',')[:3]+line.split(',')[4:]) for line in expanded_csv_histories]
+   
     
     filename = 'dictionary.tex'
     if args.max_year is not None:
@@ -671,7 +678,7 @@ def main():
     pages_filename='docs/'+csv_filename
     for fname in [csv_filename, pages_filename]:
         with open(fname, 'w', encoding='utf-8') as file:
-            file.write('English,Tovian,IPA,POS,Roots,Identical\n')
+            file.write('English,Tovian,IPA,Roots\n')
             for csv_history in expanded_csv_histories:
                 file.write(csv_history + '\n\n')
             

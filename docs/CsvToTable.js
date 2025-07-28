@@ -62,6 +62,22 @@
       };
     }
 
+    function removeCol(colNum) {
+        console.log("Removing column " + colNum);
+            var colElems = document.getElementsByClassName("col-" + colNum)
+            for (var i = colElems.length - 1; i >= 0; i--) {
+                colElems[i].style.display = "none";
+            }
+        }
+
+
+    CsvToTable.prototype.removeTableCols = function(colIndices) {
+       for (var colNum of colIndices) {
+           console.log("Removing column " + colNum);
+           removeCol(colNum);
+       }
+    }
+
 	function buildTable() {
 		getCSV.call(this).then(function(response){
 			var allRows = response.split(/\r?\n|\r/).filter(isNotEmpty);
@@ -80,7 +96,7 @@
 	                    table += rowCells[rowCell];
 	                    table += '</th>';
 	                } else {
-	                    table += '<td>';
+	                    table += '<td class="col-' + rowCell + '">';
 	                    table += rowCells[rowCell];
 	                    table += '</td>';
 	                }
