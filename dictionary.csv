@@ -1,4 +1,6 @@
 English,Tovian,IPA,Roots
+???,???, / ??? / ,_
+
 action,lor, / lˈor / ,_
 
 air,rith, / rˈiθ / ,_
@@ -7,17 +9,27 @@ alertness,shith, / ʃˈiθ / ,_
 
 ancient,nan, / nˈan / ,_
 
+animal,tlan, / ƛˈan / ,_
+
+April,loelor, / loˈelor / ,two + plant
+
+arm,kel, / kˈel / ,_
+
 arriving,kith, / kˈiθ / ,_
+
+August,femthulef, / femθˈulef / ,three + height + sun
 
 badness,yal, / jˈal / ,_
 
 balance,kar, / kˈar / ,_
 
+beast,tlan, / ƛˈan / ,_
+
 beauty,wen, / wˈen / ,_
 
-becoming,kthan, / kθˈan / ,arriving + change
+becoming,kan, / kˈan / ,arriving + change
 
-beginning,yalor, / jˈalor / ,_
+beginning,lon, / lˈon / ,_
 
 behind,hul, / hˈul / ,_
 
@@ -25,33 +37,47 @@ being,sil, / sˈil / ,_
 
 believing,nalh, / nˈaɬ / ,_
 
+berry,shanin, / ʃˈanin / ,fruit + small
+
 big,mot, / mˈot / ,_
 
-bind,tlunalor, / ƛunˈalor / ,joining + action
+bind,nalor, / nˈalor / ,joining + action
 
-blood,driks, / drˈiks / ,_
+bird,rithan, / rˈiθan / ,air + animal
+
+birth,lhan, / ɬˈan / ,bringing + light
+
+blood,drik, / drˈik / ,_
+
+bloom,med, / mˈed / ,flower + showing
 
 blue,dor, / dˈor / ,_
 
 blueness,dor, / dˈor / ,_
 
-boat,selith, / sˈeliθ / ,water + traveling
+boat,sith, / sˈiθ / ,water + traveling
+
+body,adlel, / ˈadlel / ,_
 
 bottom,sul, / sˈul / ,_
 
 branch,kel, / kˈel / ,_
 
-breath,rithwil, / rˈiθwil / ,air + movement
+breath,lirith, / lˈiriθ / ,movement + COM + air
+
+bringing,lhog, / ɬˈog / ,_
 
 burning,kesh, / kˈeʃ / ,_
 
-calm,tlaf, / ƛˈa / ,_
+calm,tla, / ƛˈa / ,_
 
-calmness,tlaf, / ƛˈa / ,_
+calmness,tla, / ƛˈa / ,_
 
-canoe,selith, / sˈeliθ / ,water + traveling
+canoe,sith, / sˈiθ / ,water + traveling
 
-ceasing,palor, / pˈalor / ,_
+carrying,lhog, / ɬˈog / ,_
+
+ceasing,pal, / pˈal / ,_
 
 center,lhel, / ɬˈel / ,_
 
@@ -69,45 +95,121 @@ cold,tush, / tˈuʃ / ,_
 
 coldness,tush, / tˈuʃ / ,_
 
-comparison,roladil, / rolˈadil / ,_
+comparison,lad, / lˈad / ,_
 
 completeness,om, / ˈom / ,_
 
-confession,ryfethr, / rjfˈeθr / ,truth + speech
+confession,yeolfethr, / jeˈolfeθr / ,truth + speech
 
-conflict,ilor, / ˈilor / ,_
+conflict,glor, / glˈor / ,_
 
 consumption,leth, / lˈeθ / ,_
 
-council,nalhun, / nˈaɬun / ,thinking + joining
+container,lhom, / ɬˈom / ,_
 
-covering,benan, / bˈenan / ,_
+council,lhun, / ɬˈun / ,thinking + joining
+
+covering,munan, / mˈunan / ,_
 
 create,sil, / sˈil / ,_
 
 created thing,sil, / sˈil / ,_
 
+creature,tlan, / ƛˈan / ,_
+
 curiosity,thraf, / θrˈaf / ,_
+
+cutting,shith, / ʃˈiθ / ,_
 
 cycle,tot, / tˈot / ,_
 
-dance,kwilor, / kwˈilor / ,movement + action
+dance,lor, / lˈor / ,movement + action
 
 dark,mral, / mrˈal / ,_
 
 darkness,mral, / mrˈal / ,_
 
-dawn,puloan, / pulˈoan / ,first + light
+dawn,mloan, / mlˈoan / ,first + light
 
-day,lhonum, / ɬˈonum / ,_
+day,lhom, / ɬˈom / ,_
 
-demonstrate,lorefed, / lorˈefed / ,action + show
+day,tuimen, / tuˈimen / ,_
 
-desert,shil, / ʃˈil / ,sand + place
+daytime,tuimen, / tuˈimen / ,_
 
-discovery,silary, / sˈilarj / ,make + wisdom
+death,dol, / dˈol / ,_
 
-dog,norin, / nˈorin / ,_
+december 1,lirithdrem, / lirˈiθdrem / ,breath + flower
+
+december 10,liriskwil, / lirˈiskwil / ,breath + movement
+
+december 11,fedrlad, / fˈedrlad / ,showing + jealousy
+
+december 12,rithaglar, / riθˈaglar / ,air + tree
+
+december 13,shotlan, / ʃˈoƛan / ,flowing + tool
+
+december 14,fedetush, / fedˈetuʃ / ,showing + cold
+
+december 15,lirithen, / lirˈiθen / ,breath + dream
+
+december 16,loreayeol, / loreajˈeol / ,dance + wisdom
+
+december 17,lanam, / lˈanam / ,twilight + bloom
+
+december 18,nanalor, / nanˈalor / ,star + plant
+
+december 19,liuswen, / liˈuswen / ,moon + beauty
+
+december 2,dolshanin, / dolʃˈanin / ,death + berry
+
+december 20,lirithun, / lirˈiθun / ,breath + joining
+
+december 21,lhilaglar, / ɬilˈaglar / ,night + tree
+
+december 22,lan, / lˈan / ,twilight + ???
+
+december 23,lanasialeth, / lanasiˈaleθ / ,twilight + food
+
+december 24,lhonrem, / ɬˈonrem / ,day + flower
+
+december 25,nan, / nˈan / ,star + ???
+
+december 26,shotlodrem, / ʃoƛˈodrem / ,flowing + flower
+
+december 27,doraklirith, / doraklˈiriθ / ,blue + breath
+
+december 28,kluloremlan, / klulorˈemlan / ,vine + twilight
+
+december 29,liuskesh, / liˈuskeʃ / ,moon + fire
+
+december 3,???, / ??? / ,???
+
+december 30,lirith, / lˈiriθ / ,breath + ???
+
+december 4,???, / ??? / ,???
+
+december 5,lirithan, / lirˈiθan / ,breath + tool
+
+december 6,shotltom, / ʃˈoƛtom / ,flowing + root
+
+december 7,mloanathan, / mloanˈaθan / ,morning + tool
+
+december 8,dolrem, / dˈolrem / ,death + flower
+
+december 9,lirithaglar, / liriθˈaglar / ,breath + tree
+
+December,lotush, / lˈotuʃ / ,one + cold
+
+demonstrate,led, / lˈed / ,action + showing
+
+denseness,lhul, / ɬˈul / ,_
+
+desert,tlil, / ƛˈil / ,sand + place
+
+discovery,sahyeol, / sahjˈeol / ,make + wisdom
+
+dog,anon, / ˈanon / ,_
 
 doing,lor, / lˈor / ,_
 
@@ -115,7 +217,13 @@ down,thok, / θˈok / ,_
 
 dream,lhen, / ɬˈen / ,_
 
+dusk,munorhan, / munˈorhan / ,last + light
+
+dying,dol, / dˈol / ,_
+
 ear,thek, / θˈek / ,_
+
+earth,men, / mˈen / ,_
 
 east,tal, / tˈal / ,_
 
@@ -123,11 +231,15 @@ eating,leth, / lˈeθ / ,_
 
 eight,ath, / ˈaθ / ,_
 
-eleven,bear, / bˈear / ,_
+eleven,dear, / dˈear / ,_
 
-empty,remen, / rˈemen / ,_
+empty,oren, / ˈoren / ,_
 
-end,panor, / pˈanor / ,_
+end,par, / pˈar / ,_
+
+eternal,tod, / tˈod / ,_
+
+evening,munorhan, / munˈorhan / ,last + light
 
 evil,yal, / jˈal / ,_
 
@@ -137,15 +249,21 @@ existence,sil, / sˈil / ,_
 
 eye,mril, / mrˈil / ,_
 
-father,paner, / pˈaner / ,_
+face,tan, / tˈan / ,_
 
-feather,ary, / ˈarj / ,_
+father,pan, / pˈan / ,_
 
-fifteen,lhiafem, / ɬiˈafem / ,twelve + three
+feather,ay, / ˈaj / ,_
 
-fighting,ilor, / ˈilor / ,_
+February,femush, / fˈemuʃ / ,three + cold
 
-final,panor, / pˈanor / ,_
+fifteen,lhiam, / ɬˈiam / ,twelve + three
+
+fighting,glor, / glˈor / ,_
+
+final,par, / pˈar / ,_
+
+finger,tom, / tˈom / ,_
 
 fire,kesh, / kˈeʃ / ,_
 
@@ -155,7 +273,7 @@ five,rem, / rˈem / ,_
 
 flatness,tum, / tˈum / ,_
 
-floor,thoksh, / θˈokʃ / ,down + foot
+floor,thok, / θˈok / ,down + foot
 
 flow,shotl, / ʃˈoƛ / ,_
 
@@ -163,11 +281,15 @@ flower,drem, / drˈem / ,_
 
 flowing,shotl, / ʃˈoƛ / ,_
 
+fog,tlurith, / ƛˈuriθ / ,tar + air
+
 food,sialeth, / siˈaleθ / ,INS + eating
 
 foot,shot, / ʃˈot / ,_
 
-forest,glarethil, / glarˈeθil / ,tree + place
+forest,lethil, / lˈeθil / ,tree + place
+
+forever,tod, / tˈod / ,_
 
 forty eight,tevi, / tˈevi / ,four + twelve
 
@@ -179,13 +301,17 @@ front,heth, / hˈeθ / ,_
 
 frost,shush, / ʃˈuʃ / ,_
 
-frown,luraolan, / luraˈolan / ,sad + mouth
+frown,laon, / lˈaon / ,sad + mouth
 
-full,doremen, / dorˈemen / ,not + empty
+fruit,shol, / ʃˈol / ,_
 
-fur,nadur, / nˈadur / ,_
+full,doren, / dˈoren / ,not + empty
 
-future,hethnume, / heθnˈume / ,front + path
+fur,anad, / ˈanad / ,_
+
+future,hethe, / hˈeθe / ,front + path
+
+gentleness,lheth, / ɬˈeθ / ,_
 
 god of memory,elakorim, / elakˈorim / ,_
 
@@ -193,7 +319,9 @@ goodness,lhum, / ɬˈum / ,_
 
 grabbing,lothr, / lˈoθr / ,_
 
-grandfather,naner, / nˈaner / ,old + father
+grain,meloresialeth, / meloresiˈaleθ / ,plant + food
+
+grandfather,nan, / nˈan / ,old + father
 
 grandness,gad, / gˈad / ,_
 
@@ -205,31 +333,41 @@ green,klat, / klˈat / ,_
 
 greenness,klat, / klˈat / ,_
 
-ground,thoksh, / θˈokʃ / ,down + foot
+ground,thok, / θˈok / ,down + foot
 
-hair,malur, / mˈalur / ,_
+hair,amal, / ˈamal / ,_
 
 hand,thang, / θˈaŋ / ,_
 
 happy,mat, / mˈat / ,_
 
-hat,darunenan, / darunˈenan / ,head + covering
+hardness,rum, / rˈum / ,_
+
+harvest,lesh, / lˈeʃ / ,plant + cutting
+
+hat,drunan, / drˈunan / ,head + covering
 
 he,ta, / tˈa / ,_
 
-head,darun, / dˈarun / ,_
+head,dan, / dˈan / ,_
 
-hide,nadur, / nˈadur / ,_
+heat,ag, / ˈag / ,_
 
-hiding,bum, / bˈum / ,bbu
+height,thul, / θˈul / ,_
 
-hoe,melorethan, / melorˈeθan / ,plant + tool
+hide,anad, / ˈanad / ,_
 
-hollow,remen, / rˈemen / ,_
+hiding,dum, / dˈum / ,bbu
 
-home,drielathil, / drielˈaθil / ,person + place
+hoe,leth, / lˈeθ / ,plant + tool
 
-house,drielathil, / drielˈaθil / ,person + place
+hollow,oren, / ˈoren / ,_
+
+home,driethil, / driˈeθil / ,person + place
+
+hotness,ag, / ˈag / ,_
+
+house,driethil, / driˈeθil / ,person + place
 
 how,lhan, / ɬˈan / ,_
 
@@ -247,17 +385,83 @@ it (inanimate),lod, / lˈod / ,_
 
 it,lod, / lˈod / ,_
 
-jealousy,yalroladil, / jalrolˈadil / ,wickedness + comparison
+January 20,shush, / ʃˈuʃ / ,ice + ???
+
+January 31,???, / ??? / ,???
+
+January 32,tushuthok, / tuʃˈuθok / ,cold + ground
+
+January 33,mralrem, / mrˈalrem / ,darkness + flower
+
+January 34,shashanin, / ʃaʃˈanin / ,ice + berry
+
+January 35,selshith, / sˈelʃiθ / ,water + sharpness
+
+January 36,kluloreshud, / klulorˈeʃud / ,vine + ice
+
+January 37,liusel, / liˈusel / ,moon + center
+
+January 38,fol, / fˈol / ,sun + sweet
+
+January 39,lhenashanin, / ɬenaʃˈanin / ,spirit + berry
+
+January 40,shaingtlurith, / ʃaiŋƛˈuriθ / ,ice + fog
+
+January 41,nanaingtlun, / nanaˈiŋƛun / ,star + tar
+
+January 42,???, / ??? / ,???
+
+January 43,nanador, / nanˈador / ,star + blue
+
+January 44,shakel, / ʃˈakel / ,ice + branch
+
+January 45,rishwen, / rˈiʃwen / ,kindness + beauty
+
+January 46,thatlun, / θˈaƛun / ,tool + joining
+
+January 47,???, / ??? / ,???
+
+January 48,kluloretush, / klulorˈetuʃ / ,vine + cold
+
+January 49,liumen, / liˈumen / ,moon + earth
+
+January 51,nanaglar, / nanˈaglar / ,star + tree
+
+January 52,lanalor, / lanˈalor / ,twilight + plant
+
+January 53,shalor, / ʃˈalor / ,ice + plant
+
+January 54,kelusialeth, / kelusiˈaleθ / ,branch + food
+
+January 55,mralesh, / mrˈaleʃ / ,darkness + sound
+
+January 56,nanad, / nˈanad / ,star + showing
+
+January 57,liusaglar, / liusˈaglar / ,moon + tree
+
+January 58,mer, / mˈer / ,earth + showing
+
+January 59,varefethr, / varˈefeθr / ,value + speaking
+
+January 60,nanadriethil, / nanadriˈeθil / ,star + home
+
+January,loetush, / loˈetuʃ / ,two + cold
+
+jealousy,lad, / lˈad / ,wickedness + comparison
 
 joining,tlun, / ƛˈun / ,_
 
+July,loethulef, / loeθˈulef / ,two + height + sun
+
+June,lothulef, / loθˈulef / ,one + height + sun
+
 killing,vek, / vˈek / ,_
 
-kindness,rishel, / rˈiʃel / ,_
+kindness,rish, / rˈiʃ / ,_
 
-knife,nashithan, / naʃˈiθan / ,small + sharpness + tool
+knife,nashith, / nˈaʃiθ / ,small + sharpness + tool
 
-knot,tlunalor, / ƛunˈalor / ,joining + action
+knot,nalor, / nˈalor / ,joining + action
 
 knowledge,lhar, / ɬˈar / ,_
 
@@ -265,7 +469,9 @@ lake,tel, / tˈel / ,_
 
 large,mot, / mˈot / ,_
 
-leader,falor, / fˈalor / ,_
+last,par, / pˈar / ,_
+
+leader,fal, / fˈal / ,_
 
 leaf,thang, / θˈaŋ / ,_
 
@@ -281,35 +487,53 @@ limb,kel, / kˈel / ,_
 
 make,sil, / sˈil / ,_
 
+March,lor, / lˈor / ,one + plant
+
+May,felor, / fˈelor / ,three + plant
+
 me,na, / nˈa / ,_
 
-meat,lethidriks, / leθˈidriks / ,tasting + GEN + blood
+meat,athir, / ˈaθir / ,tasting + GEN + blood
 
-memory,lagorim, / lagˈorim / ,_
+memory,elom, / ˈelom / ,_
 
-month,naninat, / nanˈinat / ,small + small + cycle
+metal,men, / mˈen / ,tool + GEN + rock
+
+mist,tlurinin, / ƛurˈinin / ,fog + small
+
+month,nanin, / nˈanin / ,small + small + cycle
 
 moon,lius, / lˈius / ,_
 
-morning,puloan, / pulˈoan / ,first + light
+morning,mloan, / mlˈoan / ,first + light
 
 mother,mar, / mˈar / ,_
 
-mouth,olan, / ˈolan / ,_
+mouth,eon, / ˈeon / ,_
 
 movement,kwil, / kwˈil / ,_
 
 moving quickly,sethr, / sˈeθr / ,_
 
+mystery,shim, / ʃˈim / ,_
+
+night,lhil, / ɬˈil / ,_
+
+nighttime,lhil, / ɬˈil / ,_
+
 nine,ki, / kˈi / ,_
 
-non-person hair,nadur, / nˈadur / ,_
+non-person hair,anad, / ˈanad / ,_
 
 north,lar, / lˈar / ,_
 
-nose,verun, / vˈerun / ,_
+nose,ven, / vˈen / ,_
 
 not,do, / dˈo / ,_
+
+November,ferlesh, / fˈerleʃ / ,three + harvest
+
+October,loerlesh, / loˈerleʃ / ,two + harvest
 
 old,nan, / nˈan / ,_
 
@@ -323,17 +547,19 @@ overwhelming,ngam, / ŋˈam / ,_
 
 pain,har, / hˈar / ,_
 
-painting,felor, / fˈelor / ,show + action
+painting,for, / fˈor / ,showing + action
 
-past,hulnume, / hulnˈume / ,behind + path
+past,hune, / hˈune / ,behind + path
 
 path,num, / nˈum / ,_
 
-peace,tlaf, / ƛˈa / ,_
+peace,tla, / ƛˈa / ,_
 
-peacefulness,tlaf, / ƛˈa / ,_
+peacefulness,tla, / ƛˈa / ,_
 
-person hair,malur, / mˈalur / ,_
+permanent,tod, / tˈod / ,_
+
+person hair,amal, / ˈamal / ,_
 
 person skin,trel, / trˈel / ,_
 
@@ -341,37 +567,41 @@ person,driel, / drˈiel / ,_
 
 place,thil, / θˈil / ,_
 
-plain,tumthil, / tˈumθil / ,flatness + place
+plain,til, / tˈil / ,flatness + place
 
 plant,melor, / mˈelor / ,life + action
 
 pondering,nalh, / nˈaɬ / ,_
 
-possession,elis, / ˈelis / ,_
+possession,el, / ˈel / ,_
 
 possibility,sho, / ʃˈo / ,_
 
-present,lhelnume, / ɬelnˈume / ,center + path
+present,led, / lˈed / ,action + showing
 
-present,lorefed, / lorˈefed / ,action + show
+present,nume, / nˈume / ,path + center
 
-protection,benan, / bˈenan / ,_
+protection,munan, / mˈunan / ,_
 
 proximity,sor, / sˈor / ,_
 
 reaching,kith, / kˈiθ / ,_
 
-red,lhoden, / ɬˈoden / ,_
+rebirth,mloelhan, / mloˈeɬan / ,second + birth
 
-redness,lhoden, / ɬˈoden / ,_
+red,lhod, / ɬˈod / ,_
 
-report,ryfethr, / rjfˈeθr / ,truth + speech
+redness,lhod, / ɬˈod / ,_
 
-right,lhy, / ɬj / ,_
+report,yeolfethr, / jeˈolfeθr / ,truth + speech
 
-river,shotlel, / ʃˈoƛel / ,flow + water
+right,lhya, / ɬjˈa / ,_
 
-rock,meron, / mˈeron / ,_
+river,shotl, / ʃˈoƛ / ,flow + water
+
+rock,men, / mˈen / ,_
+
+root,tom, / tˈom / ,_
 
 running,sethr, / sˈeθr / ,_
 
@@ -381,77 +611,107 @@ sad,lur, / lˈur / ,_
 
 sand,shotl, / ʃˈoƛ / ,flow + ground
 
-scales,nadur, / nˈadur / ,_
+scales,anad, / ˈanad / ,_
 
 sea,nor, / nˈor / ,_
 
-second,puloe, / pulˈoe / ,ESS + two
+season,rith, / rˈiθ / ,air + cycle
+
+second,mloe, / mlˈoe / ,ESS + two
 
 seeing,mril, / mrˈil / ,_
 
+September,lorlesh, / lˈorleʃ / ,one + harvest
+
 seven,pol, / pˈol / ,_
 
-sharing,tlun, / ƛˈun / ,_
+shadow,lan, / lˈan / ,darkness + light
 
-sharing,tlunalis, / ƛunˈalis / ,joining + possession
+shallows,sul, / sˈul / ,_
+
+sharing,nal, / nˈal / ,joining + possession
 
 sharpness,shith, / ʃˈiθ / ,_
 
 she,ta, / tˈa / ,_
 
-shelter,benan, / bˈenan / ,_
+shelter,munan, / mˈunan / ,_
 
-ship,selith, / sˈeliθ / ,water + traveling
+ship,sith, / sˈiθ / ,water + traveling
 
-show,fed, / fˈed / ,_
+shortness,sul, / sˈul / ,_
+
+showing,fed, / fˈed / ,_
 
 sight,mril, / mrˈil / ,_
+
+silver,menan, / mˈenan / ,metal + light
 
 six,tem, / tˈem / ,_
 
 sixteen,lhiatev, / ɬiˈatev / ,twelve + four
 
-skin,nadur, / nˈadur / ,_
+skin,anad, / ˈanad / ,_
 
 sky,rithil, / rˈiθil / ,air + place
 
-sleep,lhethel, / ɬˈeθel / ,_
+sleep,lheth, / ɬˈeθ / ,_
 
 small,nin, / nˈin / ,_
 
-smile,mataolan, / mataˈolan / ,happy + mouth
+smell,rithor, / rˈiθor / ,air + action
+
+smile,maon, / mˈaon / ,happy + mouth
+
+smoothness,lheth, / ɬˈeθ / ,_
+
+softness,lheth, / ɬˈeθ / ,_
+
+soul,lhen, / ɬˈen / ,_
 
 sound,tesh, / tˈeʃ / ,_
 
 south,rar, / rˈar / ,_
 
-speaking,fethr, / fˈeθr / ,show + thought
+speaking,fethr, / fˈeθr / ,showing + thought
 
 speech,fethr, / fˈeθr / ,_
 
 speed,tlesh, / ƛˈeʃ / ,_
 
-starting,yalor, / jˈalor / ,_
+spirit,lhen, / ɬˈen / ,_
+
+star,nan, / nˈan / ,small + light
+
+starting,lon, / lˈon / ,_
 
 stickiness,ing, / ˈiŋ / ,_
 
-stomach,silabor, / silˈabor / ,_
+stomach,lor, / lˈor / ,_
 
-stone,meron, / mˈeron / ,_
+stone,men, / mˈen / ,_
 
-stopping,palor, / pˈalor / ,_
+stopping,pal, / pˈal / ,_
 
-sun,efol, / ˈefol / ,_
+storm,lirith, / lˈiriθ / ,wind + water
+
+strength,rum, / rˈum / ,_
+
+sun,ef, / ˈef / ,_
+
+sunset,munorhan, / munˈorhan / ,last + light
 
 surpassing,ngam, / ŋˈam / ,_
 
-sword,vekhan, / vˈekhan / ,killing + tool
+sweet,hol, / hˈol / ,GEN + fruit
 
-tar,ngatlun, / ŋˈaƛun / ,stickiness + joining
+sword,thuv, / θˈuv / ,tool + PUR + killing
+
+tar,tlun, / ƛˈun / ,stickiness + joining
 
 tasting,leth, / lˈeθ / ,_
 
-teaching,lharafed, / ɬarˈafed / ,knowledge + show
+teaching,lhad, / ɬˈad / ,knowledge + showing
 
 ten,tir, / tˈir / ,_
 
@@ -460,6 +720,8 @@ them (inanimate),lode, / lˈode / ,_
 them,ta, / tˈa / ,_
 
 they (plural),te, / tˈe / ,_
+
+thickness,lhul, / ɬˈul / ,_
 
 thing,tiel, / tˈiel / ,_
 
@@ -475,25 +737,31 @@ thought,ithr, / ˈiθr / ,_
 
 three,fem, / fˈem / ,_
 
-throwing,hysha, / hjʃˈa / ,_
+throwing,ysha, / jʃˈa / ,_
 
-tie,tlunalor, / ƛunˈalor / ,joining + action
+thunder,lirithesh, / lirˈiθeʃ / ,storm + sound
+
+tie,nalor, / nˈalor / ,joining + action
 
 time,ngothr, / ŋˈoθr / ,_
 
 tool,than, / θˈan / ,_
 
+tooth,gang, / gˈaŋ / ,_
+
 top,thul, / θˈul / ,_
 
-town,pelor, / pˈelor / ,_
+town,pel, / pˈel / ,_
 
-trance,lhethel, / ɬˈeθel / ,_
+trance,lheth, / ɬˈeθ / ,_
 
 traveling,kith, / kˈiθ / ,_
 
 tree,glar, / glˈar / ,_
 
-truth,ary, / ˈarj / ,_
+trunk,adlel, / ˈadlel / ,_
+
+truth,yeol, / jˈeol / ,_
 
 twelve,lhi, / ɬˈi / ,_
 
@@ -505,27 +773,37 @@ twenty six,loelhialo, / loeɬiˈalo / ,twenty four + two
 
 twenty,lhiath, / ɬˈiaθ / ,twelve + eight
 
+twilight,lan, / lˈan / ,darkness + light
+
 two,loe, / lˈoe / ,_
 
 un-,do, / dˈo / ,_
+
+unknown,shim, / ʃˈim / ,_
 
 up,ther, / θˈer / ,_
 
 us,ne, / nˈe / ,_
 
-value,velar, / vˈelar / ,_
+value,var, / vˈar / ,_
 
-village,pelor, / pˈelor / ,_
+vessel,lhom, / ɬˈom / ,_
+
+village,pel, / pˈel / ,_
+
+vine,klulor, / klˈulor / ,arm + plant
 
 virtue,lhum, / ɬˈum / ,_
 
 wakefulness,shith, / ʃˈiθ / ,_
 
-waking dreamer,nolhen, / nˈoɬen / ,walking + dream
+waking dreamer,lhen, / ɬˈen / ,walking + dream
 
 walking,nolh, / nˈoɬ / ,_
 
-washing,selor, / sˈelor / ,water + action
+warmth,ag, / ˈag / ,_
+
+washing,sor, / sˈor / ,water + action
 
 watching,mril, / mrˈil / ,_
 
@@ -533,7 +811,7 @@ water,sel, / sˈel / ,_
 
 we,ne, / nˈe / ,_
 
-week,tirlhonum, / tirɬˈonum / ,ten + day
+week,tirlhom, / tˈirɬom / ,ten + day
 
 weight,tlem, / ƛˈem / ,_
 
@@ -553,25 +831,25 @@ why,lhan, / ɬˈan / ,_
 
 wickedness,yal, / jˈal / ,_
 
-width,shilad, / ʃˈilad / ,_
+width,shad, / ʃˈad / ,_
 
-wind,rithwil, / rˈiθwil / ,air + movement
+wind,lirith, / lˈiriθ / ,movement + COM + air
 
-wisdom,ary, / ˈarj / ,_
+wisdom,yeol, / jˈeol / ,_
 
 wondering,thraf, / θrˈaf / ,_
 
 woods,glar, / glˈar / ,_
 
-writing,felor, / fˈelor / ,show + action
+writing,for, / fˈor / ,showing + action
 
-year,ninat, / nˈinat / ,small + cycle
+year,nin, / nˈin / ,small + cycle
 
 you (plural),we, / wˈe / ,_
 
 you,wa, / wˈa / ,_
 
-young,donan, / dˈonan / ,not + old
+young,don, / dˈon / ,not + old
 
 ABL,di-, / dˈi / ,_
 
@@ -677,51 +955,771 @@ TEMP,tu-, / tˈu / ,_
 
 temporal case marker,tu-, / tˈu / ,_
 
+1 of autumn,keluloresialeth, / keluloresiˈaleθ / ,branch + grain
+
+1 of spring,liusklulor, / liusklˈulor / ,moon + vine
+
+1 of summer,mloanam, / mloˈanam / ,morning + bloom
+
+1 of winter,lirithdrem, / lirˈiθdrem / ,breath + flower
+
 1,lo, / lˈo / ,_
+
+10 of autumn,nanathuv, / nanˈaθuv / ,star + sword
+
+10 of spring,todawen, / todˈawen / ,eternal + beauty
+
+10 of summer,driethilemnan, / drieθilˈemnan / ,home + protection
+
+10 of winter,liriskwil, / lirˈiskwil / ,breath + movement
 
 10,tir, / tˈir / ,_
 
-11,bear, / bˈear / ,_
+11 of autumn,???, / ??? / ,???
+
+11 of spring,mralm, / mrˈalm / ,darkness + bloom
+
+11 of summer,thuvglar, / θˈuvglar / ,sword + woods
+
+11 of winter,fedrlad, / fˈedrlad / ,showing + jealousy
+
+11,dear, / dˈear / ,_
+
+12 of autumn,thilethan, / θilˈeθan / ,place + tool
+
+12 of spring,mloelhanalor, / mloeɬanˈalor / ,rebirth + plant
+
+12 of summer,nador, / nˈador / ,light + blue
+
+12 of winter,rithaglar, / riθˈaglar / ,air + tree
 
 12,lhi, / ɬˈi / ,_
 
+13 of autumn,shithan, / ʃˈiθan / ,sharpness + tool
+
+13 of spring,tushudol, / tuʃˈudol / ,cold + fruit
+
+13 of summer,mralsialeth, / mralsiˈaleθ / ,darkness + food
+
+13 of winter,shotlan, / ʃˈoƛan / ,flowing + tool
+
 13,lhial, / ɬˈial / ,twelve + one
+
+14 of autumn,tlurinin, / ƛurˈinin / ,mist + ???
+
+14 of spring,menan, / mˈenan / ,silver + ???
+
+14 of summer,liriskwil, / lirˈiskwil / ,wind + movement
+
+14 of winter,fedetush, / fedˈetuʃ / ,showing + cold
 
 14,lhialo, / ɬiˈalo / ,twelve + two
 
 144,lhialhi, / ɬiˈaɬi / ,twelve + twelve
 
-15,lhiafem, / ɬiˈafem / ,twelve + three
+15 of autumn,???, / ??? / ,???
+
+15 of spring,rithilekel, / riθilˈekel / ,sky + branch
+
+15 of summer,forengothr, / forˈeŋoθr / ,writing + time
+
+15 of winter,lirithen, / lirˈiθen / ,breath + dream
+
+15,lhiam, / ɬˈiam / ,twelve + three
+
+16 of autumn,rithol, / rˈiθol / ,air + sweet
+
+16 of spring,mrawen, / mrˈawen / ,darkness + beauty
+
+16 of summer,semlor, / sˈemlor / ,water + plant
+
+16 of winter,loreayeol, / loreajˈeol / ,dance + wisdom
 
 16,lhiatev, / ɬiˈatev / ,twelve + four
 
+17 of autumn,sholalhum, / ʃolˈaɬum / ,fruit + goodness
+
+17 of spring,tlafor, / ƛˈafor / ,peace + plant
+
+17 of summer,gaglar, / gˈaglar / ,warmth + tree
+
+17 of winter,lanam, / lˈanam / ,twilight + bloom
+
+18 of autumn,sholaglar, / ʃolˈaglar / ,fruit + tree
+
+18 of spring,nanamel, / nanˈamel / ,star + life
+
+18 of summer,mrallhenadrem, / mralɬenˈadrem / ,darkness + dream + flower
+
+18 of winter,nanalor, / nanˈalor / ,star + plant
+
+19 of autumn,lshanin, / lʃˈanin / ,sun + berry
+
+19 of spring,efem, / ˈefem / ,sun + flower
+
+19 of summer,tomomen, / tomˈomen / ,root + earth
+
+19 of winter,liuswen, / liˈuswen / ,moon + beauty
+
+2 of autumn,liusoresialeth, / liusoresiˈaleθ / ,moon + grain
+
+2 of spring,efith, / ˈefiθ / ,sun + sharpness
+
+2 of summer,rithileaglar, / riθileˈaglar / ,sky + tree
+
+2 of winter,dolshanin, / dolʃˈanin / ,death + berry
+
 2,loe, / lˈoe / ,_
+
+20 of autumn,tilethil, / tilˈeθil / ,plain + place
+
+20 of spring,nanashith, / nanˈaʃiθ / ,star + sharpness
+
+20 of summer,holadriethil, / holadriˈeθil / ,sweet + home
+
+20 of winter,lirithun, / lirˈiθun / ,breath + joining
+
+20 of winter,shush, / ʃˈuʃ / ,ice + ???
 
 20,lhiath, / ɬˈiaθ / ,twelve + eight
 
+21 of autumn,riskel, / rˈiskel / ,air + branch
+
+21 of spring,dremlor, / drˈemlor / ,flower + plant
+
+21 of summer,meloremnan, / melorˈemnan / ,plant + protection
+
+21 of winter,lhilaglar, / ɬilˈaglar / ,night + tree
+
+22 of autumn,mraltlun, / mrˈalƛun / ,darkness + joining
+
+22 of spring,rithiledrem, / riθilˈedrem / ,sky + flower
+
+22 of summer,shotlathang, / ʃoƛˈaθaŋ / ,flowing + leaf
+
+22 of winter,lan, / lˈan / ,twilight + ???
+
+23 of autumn,kelushol, / kelˈuʃol / ,branch + fruit
+
+23 of spring,shasith, / ʃˈasiθ / ,ice + ship
+
+23 of summer,melaglar, / melˈaglar / ,life + tree
+
+23 of winter,lanasialeth, / lanasiˈaleθ / ,twilight + food
+
+24 of autumn,mloanamen, / mloanˈamen / ,morning + earth
+
+24 of spring,nanadrem, / nanˈadrem / ,star + flower
+
+24 of summer,tleshor, / ƛˈeʃor / ,speed + plant
+
+24 of winter,lhonrem, / ɬˈonrem / ,day + flower
+
 24,loelhi, / loˈeɬi / ,two + twelve
+
+25 of autumn,???, / ??? / ,???
+
+25 of spring,lirithan, / lirˈiθan / ,storm + animal
+
+25 of summer,rithileay, / riθilˈeaj / ,sky + feather
+
+25 of winter,nan, / nˈan / ,star + ???
 
 25,loelhial, / loeɬˈial / ,twenty four + one
 
+26 of autumn,melorelor, / melorˈelor / ,plant + plant
+
+26 of spring,mramlorelhen, / mramlorˈeɬen / ,darkness + plant + dream
+
+26 of summer,dolithor, / dolˈiθor / ,death + smell
+
+26 of winter,shotlodrem, / ʃoƛˈodrem / ,flowing + flower
+
 26,loelhialo, / loeɬiˈalo / ,twenty four + two
+
+27 of autumn,thullhen, / θˈulɬen / ,top + dream
+
+27 of spring,gadrem, / gˈadrem / ,hotness + flower
+
+27 of summer,lirithdrem, / lirˈiθdrem / ,wind + flower
+
+27 of winter,doraklirith, / doraklˈiriθ / ,blue + breath
+
+28 of autumn,???, / ??? / ,???
+
+28 of spring,lshol, / lʃˈol / ,sun + fruit
+
+28 of summer,ithrem, / ˈiθrem / ,thought + flower
+
+28 of winter,kluloremlan, / klulorˈemlan / ,vine + twilight
+
+29 of autumn,vareloresialeth, / vareloresiˈaleθ / ,value + grain
+
+29 of spring,nanaloresialeth, / nanaloresiˈaleθ / ,star + grain
+
+29 of summer,mralshol, / mrˈalʃol / ,darkness + fruit
+
+29 of winter,liuskesh, / liˈuskeʃ / ,moon + fire
+
+3 of autumn,mralaliusm, / mralalˈiusm / ,darkness + moon + bloom
+
+3 of spring,thanshol, / θˈanʃol / ,tool + fruit
+
+3 of summer,liusan, / liˈusan / ,moon + tool
+
+3 of winter,???, / ??? / ,???
 
 3,fem, / fˈem / ,_
 
+30 of autumn,rithtesh, / rˈiθteʃ / ,air + sound
+
+30 of spring,shimilhom, / ʃimˈiɬom / ,mystery + container
+
+30 of summer,melor, / mˈelor / ,plant + ???
+
+30 of winter,lirith, / lˈiriθ / ,breath + ???
+
 30,loelhiatem, / loeɬiˈatem / ,twenty four + six
+
+31 of autumn,leshol, / lˈeʃol / ,harvest + fruit
+
+31 of spring,rithileshol, / riθilˈeʃol / ,sky + fruit
+
+31 of summer,lhenananaloresialeth, / ɬenananaloresiˈaleθ / ,dream + star + grain
+
+31 of winter,???, / ??? / ,???
+
+32 of autumn,kluloreloresialeth, / kluloreloresiˈaleθ / ,vine + grain
+
+32 of spring,liusith, / liˈusiθ / ,moon + sharpness
+
+32 of summer,yeomlor, / jeˈomlor / ,wisdom + plant
+
+32 of winter,tushuthok, / tuʃˈuθok / ,cold + ground
+
+33 of autumn,???, / ??? / ,???
+
+33 of spring,lirithwen, / lirˈiθwen / ,storm + beauty
+
+33 of summer,llhenashol, / lɬenˈaʃol / ,sun + dream + fruit
+
+33 of winter,mralrem, / mrˈalrem / ,darkness + flower
+
+34 of autumn,lhilaloresialeth, / ɬilaloresiˈaleθ / ,night + grain
+
+34 of spring,dlelaglar, / dlelˈaglar / ,body + tree
+
+34 of summer,melorethanglar, / meloreθˈaŋlar / ,plant + tool + woods
+
+34 of winter,shashanin, / ʃaʃˈanin / ,ice + berry
+
+35 of autumn,shotlan, / ʃˈoƛan / ,river + light
+
+35 of spring,lirithay, / lirˈiθaj / ,storm + feather
+
+35 of summer,lhomtlan, / ɬˈomƛan / ,day + animal
+
+35 of winter,selshith, / sˈelʃiθ / ,water + sharpness
+
+36 of autumn,liusnal, / liˈusnal / ,moon + sharing
+
+36 of spring,teshglar, / tˈeʃglar / ,sound + woods
+
+36 of summer,mloanalor, / mloanˈalor / ,dawn + plant
+
+36 of winter,kluloreshud, / klulorˈeʃud / ,vine + ice
 
 36,femlhi, / fˈemɬi / ,three + twelve
 
+37 of autumn,hol, / hˈol / ,sweet + ???
+
+37 of spring,dremshol, / drˈemʃol / ,flower + fruit
+
+37 of summer,lhenamral, / ɬenˈamral / ,dream + darkness
+
+37 of winter,liusel, / liˈusel / ,moon + center
+
+38 of autumn,lhenadrem, / ɬenˈadrem / ,dream + flower
+
+38 of spring,mraladlel, / mralˈadlel / ,darkness + body
+
+38 of summer,llhenalor, / lɬenˈalor / ,sun + dream + plant
+
+38 of winter,fol, / fˈol / ,sun + sweet
+
+39 of autumn,mralaglar, / mralˈaglar / ,darkness + tree
+
+39 of spring,yeolaglar, / jeolˈaglar / ,truth + tree
+
+39 of summer,shaninalhil, / ʃaninˈaɬil / ,berry + night
+
+39 of winter,lhenashanin, / ɬenaʃˈanin / ,spirit + berry
+
+4 of autumn,???, / ??? / ,???
+
+4 of spring,dremrem, / drˈemrem / ,flower + flower
+
+4 of summer,lel, / lˈel / ,sun + branch
+
+4 of winter,???, / ??? / ,???
+
 4,tev, / tˈev / ,_
+
+40 of autumn,nanathan, / nanˈaθan / ,star + tool
+
+40 of spring,rithilenum, / riθilˈenum / ,sky + path
+
+40 of summer,selnan, / sˈelnan / ,water + protection
+
+40 of winter,shaingtlurith, / ʃaiŋƛˈuriθ / ,ice + fog
+
+41 of autumn,liusanin, / liusˈanin / ,moon + berry
+
+41 of spring,lanatan, / lanˈatan / ,twilight + face
+
+41 of summer,melsialeth, / melsiˈaleθ / ,life + food
+
+41 of winter,nanaingtlun, / nanaˈiŋƛun / ,star + tar
+
+42 of autumn,kelumral, / kelˈumral / ,branch + darkness
+
+42 of spring,liusotel, / liusˈotel / ,moon + lake
+
+42 of summer,nomen, / nˈomen / ,sea + stone
+
+42 of winter,???, / ??? / ,???
+
+43 of autumn,shithol, / ʃˈiθol / ,sharpness + sweet
+
+43 of spring,mrilaglar, / mrilˈaglar / ,sight + tree
+
+43 of summer,mloanafor, / mloanˈafor / ,morning + writing
+
+43 of winter,nanador, / nanˈador / ,star + blue
+
+44 of autumn,munorhanashol, / munorhanˈaʃol / ,dusk + fruit
+
+44 of spring,rithilefethr, / riθilˈefeθr / ,sky + speech
+
+44 of summer,thangekel, / θaŋˈekel / ,leaf + branch
+
+44 of winter,shakel, / ʃˈakel / ,ice + branch
+
+45 of autumn,???, / ??? / ,???
+
+45 of spring,lirithitan, / liriθˈitan / ,storm + bird
+
+45 of summer,lhenaliusan, / ɬenaliˈusan / ,dream + moon + animal
+
+45 of winter,rishwen, / rˈiʃwen / ,kindness + beauty
+
+46 of autumn,for, / fˈor / ,sun + action
+
+46 of spring,nanatom, / nanˈatom / ,star + root
+
+46 of summer,lhenalor, / ɬenˈalor / ,dream + plant
+
+46 of winter,thatlun, / θˈaƛun / ,tool + joining
+
+47 of autumn,lenan, / lˈenan / ,hoe + covering
+
+47 of spring,shasel, / ʃˈasel / ,ice + water
+
+47 of summer,shaninakel, / ʃaninˈakel / ,berry + branch
+
+47 of winter,???, / ??? / ,???
+
+48 of autumn,mloanashith, / mloanˈaʃiθ / ,morning + sharpness
+
+48 of spring,shagang, / ʃˈagaŋ / ,ice + tooth
+
+48 of summer,holashol, / holˈaʃol / ,sweet + fruit
+
+48 of winter,kluloretush, / klulorˈetuʃ / ,vine + cold
 
 48,tevi, / tˈevi / ,four + twelve
 
+49 of autumn,varethan, / varˈeθan / ,value + tool
+
+49 of spring,nanashol, / nanˈaʃol / ,star + fruit
+
+49 of summer,dolaglar, / dolˈaglar / ,death + tree
+
+49 of winter,liumen, / liˈumen / ,moon + earth
+
+5 of autumn,nanamen, / nanˈamen / ,star + earth
+
+5 of spring,lirithan, / lirˈiθan / ,wind + animal
+
+5 of summer,mloanatlan, / mloanˈaƛan / ,morning + animal
+
+5 of winter,lirithan, / lirˈiθan / ,breath + tool
+
 5,rem, / rˈem / ,_
+
+50 of autumn,harathan, / harˈaθan / ,pain + tool
+
+50 of spring,nanamnan, / nanˈamnan / ,star + covering
+
+50 of summer,selriethil, / selriˈeθil / ,water + home
+
+51 of autumn,lethiledrem, / leθilˈedrem / ,forest + flower
+
+51 of spring,shimisel, / ʃimˈisel / ,mystery + water
+
+51 of summer,efot, / ˈefot / ,sun + circle
+
+51 of winter,nanaglar, / nanˈaglar / ,star + tree
+
+52 of autumn,lhenaliusol, / ɬenaliˈusol / ,dream + moon + fruit
+
+52 of spring,mralshanin, / mralʃˈanin / ,darkness + berry
+
+52 of summer,mralshol, / mrˈalʃol / ,dark + fruit
+
+52 of winter,lanalor, / lanˈalor / ,twilight + plant
+
+53 of autumn,thamlor, / θˈamlor / ,tool + plant
+
+53 of spring,femlor, / fˈemlor / ,speaking + plant
+
+53 of summer,liusayeol, / liusajˈeol / ,moon + wisdom
+
+53 of winter,shalor, / ʃˈalor / ,ice + plant
+
+54 of autumn,meloresialethavar, / meloresialeθˈavar / ,grain + value
+
+54 of spring,num, / nˈum / ,sun + present
+
+54 of summer,kelulor, / kelˈulor / ,branch + plant
+
+54 of winter,kelusialeth, / kelusiˈaleθ / ,branch + food
+
+55 of autumn,shotlesh, / ʃˈoƛeʃ / ,river + sound
+
+55 of spring,rithiletlan, / riθilˈeƛan / ,sky + animal
+
+55 of summer,sethan, / sˈeθan / ,water + tool
+
+55 of winter,mralesh, / mrˈaleʃ / ,darkness + sound
+
+56 of autumn,haraon, / harˈaon / ,pain + mouth
+
+56 of spring,mralsialethashol, / mralsialeθˈaʃol / ,darkness + food + fruit
+
+56 of summer,mramlor, / mrˈamlor / ,darkness + plant
+
+56 of winter,nanad, / nˈanad / ,star + showing
+
+57 of autumn,lethilekel, / leθilˈekel / ,forest + branch
+
+57 of spring,drielathan, / drielˈaθan / ,person + tool
+
+57 of summer,varedrem, / varˈedrem / ,value + flower
+
+57 of winter,liusaglar, / liusˈaglar / ,moon + tree
+
+58 of autumn,mlor, / mlˈor / ,sun + plant
+
+58 of spring,liusol, / liˈusol / ,moon + fruit
+
+58 of summer,liusm, / lˈiusm / ,moon + bloom
+
+58 of winter,mer, / mˈer / ,earth + showing
+
+59 of autumn,glareshol, / glarˈeʃol / ,tree + fruit
+
+59 of spring,keluaglar, / keluˈaglar / ,branch + tree
+
+59 of summer,rithiledriel, / riθiledrˈiel / ,sky + person
+
+59 of winter,varefethr, / varˈefeθr / ,value + speaking
+
+6 of autumn,mar, / mˈar / ,sun + mother
+
+6 of spring,shimilor, / ʃimˈilor / ,mystery + plant
+
+6 of summer,meloreathang, / meloreˈaθaŋ / ,plant + leaf
+
+6 of winter,shotltom, / ʃˈoƛtom / ,flowing + root
 
 6,tem, / tˈem / ,_
 
+60 of autumn,leshor, / lˈeʃor / ,harvest + action
+
+60 of spring,rithilekwil, / riθilˈekwil / ,sky + movement
+
+60 of summer,lhenumlhen, / ɬenˈumɬen / ,center + path + dream
+
+60 of winter,nanadriethil, / nanadriˈeθil / ,star + home
+
+61 of autumn,nanasialeth, / nanasiˈaleθ / ,star + food
+
+61 of spring,selaglar, / selˈaglar / ,water + tree
+
+61 of summer,mloanadrem, / mloanˈadrem / ,morning + flower
+
+61 of winter,tushulor, / tuʃˈulor / ,cold + plant
+
+62 of autumn,lhoman, / ɬˈoman / ,day + light
+
+62 of spring,meloresel, / melorˈesel / ,plant + water
+
+62 of summer,teshaglar, / teʃˈaglar / ,sound + tree
+
+62 of winter,sulramen, / sulrˈamen / ,bottom + darkness + stone
+
+63 of autumn,haralor, / harˈalor / ,pain + plant
+
+63 of spring,shotlen, / ʃˈoƛen / ,flowing + dream
+
+63 of summer,munanilor, / munanˈilor / ,covering + plant
+
+63 of winter,mralingtlun, / mralˈiŋƛun / ,darkness + tar
+
+64 of autumn,lius, / lˈius / ,moon + ???
+
+64 of spring,shashithan, / ʃaʃˈiθan / ,ice + sharpness + tool
+
+64 of summer,kelushith, / kelˈuʃiθ / ,branch + sharpness
+
+64 of winter,nanamen, / nanˈamen / ,star + stone
+
+65 of autumn,teleay, / telˈeaj / ,lake + feather
+
+65 of spring,doltlan, / dˈolƛan / ,death + animal
+
+65 of summer,mral, / mrˈal / ,darkness + ???
+
+65 of winter,liusanon, / liusˈanon / ,moon + dog
+
+66 of autumn,holalor, / holˈalor / ,sweet + plant
+
+66 of spring,rithor, / rˈiθor / ,air + plant
+
+66 of summer,lhenathan, / ɬenˈaθan / ,dream + tool
+
+66 of winter,lhenashotl, / ɬenˈaʃoƛ / ,dream + flow
+
+67 of autumn,lhuloresialeth, / ɬuloresiˈaleθ / ,goodness + grain
+
+67 of spring,munanialius, / munanialˈius / ,protection + moon
+
+67 of summer,liusdrem, / liˈusdrem / ,moon + flower
+
+67 of winter,menlor, / mˈenlor / ,earth + plant
+
+68 of autumn,dolag, / dˈolag / ,death + hotness
+
+68 of spring,munorhanalor, / munorhanˈalor / ,dusk + plant
+
+68 of summer,menrunan, / menrˈunan / ,earth + hat
+
+68 of winter,mersialeth, / mersiˈaleθ / ,earth + food
+
+69 of autumn,rithtom, / rˈiθtom / ,air + root
+
+69 of spring,teleaglar, / teleˈaglar / ,lake + tree
+
+69 of summer,selrem, / sˈelrem / ,water + flower
+
+69 of winter,shalhen, / ʃˈaɬen / ,ice + dream
+
+7 of autumn,lius, / lˈius / ,moon + ???
+
+7 of spring,mrilamen, / mrilˈamen / ,sight + stone
+
+7 of summer,glarenan, / glarˈenan / ,tree + star
+
+7 of winter,mloanathan, / mloanˈaθan / ,morning + tool
+
 7,pol, / pˈol / ,_
+
+70 of autumn,mrallhenathan, / mralɬenˈaθan / ,darkness + dream + tool
+
+70 of spring,shotlol, / ʃˈoƛol / ,flowing + fruit
+
+70 of summer,nanalor, / nanˈalor / ,star + action
+
+70 of winter,tushuthan, / tuʃˈuθan / ,cold + tool
+
+71 of autumn,shithanin, / ʃiθˈanin / ,sharpness + berry
+
+71 of spring,mramlorean, / mramlorˈean / ,darkness + plant + light
+
+71 of summer,lanathan, / lanˈaθan / ,twilight + tool
+
+71 of winter,thanramen, / θanrˈamen / ,tool + darkness + stone
+
+72 of autumn,lethileaglar, / leθileˈaglar / ,forest + tree
+
+72 of spring,dleleon, / dlelˈeon / ,trunk + mouth
+
+72 of summer,mloanatesh, / mloanˈateʃ / ,morning + sound
+
+72 of winter,numvar, / nˈumvar / ,path + value
+
+73 of autumn,kanaithr, / kanˈaiθr / ,change + thought
+
+73 of spring,???, / ??? / ,???
+
+73 of summer,efan, / ˈefan / ,sun + tool
+
+73 of winter,mramen, / mrˈamen / ,darkness + stone
+
+74 of autumn,sillhum, / sˈilɬum / ,existence + goodness
+
+74 of spring,shotl, / ʃˈoƛ / ,flowing + ???
+
+74 of summer,glaretesh, / glarˈeteʃ / ,tree + sound
+
+74 of winter,menmen, / mˈenmen / ,earth + stone
+
+75 of autumn,mloanarithan, / mloanarˈiθan / ,morning + bird
+
+75 of spring,liusan, / liˈusan / ,moon + animal
+
+75 of summer,holalor, / holˈalor / ,sweet + action
+
+75 of winter,shashol, / ʃˈaʃol / ,ice + fruit
+
+76 of autumn,fedemralrem, / fedemrˈalrem / ,showing + darkness + flower
+
+76 of spring,rithilesialeth, / riθilesiˈaleθ / ,sky + food
+
+76 of summer,melrem, / mˈelrem / ,life + flower
+
+76 of winter,namen, / nˈamen / ,light + stone
+
+77 of autumn,lhiladrem, / ɬilˈadrem / ,night + flower
+
+77 of spring,kelueon, / keluˈeon / ,branch + mouth
+
+77 of summer,keluthan, / kelˈuθan / ,branch + tool
+
+77 of winter,lhenamen, / ɬenˈamen / ,dream + earth
+
+78 of autumn,lhenakel, / ɬenˈakel / ,dream + branch
+
+78 of spring,mralel, / mrˈalel / ,darkness + branch
+
+78 of summer,varetlun, / varˈeƛun / ,value + joining
+
+78 of winter,liusdeshol, / liusdˈeʃol / ,moon + showing + fruit
+
+79 of autumn,nanathang, / nanˈaθaŋ / ,star + leaf
+
+79 of spring,liusor, / liˈusor / ,moon + plant
+
+79 of summer,mralaliusor, / mralaliˈusor / ,darkness + moon + plant
+
+79 of winter,nanalhen, / nanˈaɬen / ,star + dream
+
+8 of autumn,munorhanapal, / munorhanˈapal / ,dusk + stopping
+
+8 of spring,todakesh, / todˈakeʃ / ,eternal + fire
+
+8 of summer,nalhom, / nˈaɬom / ,light + container
+
+8 of winter,dolrem, / dˈolrem / ,death + flower
 
 8,ath, / ˈaθ / ,_
 
+80 of autumn,nathan, / nˈaθan / ,light + tool
+
+80 of spring,shotlrleth, / ʃˈoƛrleθ / ,flowing + hoe
+
+80 of summer,thangethan, / θaŋˈeθan / ,leaf + tool
+
+80 of winter,mrathan, / mrˈaθan / ,darkness + tool
+
+81 of autumn,???, / ??? / ,???
+
+81 of spring,sethok, / sˈeθok / ,water + down
+
+81 of summer,lhenashotlodrem, / ɬenaʃoƛˈodrem / ,dream + flowing + flower
+
+81 of winter,dremen, / drˈemen / ,flower + stone
+
+82 of autumn,???, / ??? / ,???
+
+82 of spring,shotlom, / ʃˈoƛom / ,flowing + bloom
+
+82 of summer,munorhanatesh, / munorhanˈateʃ / ,dusk + sound
+
+82 of winter,sialethanan, / sialeθˈanan / ,food + star
+
+83 of autumn,holamel, / holˈamel / ,sweet + life
+
+83 of spring,mloanalor, / mloanˈalor / ,morning + plant
+
+83 of summer,drielan, / driˈelan / ,person + light
+
+83 of winter,liumen, / liˈumen / ,moon + stone
+
+84 of autumn,rithdrem, / rˈiθdrem / ,air + flower
+
+84 of spring,selulor, / selˈulor / ,water + vine
+
+84 of summer,lhenaglar, / ɬenˈaglar / ,dream + tree
+
+84 of winter,mloanamen, / mloanˈamen / ,morning + metal
+
+85 of autumn,lhenarith, / ɬenˈariθ / ,dream + air
+
+85 of spring,nanatlan, / nanˈaƛan / ,star + animal
+
+85 of summer,liuselom, / liusˈelom / ,moon + memory
+
+85 of winter,nanatan, / nanˈatan / ,star + face
+
+86 of autumn,nunasil, / nunˈasil / ,small + existence
+
+86 of spring,dolor, / dˈolor / ,death + blue
+
+86 of summer,keshaglar, / keʃˈaglar / ,fire + tree
+
+86 of winter,lanamen, / lanˈamen / ,twilight + metal
+
+87 of autumn,liusen, / liˈusen / ,moon + dream
+
+87 of spring,liuskel, / liˈuskel / ,moon + branch
+
+87 of summer,rithenalor, / riθenˈalor / ,air + dream + plant
+
+87 of winter,mramen, / mrˈamen / ,darkness + metal
+
+88 of autumn,engothr, / ˈeŋoθr / ,sun + time
+
+88 of spring,mloanakel, / mloanˈakel / ,dawn + branch
+
+88 of summer,mralor, / mrˈalor / ,darkness + blue
+
+88 of winter,lan, / lˈan / ,twilight + ???
+
+89 of autumn,haradrem, / harˈadrem / ,pain + flower
+
+89 of spring,shotleon, / ʃoƛˈeon / ,flowing + mouth
+
+89 of summer,efol, / ˈefol / ,sun + death
+
+89 of winter,tleshmen, / ƛˈeʃmen / ,speed + metal
+
+9 of autumn,lhenashith, / ɬenˈaʃiθ / ,dream + sharpness
+
+9 of spring,shatom, / ʃˈatom / ,ice + root
+
+9 of summer,temen, / tˈemen / ,sound + stone
+
+9 of winter,lirithaglar, / liriθˈaglar / ,breath + tree
+
 9,ki, / kˈi / ,_
+
+90 of autumn,meloresialethalor, / meloresialeθˈalor / ,grain + plant
+
+90 of spring,shakwil, / ʃˈakwil / ,ice + movement
+
+90 of summer,falnan, / fˈalnan / ,leader + star
+
+90 of winter,shathan, / ʃˈaθan / ,ice + tool
 

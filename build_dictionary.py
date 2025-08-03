@@ -18,6 +18,7 @@ voiceless_stops = 'ptk'
 sonorants = 'lmnŋrjw'
 glides = 'jw'
 liquids = 'lr'
+nasals = 'mnŋ'
 
 fricatives = 'fvθðszʒʃhɬ'
 affricates = 'ƛ'
@@ -27,12 +28,29 @@ stress_mark = "ˈ"
 
 plural_marker = 'e'
 
+light_morphemes = ['fe', 'la', 're', 'li']
+
+def find_syllables(word):
+    pattern = fr'([{consonants}]*[{vowels}][{consonants}]*)'
+    syllables = re.findall(pattern, word)
+    return syllables
+
+def count_syllables(word):
+    syllables = find_syllables(word)
+    return len(syllables)
+
+def mark_syllable_boundaries(word):
+    syllables = find_syllables(word)
+    if len(syllables) == 0:
+        return word
+    # Reconstruct the word with '.' between syllables
+    marked_word = '.'.join(syllables)
+    return marked_word
+
 def mark_stress(word):
     # Define the pattern to capture syllables
-    pattern = fr'([{consonants}]*[{vowels}][{consonants}]*)'
-    
     # Find all syllables in the word
-    syllables = re.findall(pattern, word)
+    syllables = find_syllables(word)
     if len(syllables) == 0:
         print(f'No syllables found in {word}')
         return word
@@ -73,6 +91,9 @@ def vowel_loss_between_voiceless_consonants_unless_stressed(word):
     
     return unmark_stress(re.sub(pattern, replacement, stressed))
 
+
+def b_to_d(word):
+    return word.replace('b', 'd')
 
 def voiceless_stop_to_voiced_between_voiced(word):
     voiced_sounds = f'{vowels}{voiced_consonants}'
@@ -169,7 +190,7 @@ def nasal_assimilation(word):
         r'md': 'nd',
         r'np': 'mp',
         r'nk': 'ŋg',
-        r'ng': 'ŋg',  # Additional replacements
+        r'ng': 'ŋg', 
         r'nt': 'nd',
         r'nc': 'ŋg',
         r'nj': 'ndʒ',
@@ -203,6 +224,18 @@ def word_final_vowel_loss_unless_stressed(word):
     pattern = fr'([{vowels}])$'
     return re.sub(pattern, '', word)
 
+
+
+#θ → s / _k
+def theta_s_before_k(word):
+    pattern = r'θ(?=k)'
+    return re.sub(pattern, 's', word)
+
+#θ → t / {p,t,k}_
+def theta_t_after_voiceless_stops(word):
+    pattern = fr'(?<=[{voiceless_stops}])θ'
+    return re.sub(pattern, 't', word)
+
 def theta_r(word):
     # Get the stressed version of the word
     stressed = mark_stress(word)
@@ -226,19 +259,23 @@ def theta_r(word):
 
 
 def no_stops_after_nasals(word):
-    # Define the replacements
-    replacements = {
-        r'ŋk': 'ŋ',
-        r'mp': 'm',
-        r'ŋg': 'ŋ'
-    }
-    
-    # Apply each replacement using regular expressions
-    for pat, repl in replacements.items():
-        word = re.sub(pat, repl, word)
-    
-    return word
+    pattern = fr'([{nasals}])([{stops}])'
+    return re.sub(pattern, r'\1', word)
 
+def no_stops_after_nasals_except_when_split_syllable(word):
+    syl = mark_syllable_boundaries(word)
+    parts = syl.split('.')
+    new_parts = []
+    for part in parts:
+        for nasal in nasals:
+            for stop in stops:
+                pattern = nasal + stop
+                if pattern in part:
+                    # only remove if not split syllable
+                    if len(part) > 2 and part.index(pattern) != 0 and part.index(pattern) != len(part)-2:
+                        part = part.replace(pattern, nasal)
+        new_parts.append(part)
+    return ''.join(new_parts)
 
 def no_stops_after_sonorants(word):
     for sonorant in sonorants:
@@ -251,10 +288,10 @@ def no_stops_after_sonorants(word):
 def ae_to_a(word):
     return word.replace('ae', 'a')
 
-def no_coda_stops(word):
+def p_b_to_m(word): # TODO
     stops = 'pb'
     for stop in stops:
-        word = re.sub(f'{stop}(?=[^aeiou]|$)', 'm', word)
+        word = re.sub(f'{stop}(?=[^{vowels}]|$)', 'm', word)
     return word
 
 def no_final_e(word):
@@ -290,6 +327,10 @@ def no_affricates_after_fricatives(word):
     # Replace the matched pattern with just the fricative
     return re.sub(pattern, r'\1', word)
 
+#s → ∅ / V_V 
+def loss_of_s_between_vowels(word):
+    pattern = fr'(?<=[{vowels}])s(?=[{vowels}])'
+    return re.sub(pattern, '', word)
 
 #Stop Cluster Simplification
 def stop_cluster_simplification(word):
@@ -303,11 +344,21 @@ def fricative_cluster_hardening(word):
     pattern = r'sʃ|ɬʃ'
     return re.sub(pattern, lambda m: 't' + m.group(), word)
 
+# /ʃd/ → [ɬt]
+def shd_to_lht(word):
+    pattern = r'ʃd'
+    return re.sub(pattern, 'ɬt', word)
+
 #  Nasal Deletion Before Voiceless Obstruents
 def nasal_deletion_before_voiceless_obstruents(word):
     #/n/ → ∅ / __[p t k f θ ʃ]
     pattern = fr'n(?=[{voiceless_consonants}])'
     return re.sub(pattern, '', word)
+
+
+def schwa_deletion(word):
+    return word.replace('ə', '')
+
 
 # Reduplicant Vowel Reduction
 # Rule: CV-CV → Cə-CV
@@ -321,6 +372,177 @@ def reduplicant_vowel_reduction(word):
     return re.sub(pattern, r'\1ə\1\3', word)
 
 
+# /npk/ → /nk/ or /pk/ (depends on syllabification)
+def npk_to_nk_or_pk(word):
+    syllables = find_syllables(word)
+    if len(syllables) < 2:
+        return word
+    # Check if the first syllable ends with 'n' and the second starts with 'p'
+
+
+def simplify_hn_to_n(word):
+    return re.sub(r'hn', 'n', word)
+
+def simplify_final_clusters(word):
+    # e.g., /-rks/ → /-ks/, /-ndr/ → /-r/
+    pattern = fr'([{consonants}])([{consonants}])$'
+    # thr is allowed
+    if word.endswith('θr'):
+        return word
+    return re.sub(pattern, r'\1', word)
+
+
+def medial_syncope_unless_stressed(word):
+    stressed = mark_stress(word)
+    syllables = find_syllables(word)
+    if len(syllables) < 3:
+        return word
+    # Check if the middle syllable is stressed
+    middle_index = len(syllables) // 2
+    middle_syllable = syllables[middle_index]
+    if stress_mark in middle_syllable:
+        return word
+    # Remove the vowel from the middle syllable
+    pattern = fr'([{consonants}])([{vowels}])([{consonants}])'
+    parts = stressed.split('.')
+    new_parts = []
+    for i, part in enumerate(parts):
+        if i == middle_index:
+            # Remove the vowel from this part
+            part = re.sub(pattern, r'\1\3', part)
+        new_parts.append(part)
+    return ''.join(new_parts)
+
+def light_morpheme_simplification(word):
+    stressed = mark_stress(word)
+    for morpheme in light_morphemes:
+        # Only delete if surrounded by other content and not stressed
+        pattern = f'([a-z]+){morpheme}([a-z]+)'
+        new_word = re.sub(pattern, r'\1\2', stressed)
+        if new_word != word:
+            return unmark_stress(new_word)
+    return unmark_stress(word)
+
+def reduplication_simplification(word):
+    if count_syllables(word) < 3:
+        return word
+    # Match repeated syllables: e.g., la-la → la
+    return re.sub(r'(\b\w{1,2})\1', r'\1', word)
+
+
+def onset_cluster_simplification(word):
+    # Simplify illegal CCC onsets, e.g., stl → sl or remove first C
+    return re.sub(fr'\b([{consonants}])([{consonants}])([{consonants}])', r'\2\3', word)
+
+
+def medial_vowel_loss(word):
+    # Removes a medial unstressed vowel between consonants
+    stressed = mark_stress(word)
+    return unmark_stress(re.sub(fr'([{consonants}])([{vowels}])([{consonants}])', r'\1\3', stressed))
+
+
+def simplify_sonorant_clusters_excluding_initial_mr(word):
+      # e.g. lr → r, ln → n
+    # Simplify sonorant+sonorant (l/r/m/n) sequences where awkward
+    # return re.sub(fr'([{sonorants}])([{sonorants}])', r'\2', word)
+    # except when initial mr
+    if word.startswith('mr'):
+        rest = word[2:]
+        simplified_rest = re.sub(fr'([{sonorants}])([{sonorants}])', r'\2', rest)
+        return 'mr' + simplified_rest
+    else:
+        return re.sub(fr'([{sonorants}])([{sonorants}])', r'\2', word)
+
+
+def simplify_fricative_nasal_clusters(word):
+    for fric in fricatives:
+        for nasal in nasals:
+            pattern = fric + nasal
+            word = word.replace(pattern, nasal)
+    return word
+
+
+def simplify_initial_tl_n_cluster(word):
+    return re.sub(r'^ƛn', 'n', word)
+
+
+def simplify_initial_mf_to_m(word):
+    return re.sub(r'^mf', 'm', word)
+
+def epenthesis_in_initial_ml(word):
+    return re.sub(r'^ml', 'mel', word)
+
+def epenthesis_in_initial_lm(word):
+    return re.sub(r'^lm', 'lem', word)
+
+def epenthesis_in_initial_fm(word):
+    return re.sub(r'^fm', 'fem', word)
+
+def simplify_fricative_liquid_clusters(word):
+    for fric in fricatives:
+        for liquid in liquids:
+            cluster = fric + liquid
+            if cluster == 'θr':
+                continue  # θr is allowed
+            if cluster in word:
+                # Default simplification: delete the liquid
+                word = word.replace(cluster, fric)
+    return word
+
+
+def epenthetic_vowel_in_initial_double_nasal(word):
+    return re.sub(fr'^([{nasals}])([{nasals}])', r'\1u\2', word)
+
+
+def simplify_final_stop_sonorant_clusters(word):
+    return re.sub(fr'([{stops}])([{sonorants}])$', r'\2', word)
+
+def simplify_g_tl(word):
+    return re.sub(r'gƛ', 'ƛ', word) 
+
+def simplify_tl_to_ƛ(word):
+    return re.sub(r'tl', 'ƛ', word)
+
+def simplify_lh_to_ɬ(word):
+    return re.sub(r'lh', 'ɬ', word)
+
+def wiw_to_win(word):
+    return re.sub(r'wiw', 'win', word)  
+
+def epenthesis_in_ƛd_cluster(word):
+    return re.sub(r'ƛd', 'ƛod', word)
+
+def epenthesis_in_initial_t_sh_cluster(word):
+    return re.sub(r'^tʃ', 'teʃ', word)
+
+def simplify_lθ_to_θ(word):
+    return re.sub(r'lθ', 'θ', word)
+
+
+def dissimilate_fricative_reduplication(word):
+    # Avoid fricative-vowel-fricative-vowel-fricative patterns (e.g., iθiθ to iθit)
+    replacements = {
+        'θ': 't',
+        'ʃ': 'd',
+        'ɬ': 'l',
+    }
+    for k,v in replacements.items():
+        pattern = fr'([{vowels}]){k}([{vowels}]){k}'
+        word = re.sub(pattern, fr'\1{k}\2{v}', word)
+    return word
+
+
+def metathesize_lr(word):
+    return re.sub(r'lr', 'rl', word)
+def metathesize_jf(word):
+    return re.sub(r'jf', 'fj', word)
+
+def epenthesize_initial_nθ(word):
+    return re.sub(r'^nθ', 'meθ', word)
+
+def nasal_assimilation_mθ_to_nθ(word):
+    return re.sub(r'mθ', 'nθ', word)
+
 
 # List of sound changes
 sound_changes = [
@@ -328,47 +550,80 @@ sound_changes = [
     {'rule': 2000, 'description': 'Voiceless stop between voiced sounds become voiced', 'function': voiceless_stop_to_voiced_between_voiced},
     {'rule': 2100, 'description': 'Vowel loss before affricate', 'function': vowel_loss_before_approximate},
     {'rule': 2200, 'description': 'Velar hardening k > k', 'function': velar_hardening},
-    {'rule': 2300, 'description': 'ə lost', 'function': lambda x: x.replace('ə', '')},
+    {'rule': 2300, 'description': 'ə lost', 'function': schwa_deletion},
     {'rule': 3000, 'description': 'No voiceless stops in clusters', 'function': no_voiceless_stops_in_clusters},
+    {'rule': 3200, 'description': 'Medial vowel loss', 'function': medial_vowel_loss}, # huge change
     {'rule': 3500, 'description': 'ɟ to j', 'function': change_bardotlessj},
-    {'rule': 3500, 'description': 'Rhotacism GsG > GrG and GʒG > GrG', 'function': rhotacism_between_glides},
-    {'rule': 3501, 'description': 'Rhotacism VsV > VrV to VʒV > VrV', 'function': rhotacism_between_vowels},
+    {'rule': 3501, 'description': 'Rhotacism GsG > GrG and GʒG > GrG', 'function': rhotacism_between_glides},
+    {'rule': 3502, 'description': 'Rhotacism VsV > VrV to VʒV > VrV', 'function': rhotacism_between_vowels},
+    {'rule': 3503, 'description': 'Nasal assimilation mth > nth', 'function': nasal_assimilation_mθ_to_nθ},
+    {'rule': 3503, 'description': 'epenthesize_initial_nθ', 'function': epenthesize_initial_nθ},
     {'rule': 4500, 'description': 'No stops after fricatives', 'function': no_stops_after_fricatives},
     {'rule': 4501, 'description': 'No stops after liquids', 'function': no_stops_after_liquids},
     {'rule': 4502, 'description': 'No fricative clusters', 'function': no_fricative_clusters},
     {'rule': 4503, 'description': 'No stops after glides', 'function': no_stops_after_glides},
     {'rule': 5000, 'description': 'h is lost between vowels and at the end of words', 'function': loss_of_h},
+    {'rule': 5100, 'description': 's is lost between vowels', 'function': loss_of_s_between_vowels},
     {'rule': 5500, 'description': 'Vowel combinations', 'function': vowel_combinations},
     {'rule': 6000, 'description': 'Nasal assimilation', 'function': nasal_assimilation},
     {'rule': 6200, 'description': 'Approximate loss after o or u', 'function': approximate_loss_after_o_or_u},
+    {'rule': 6240, 'description': 'hn > n', 'function': simplify_hn_to_n},
     {'rule': 6300, 'description': 'Vowel loss before approximates', 'function': vowel_loss_before_approximate},
     {'rule': 6400, 'description': 'Nasal deletion before voiceless obstruents', 'function': nasal_deletion_before_voiceless_obstruents}, 
+    {'rule': 6401, 'description': 'tl → ƛ', 'function': simplify_tl_to_ƛ},
+    {'rule': 6402, 'description': 'lh → ɬ', 'function': simplify_lh_to_ɬ},
     {'rule': 6500, 'description': 'No double consonants', 'function': no_double_consonants},
+    {'rule': 6501, 'description': 'Simplify initial ƛn cluster', 'function': simplify_initial_tl_n_cluster},
+    {'rule': 6502, 'description': 'Epenthesis in initial fm', 'function': epenthesis_in_initial_fm},
+    {'rule': 6503, 'description': 'Metathesize lr', 'function': metathesize_lr},
+    {'rule': 7400, 'description': 'Epenthesis in initial lm', 'function': epenthesis_in_initial_lm},
     {'rule': 7500, 'description': 'Word-initial vowel loss', 'function': word_initial_vowel_loss_unless_stressed},
     {'rule': 7501, 'description': 'f to ɸ at the end of words', 'function': f_to_phi_at_word_end},
+    {'rule': 7501, 'description': 'Onset cluster simplification', 'function': onset_cluster_simplification},
+    {'rule': 7502, 'description': 'Epenthesis in initial ml', 'function': epenthesis_in_initial_ml},
+    {'rule': 7503, 'description': 'Metathesize jf', 'function': metathesize_jf},
+    {'rule': 7600, 'description': 'Simplify sonorant clusters', 'function': simplify_sonorant_clusters_excluding_initial_mr},
     {'rule': 8000, 'description': 'θr unless stressed', 'function': theta_r},
-    {'rule': 8500, 'description': 'No stops after nasals', 'function': no_stops_after_nasals},
+    {'rule': 8500, 'description': 'No stops after nasals', 'function': no_stops_after_nasals_except_when_split_syllable},
     {'rule': 8750, 'description': 'No stops after any sonorant', 'function': no_stops_after_sonorants},
     {'rule': 9200, 'description': 'Reduplicant vowel reduction', 'function': reduplicant_vowel_reduction}, # big change
+    {'rule': 9300, 'description': 'Epenthesis in ƛd clusters', 'function': epenthesis_in_ƛd_cluster},
     {'rule': 9500, 'description': 'Word-final vowel loss', 'function': word_final_vowel_loss_unless_stressed},
     {'rule': 10000, 'description': 'ae to a', 'function': ae_to_a},
-    {'rule': 11000, 'description': 'No coda stops', 'function': no_coda_stops},
+    {'rule': 10500, 'description': 'θ to s before k', 'function': theta_s_before_k},
+    {'rule': 10700, 'description': 'θ to t after voiceless stops', 'function': theta_t_after_voiceless_stops},
+    {'rule': 11000, 'description': 'No coda stops', 'function': p_b_to_m},
+    {'rule': 11001, 'description': 'b to d', 'function': b_to_d},
     {'rule': 11500, 'description': 'Stop cluster simplification', 'function': stop_cluster_simplification},
-    {'rule': 11990, 'description': 'ə lost', 'function': lambda x: x.replace('ə', '')},
+    {'rule': 11501, 'description': 'Simplify gƛ', 'function': simplify_g_tl},
+    {'rule': 11600, 'description': 'Medial syncope', 'function': medial_syncope_unless_stressed},
+    {'rule': 11990, 'description': 'ə lost', 'function': schwa_deletion},
+    {'rule': 11995, 'description': 'Simplify initial mf to m', 'function': simplify_initial_mf_to_m},
+    {'rule': 11996, 'description': 'Epenthetic vowel in initial double nasal', 'function': epenthetic_vowel_in_initial_double_nasal},
     {'rule': 12000, 'description': 'z to s', 'function': z_to_s},
     {'rule': 12001, 'description': 'ʒ to ʃ', 'function': y_to_sh},
     {'rule': 12002, 'description': 'ð to θ', 'function': unvoice_th},
-    {'rule': 12003, 'description': 'No repeated vowels', 'function': no_repeated_vowels},
-    {'rule': 12004, 'description': 'No word-final e', 'function': no_final_e},
-    {'rule': 12005, 'description': 'No repeated consonants', 'function': no_double_consonants},
+    {'rule': 12003, 'description': 'Light morpheme simplification', 'function': light_morpheme_simplification},
+    {'rule': 12004, 'description': 'Reduplication simplification', 'function': reduplication_simplification},
+    {'rule': 12005, 'description': 'No repeated vowels', 'function': no_repeated_vowels},
+    {'rule': 12006, 'description': 'No word-final e', 'function': no_final_e},
+    {'rule': 12007, 'description': 'No repeated consonants', 'function': no_double_consonants},
+    {'rule': 12400, 'description': 'Epenthetic vowel in initial tʃ', 'function': epenthesis_in_initial_t_sh_cluster},
+    {'rule': 12500, 'description': 'Simplify fricative-liquid clusters', 'function': simplify_fricative_liquid_clusters},
+    {'rule': 12501, 'description': 'Dissimilate fricative reduplication', 'function': dissimilate_fricative_reduplication},
+    {'rule': 12502, 'description': 'Simplify lθ → l', 'function': simplify_lθ_to_θ},
     {'rule': 13000, 'description': 'No fricative clusters', 'function': no_fricative_clusters},
+    {'rule': 13001, 'description': 'Simplify final consonant clusters to single consonant', 'function': simplify_final_clusters},
+    {'rule': 13002, 'description': 'Simplify fricative-nasal clusters', 'function': simplify_fricative_nasal_clusters},
+    {'rule': 13003, 'description': 'wiw to win', 'function': wiw_to_win},
+    {'rule': 13004, 'description': 'Simplify stop sonorany clusters word finally', 'function': simplify_final_stop_sonorant_clusters},
     {'rule': 14000, 'description': 'No fricatives after affricates', 'function': no_fricatives_after_affricates},
     {'rule': 14001, 'description': 'No affricates after fricatives', 'function': no_affricates_after_fricatives},
+    {'rule': 14005, 'description': 'Epenthesis and metathesis /ʃd/ → [ɬt]', 'function': shd_to_lht},
 ]
 
 # Function to apply all sound changes
 def apply_sound_changes(year_and_word, max_year=None):
-    print(year_and_word)
     year, word, _, _, pos, _ = year_and_word
     history = [(year, word)]
     if year == -1:
@@ -380,7 +635,7 @@ def apply_sound_changes(year_and_word, max_year=None):
         if max_year is not None and change['rule'] > max_year:
             break
         
-        word = change['function'](word)
+        word = change['function'](unmark_stress(word))
         if unmark_stress(word) != history[-1][1]:
             history.append((change['rule'], word))
     word = history[-1][1]
@@ -559,22 +814,24 @@ def find_root_or_compound(word, roots, compounds):
 
 def form_compounds(roots):
     compounds = []
-    with open('compounds.csv', 'r', encoding='utf-8') as file:
-        reader = csv.reader(file)
-        next(reader) # Skip the header
-        for row in reader:
-            if len(row) == 0: continue
-            compound_roots = row[2]
-            compound_roots = compound_roots.split('+')
-            for R in compound_roots:
-                root = find_root_or_compound(R, roots, compounds)
-                if root is None:
-                    raise ValueError(f"Root {R} not found")
-                # apply sound changes up to the year of the compound to each root
-                root = apply_sound_changes(root, int(row[0]))[0]
-                compound_roots[compound_roots.index(R)] = root
-            compound = "".join(compound_roots)
-            compounds.append((int(row[0]), compound, row[1], row[2], row[3], row[4]))
+    for f in ['compounds.csv', 'calendar.csv']:
+        print(f'Loading compounds from {f}')
+        with open(f, 'r', encoding='utf-8') as file:
+            reader = csv.reader(file)
+            next(reader) # Skip the header
+            for row in reader:
+                if len(row) == 0: continue
+                compound_roots = row[2]
+                compound_roots = compound_roots.split('+')
+                for R in compound_roots:
+                    root = find_root_or_compound(R, roots, compounds)
+                    if root is None:
+                        raise ValueError(f"Root {R} not found")
+                    # apply sound changes up to the year of the compound to each root
+                    root = apply_sound_changes(root, int(row[0]))[0]
+                    compound_roots[compound_roots.index(R)] = root
+                compound = "".join(compound_roots)
+                compounds.append((int(row[0]), compound, row[1], row[2], row[3], row[4]))
     return compounds
 
 import argparse
@@ -686,11 +943,12 @@ def main():
     if args.interactive:
         print("Interactive mode enabled. Type 'q' to quit.")
         while True:
-            user_input = input("Enter a word or definition: ").strip()
-            if user_input.lower() == 'q':
+            user_input = input("Enter a word or definition: ").strip().lower()
+            if user_input == 'q':
                 break
-            if user_input in interactive_dict:
-                final_word, pos, history, rom, stress, note = interactive_dict[user_input]
+            dict_lower_keys = {k.lower(): v for k,v in interactive_dict.items()}
+            if user_input in dict_lower_keys.keys():
+                final_word, pos, history, rom, stress, note = dict_lower_keys[user_input]
                 print(f"Final Word: {final_word}, POS: {pos}, Romanization: {rom}, Stress: {stress}")
                 if note!="_" and note:
                     print(f"Note: {note}")

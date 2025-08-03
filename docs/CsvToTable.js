@@ -81,20 +81,19 @@
 	function buildTable() {
 		getCSV.call(this).then(function(response){
 			var allRows = response.split(/\r?\n|\r/).filter(isNotEmpty);
-	        var table = '<table id="dictionaryTable" class="alt" style="display:table; max-height:100vh;">';
+	        var table = '<table id="dictionaryTable" style="display:table; max-height:100vh;">';
 	        for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
 	            if (singleRow === 0) {
 	                table += '<thead>';
-	                table += '<tr>';
+	                table += '<tr class="item">';
 	            } else {
-	                table += '<tr>';
+	                table += '<tr class="item">';
 	            }
 	            var rowCells = allRows[singleRow].split(',');
 	            for(var rowCell = 0; rowCell < rowCells.length; rowCell++){
-	                if(singleRow === 0){
-	                    table += '<th>';
-	                    table += rowCells[rowCell];
-	                    table += '</th>';
+					if (singleRow === 0) {
+						table += `<th onclick="sortTable(${rowCell})" style="cursor:pointer;">${rowCells[rowCell]}</th>`;
+					
 	                } else {
 	                    table += '<td class="col-' + rowCell + '">';
 	                    table += rowCells[rowCell];

@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <script src="CsvToTable.js"></script>
+
 </head>
 
 <body class="is-preload">
@@ -79,6 +80,36 @@
                     }
                 </script>
 
+                <script>
+                  function sortTable(n) {
+    const table = document.getElementById("dictionaryTable");
+    const tbody = table.tBodies[0];
+    const rowsArray = Array.from(tbody.rows);
+    const isNumeric = rowsArray.every(row => !isNaN(row.cells[n].textContent.trim()));
+    
+    // Toggle sort direction
+    const currentDir = table.getAttribute("data-sort-dir-" + n) || "asc";
+    const dir = currentDir === "asc" ? "desc" : "asc";
+    table.setAttribute("data-sort-dir-" + n, dir);
+
+    rowsArray.sort((a, b) => {
+        const x = a.cells[n].textContent.trim();
+        const y = b.cells[n].textContent.trim();
+
+        let xVal = isNumeric ? parseFloat(x) : x.toLowerCase();
+        let yVal = isNumeric ? parseFloat(y) : y.toLowerCase();
+
+        if (xVal < yVal) return dir === "asc" ? -1 : 1;
+        if (xVal > yVal) return dir === "asc" ? 1 : -1;
+        return 0;
+    });
+
+    // Reattach sorted rows
+    tbody.innerHTML = "";
+    rowsArray.forEach(row => tbody.appendChild(row));
+}
+                </script>
+
 
 
 
@@ -116,6 +147,7 @@
             <script src="assets/js/breakpoints.min.js"></script>
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
+
 
 </body>
 
