@@ -7,9 +7,9 @@ Year,Word,Translation,Roots,POS,Note
 -1,ti-,LOC/locative case marker,_,CASE,_
 -1,tu-,TEMP/temporal case marker,_,CASE,_
 -1,si-,INS/instrumental case marker,_,CASE,_
--1,ɬu-,PUR/purpose case marker,_,CASE,_
--1,di-,ABL/ablative case marker,_,CASE,_
--1,yi-,COM/comlative case marker,_,CASE,_
+-1,ɬu-,PUR/purpose case marker/for,_,CASE,_
+-1,di-,ABL/ablative case marker/away from,_,CASE,_
+-1,yi-,COM/comlative case marker/with/together with,_,CASE,_
 -1,su-,ALL/allative case marker,_,CASE,_
 -1,pu-,ESS/essive case marker,_,CASE,_
 -1,-e,plural marker,_,PLURAL,_
