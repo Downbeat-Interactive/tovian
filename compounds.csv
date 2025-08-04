@@ -30,7 +30,7 @@ Year,Translation,Roots,POS,Note
 0,becoming,arriving+change,N,_
 400,smile,happy+mouth,N,_
 400,frown,sad+mouth,N,_
-0,full,not+empty,N,_
+0,full,empty+not,N,_
 7200,report/confession,truth+speech,N,_
 6000,city,wakefulness+place,N,_
 500,river,flow+water,N,_
@@ -80,3 +80,5 @@ Year,Translation,Roots,POS,Note
 500,smell,air+action,N,_
 100,mist,fog+small,N,_
 100,bird,air+animal,N,_
+100,spring vegetable,plant+first,N,_
+1000,adventure,going+unknown,N,_
