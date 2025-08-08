@@ -80,6 +80,20 @@ def mark_stress(word):
 def unmark_stress(word):
     return word.replace(stress_mark, "")
 
+def dotted_with_stress(word):
+    """Return a display-only IPA with syllable dots and stress mark.
+    Expects an undecorated word (no stress marks)."""
+    syllables = find_syllables(word)
+    if len(syllables) == 0:
+        return word
+    idx = 0 if len(syllables) == 1 else len(syllables) - 2
+    # insert stress before the first vowel in the target syllable
+    m = re.search(fr'[{vowels}]', syllables[idx])
+    if m:
+        s = syllables[idx]
+        syllables[idx] = s[:m.start()] + stress_mark + s[m.start():]
+    return '.'.join(syllables)
+
 def vowel_loss_between_voiceless_consonants_unless_stressed(word):
     pattern = f"([{voiceless_consonants}])([{vowels}])([{voiceless_consonants}])"
     stressed = mark_stress(word)
@@ -706,8 +720,10 @@ def romanization(word):
     return word
 
 def get_dictionary_csv(word_after_changes, translation, stress, rom, pos, notes, roots):
+    # Create a display IPA with syllable dots, but do not use dots in sound changes.
+    display_ipa = dotted_with_stress(unmark_stress(word_after_changes))
     csv_lines = []
-    csv_lines.append(f"{translation.strip()},{rom},/{stress}/,{pos},{roots}")
+    csv_lines.append(f"{translation.strip()},{rom},/{display_ipa}/,{pos},{roots}")
     return "\n".join(csv_lines)
 
 def get_dictionary_latex(history, translation,roots,pos,notes):
@@ -959,3 +975,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    from scripts import build_guide_manifest
+    build_guide_manifest.main()

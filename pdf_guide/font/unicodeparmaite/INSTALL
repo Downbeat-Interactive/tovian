@@ -1,0 +1,10 @@
+Please, consult your (La)TeX administrator, a (La)TeX guru, or the (La)TeX
+documentation to know what to do with the files
+
+parmaite.pfb (PostScript Type 1 font binary data)
+parmaite.tfm (TeX font metric data)
+tengwar.map  (map to create psfonts.map, ps2pk.map and pdftex.map for DVIPS)
+
+so that you can use them with a (La)TeX system. When done, you can check the
+font and its availability by running the (pdf)tex program on fontchart.tex
+or testfont.tex and by answering "parmaite" to the question on the font.

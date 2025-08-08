@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Attributive Nouns | Tovian Guide</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script defer src="../CsvToTable.js"></script>
+    <script defer src="../app.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container row between center">
+        <a class="brand" href="../">Tovian</a>
+        <nav class="nav row">
+          <a href="../index.html#dictionary">Dictionary</a>
+          <a href="./">Guide</a>
+          <a href="../index.html#ask">Ask</a>
+        </nav>
+        <div class="row gap" style="flex:1; justify-content:flex-end;">
+          <input id="quickSearch" class="input" style="max-width:340px" placeholder="Quick search…" />
+          <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
+        </div>
+      </div>
+    </header>
+    <main class="section">
+      <div class="container">
+        <div id="quickResults" class="list"></div>
+      </div>
+      <div class="container guide-layout">
+        <aside id="guideSidebar" class="guide-sidebar"></aside>
+        <article class="guide-content">
+          <div id="mdHost"></div>
+          <div id="guideNav" class="guide-nav"></div>
+        </article>
+      </div>
+    </main>
+    <script src="guide.js" defer></script>
+  </body>
+  </html>

@@ -1,154 +1,101 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
-<head>
-    <title>Tovian to English Dictionary</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
-    <script src="CsvToTable.js"></script>
-
-</head>
-
-<body class="is-preload">
-
-    <!-- Sidebar -->
-    <section id="sidebar">
-        <div class="inner">
-            <nav>
-                <ul>
-                    <li><a href="#Dictionary">Dictionary</a></li>
-                    <li><a href="#Learn">Learn Tovian</a></li>
-                </ul>
-            </nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tovian | Learn, Search, Ask</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script defer src="CsvToTable.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container row between center">
+        <a class="brand" href="#home">Tovian</a>
+        <nav class="nav row">
+          <a href="#dictionary">Dictionary</a>
+          <a href="guide/">Guide</a>
+          <a href="#ask">Ask</a>
+          <a href="#about">About</a>
+        </nav>
+        <div class="row gap" style="flex:1; justify-content:flex-end;">
+          <input id="quickSearch" class="input" style="max-width:340px" placeholder="Quick search…" />
+          <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
         </div>
-    </section>
+      </div>
+    </header>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-        <!-- Dictionary -->
-        <section id="Dictionary" style="display: block; max-width:100%" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
-                <h2 style="text-align: center;">Tovian to English Dictionary</h2>
-                <!-- <h1>Tovian</h1>
-                <p></p> -->
-                <script>
-                    var csvtotable = new CsvToTable({
-                        csvFile: 'dictionary.csv'
-                    });
+    <main>
+      <section id="home" class="section hero">
+        <div class="container grid2">
+          <div>
+            <h1>Learn Tovian</h1>
+            <p>Search the dictionary or browse the complete guide. Quick navigation: <a href="#dictionary">Dictionary</a> · <a href="guide/">Guide</a> · <a href="#ask">Ask</a></p>
+          </div>
+          <div class="card">
+            <h3>Word of the Day</h3>
+            <div id="quickResults" class="list" style="display:none"></div>
+            <div id="wotd"></div>
+          </div>
+        </div>
+      </section>
 
-                </script>
-                <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search">
-                <p></p>
-                <div id="dictionaryHolder" style="display:table; max-height:100vh; width: 100%; height: 100%;">
-                    <script>
-                        csvtotable.run()
-                    </script>
-                        <p style="display: table-cell; height: 100%;"
-                      ></p>
-                </div>
-
-                <script>
-                    function filterTable() {
-                        // Declare variables
-                        var input, filter, table, tr, td, i, txtValue;
-                        input = document.getElementById("myInput");
-                        filter = input.value.toUpperCase().trim();
-                        table = document.getElementById("dictionaryTable");
-                        tr = table.getElementsByTagName("tr");
-
-                        // Loop through all table rows, and hide those who don't match the search query
-                        for (i = 0; i < tr.length; i++) {
-                            td = tr[i].getElementsByTagName("td")[0];
-                            if (td) {
-                                txtValue = td.textContent || td.innerText;
-                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                    tr[i].style.display = "";
-                                } else {
-                                    tr[i].style.display = "none";
-                                }
-                            }
-                        }
-                    }
-                </script>
-
-                <script>
-                  function sortTable(n) {
-    const table = document.getElementById("dictionaryTable");
-    const tbody = table.tBodies[0];
-    const rowsArray = Array.from(tbody.rows);
-    const isNumeric = rowsArray.every(row => !isNaN(row.cells[n].textContent.trim()));
-    
-    // Toggle sort direction
-    const currentDir = table.getAttribute("data-sort-dir-" + n) || "asc";
-    const dir = currentDir === "asc" ? "desc" : "asc";
-    table.setAttribute("data-sort-dir-" + n, dir);
-
-    rowsArray.sort((a, b) => {
-        const x = a.cells[n].textContent.trim();
-        const y = b.cells[n].textContent.trim();
-
-        let xVal = isNumeric ? parseFloat(x) : x.toLowerCase();
-        let yVal = isNumeric ? parseFloat(y) : y.toLowerCase();
-
-        if (xVal < yVal) return dir === "asc" ? -1 : 1;
-        if (xVal > yVal) return dir === "asc" ? 1 : -1;
-        return 0;
-    });
-
-    // Reattach sorted rows
-    tbody.innerHTML = "";
-    rowsArray.forEach(row => tbody.appendChild(row));
-}
-                </script>
-
-
-
-
-
+      <section id="dictionary" class="section">
+        <div class="container">
+          <div class="row between center">
+            <h2>Dictionary</h2>
+            <div class="row gap">
+              <input id="dictSearch" class="input" placeholder="Filter entries..." />
+              <button id="favoritesBtn" class="btn">★ Favorites</button>
+              <button id="toggleIpaBtn" class="btn">Toggle IPA</button>
+              <button id="toggleTableBtn" class="btn">Toggle Table View</button>
             </div>
-        </section>
+          </div>
 
-        <section id="Learn" style="display: block; margin:0%" class="wrapper style1 fullscreen fade-up">
-            <div  style="			padding: 1em 5em 2em 2em ;
-			max-width: 100%;
-			width: 75em;
-            vertical-align: top; height: 100vh;">
-                <h2 style="text-align: center;">Learn Tovian</h2>
-                    <iframe src="guide.pdf" frameborder="0" height="90%" width="100%"></iframe>
-                    <p style="display: table-cell; height: 100%;"
-                      >
-                </p>
-            </div>
-        </section>
-            <!-- Footer -->
-            <footer id="footer" class="wrapper style1-alt">
-                <div class="inner">
-                    <ul class="menu">
-                        <li>&copy; Jackson Dean. All rights reserved.</li>
-                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
-                </div>
-            </footer>
+          <div id="dictCards" class="cards"></div>
 
-            <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+          <div id="tableWrap" class="table-wrap hidden">
+            <div id="dictionaryHolder"></div>
+          </div>
+        </div>
+      </section>
 
+      <section id="guide" class="section alt">
+        <div class="container">
+          <h2>Complete Guide</h2>
+          <p class="muted">From zero experience to fluency. All sections below are easy to edit (Markdown). <a class="btn" href="guide.pdf" download>Download full PDF guide</a></p>
+          <div id="guideLinks" class="cards"></div>
+        </div>
+      </section>
 
-</body>
+      <section id="ask" class="section">
+        <div class="container">
+          <h2>Ask Tovian</h2>
+          <p class="muted">Type a keyword you’d look up (e.g., “questions”, “verbs”, “cases”, “dream”, “memory”). It searches the guide (titles) and dictionary.</p>
+          <div class="qa box">
+            <input id="askInput" class="input" placeholder="Search grammar or vocabulary (e.g., questions, locative, dream)" />
+            <div id="askResults" class="stack"></div>
+          </div>
+        </div>
+      </section>
 
-</html>
+      <section id="about" class="section alt">
+        <div class="container">
+          <h2>About</h2>
+          <p>This placeholder will introduce the Tovian language: its phonology, core grammar ideas, and cultural context. We’ll expand this section with a concise overview and links into the most relevant guide pages.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container row between wrap">
+        <span>&copy; Jackson Dean</span>
+        <span>UI: vanilla + Fuse.js | PDF embedded</span>
+      </div>
+    </footer>
+  </body>
+  </html>

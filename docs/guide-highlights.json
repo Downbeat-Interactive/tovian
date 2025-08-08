@@ -1,0 +1,77 @@
+[
+  {
+    "id": "questions",
+    "tag": "Grammar",
+    "title": "Forming Questions",
+    "summary": "Add ‘lhan’ at the start for yes/no questions. For wh-forms, combine a case marker with ‘lhan’: si-lhan (how), ti-lhan (where), to-lhan (when), ya-lhan (to whom).",
+    "examples": [
+      { "tovian": "lhan wa fa lhar?", "english": "Do you understand?" },
+      { "tovian": "si-lhan ta fe fethra?", "english": "How did he speak?" },
+      { "tovian": "ti-lhan ta fa mela?", "english": "Where does he live?" }
+    ]
+  },
+  {
+    "id": "nouns-classes",
+    "tag": "Grammar",
+    "title": "Noun Classes and Cases",
+    "summary": "Three noun classes: la- (animate), lo- (inanimate/places), le- (abstract). Cases are prefixes like yu- (accusative), hi- (genitive), mi- (dative), ti- (locative), si- (instrumental), lhu- (purpose), di- (ablative), yi- (comitative), su- (allative). Combine case before class.",
+    "examples": [
+      { "tovian": "yu-la-driel fa mrila.", "english": "[He/She] sees the person." },
+      { "tovian": "ti-lo-pelor la-driel fa mela.", "english": "The person lives in the city." },
+      { "tovian": "hi-la-driel", "english": "of the person" }
+    ]
+  },
+  {
+    "id": "verbs-aux",
+    "tag": "Grammar",
+    "title": "Verbs: Auxiliary + Infinitive",
+    "summary": "Tovian uses an auxiliary built from aspect root + tense suffix (-e past, -a present, -o future). The main verb stays as an infinitive. Optional mood and voice prefixes attach to the auxiliary.",
+    "examples": [
+      { "tovian": "sha fethr.", "english": "is speaking (progressive present)." },
+      { "tovian": "tlotema …", "english": "should habitually … (obligative + habitual present)." },
+      { "tovian": "fa mrila.", "english": "[He/She] sees (simple present)." }
+    ]
+  },
+  {
+    "id": "agreement",
+    "tag": "Grammar",
+    "title": "Agreement on Auxiliary",
+    "summary": "Person is marked on the auxiliary (1st -i, 2nd -o, 3rd -a). Nouns don’t require agreement; plurality is -e for nouns.",
+    "examples": [
+      { "tovian": "ilana sa nalhi.", "english": "I think." },
+      { "tovian": "ilawa sa nalho.", "english": "You think." },
+      { "tovian": "ilata sa nalha.", "english": "He/She/They think." }
+    ]
+  },
+  {
+    "id": "adjectives",
+    "tag": "Usage",
+    "title": "Attributive Nouns (Adjectives)",
+    "summary": "Descriptive words are nouns placed after the noun they modify: ‘pelor mot’ = ‘big city’. Order matters; swapping changes meaning.",
+    "examples": [
+      { "tovian": "ti-lo-pelor mot la-driel fa mela.", "english": "The person lives in the big city." },
+      { "tovian": "ti-lo-pelor la-driel mot fa mela.", "english": "The big person lives in the city." }
+    ]
+  },
+  {
+    "id": "intro-memory",
+    "tag": "Culture",
+    "title": "Introductions via Memory",
+    "summary": "Culturally, memory and dreams are central. Polite introductions ask how to remember someone, using ‘elom’ (memory) and ‘nalor’ (bind).",
+    "examples": [
+      { "tovian": "si-lhan wa tlotema nalora ti-le-elom hiwa?", "english": "How should I bind myself in your memory? (How would you like me to remember you?)" },
+      { "tovian": "hletema nalora ti-le-elom hina: [Name/Epithet].", "english": "Please bind me in my memory as [Name/Epithet]." }
+    ]
+  },
+  {
+    "id": "dreams",
+    "tag": "Culture",
+    "title": "Dream Motifs",
+    "summary": "‘lhen’ = dream. People often share a dream-sign during introductions.",
+    "examples": [
+      { "tovian": "yu-lhan wa fa hiwa lhen?", "english": "What is your dream?" },
+      { "tovian": "hina lhen fa [motif].", "english": "My dream is [motif]." }
+    ]
+  }
+]
+
