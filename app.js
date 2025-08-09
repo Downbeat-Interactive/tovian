@@ -11,6 +11,9 @@
       showIPA: true,
     };
   
+    // Base prefix for path (from Eleventy pathPrefix)
+    const BASE = (window.__BASE || '/');
+
     // Theme toggle
     const body = document.documentElement;
     function applyTheme(initial) {
@@ -323,7 +326,8 @@
           else {
             const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns-cases':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
             const icon = ICONS[ref.id] || '📄';
-            quickOut.appendChild(el(`<div class="list-item"><a href="${ref.path && ref.path.startsWith('/') ? ref.path : (isGuide ? '' : 'guide/') + (ref.path || '')}"><b><span style="margin-right:6px">${icon}</span>${ref.title}</b></a></div>`));
+            const href = ref.path && ref.path.startsWith('/') ? (BASE + ref.path.replace(/^\//, '')) : (isGuide ? '' : 'guide/') + (ref.path || '');
+            quickOut.appendChild(el(`<div class="list-item"><a href="${href}"><b><span style="margin-right:6px">${icon}</span>${ref.title}</b></a></div>`));
           }
         });
         showQuick();
@@ -415,7 +419,8 @@
           if (item.type === 'guide') {
             const ICONS = { 'overview':'📘', 'nouns-cases':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
             const icon = ICONS[item.ref.id] || '📄';
-            askOut.appendChild(el(`<div class="list-item"><a href="${item.ref.path && item.ref.path.startsWith('/') ? item.ref.path : (isGuide ? '' : 'guide/') + (item.ref.path || '')}"><b><span style="margin-right:6px">${icon}</span>${item.ref.title}</b></a></div>`));
+            const href = item.ref.path && item.ref.path.startsWith('/') ? (BASE + item.ref.path.replace(/^\//, '')) : (isGuide ? '' : 'guide/') + (item.ref.path || '');
+            askOut.appendChild(el(`<div class="list-item"><a href="${href}"><b><span style="margin-right:6px">${icon}</span>${item.ref.title}</b></a></div>`));
           } else {
             askOut.appendChild(renderCard(item.ref));
           }

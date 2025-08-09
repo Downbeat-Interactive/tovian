@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tovian Guide</title>
+    <base href="/tovian/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/tovian/styles.css" />
+    <script>window.__BASE = '/tovian/';</script>
     <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     <script defer src="/tovian/CsvToTable.js"></script>
     <script defer src="/tovian/app.js"></script>
@@ -43,7 +45,7 @@
       <section class="section">
   <div class="container">
     <h1>Tovian Guide</h1>
-    <p class="muted">From zero to fluency: Use the sidebar in any guide page to jump between topics.</p>
+    <p class="muted">Learn to speak Tovian.</p>
     <p style="margin-top:12px"><a class="btn" href="/tovian/guide.pdf" download>Download full PDF guide</a></p>
     <div class="cards" id="guideCards"></div>
   </div>
@@ -56,7 +58,12 @@
     const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns-cases':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
     list.forEach(p=>{
       const a = document.createElement('a');
-      a.className = 'card'; a.href = p.path;
+      a.className = 'card';
+      // Ensure links always include the '/guide/' prefix under the site base
+      const href = p.path && p.path.startsWith('/')
+        ? (BASE + p.path.replace(/^\//, ''))
+        : (BASE + 'guide/' + (p.path || ''));
+      a.href = href;
       const summary = p.summary || 'Overview and key concepts for this topic.';
       const icon = ICONS[p.id] || '📄';
       a.innerHTML = `<h3><span style=\"margin-right:6px\">${icon}</span>${p.title}</h3><p class=\"muted\">${summary}</p>`;
