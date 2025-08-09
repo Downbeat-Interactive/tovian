@@ -4,7 +4,7 @@ permalink: /guide/overview.html
 title: Getting Started
 ---
 
-## Getting Started
+# Getting Started
 
 Welcome. This guide will help you learn to speak Tovian.
 

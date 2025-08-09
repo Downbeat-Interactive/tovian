@@ -9,7 +9,7 @@ title: Forming Questions | Tovian Guide
 
 Add <code>lhan</code> at the start of a declarative sentence.
 
-- <code>lhan wa fa fethr?</code>  
+- <code>lhan wa fa fethro?</code>  
   English: Do you speak?
 
 ## Information (wh- style)
@@ -30,6 +30,6 @@ Combine a case prefix with <code>lhan</code> to ask for a specific role:
 
 Examples:
 
-- <code>si-lhan ta fe fethr?</code> — English: How did he speak?
-- <code>ti-lhan ta fa fethr?</code> — English: Where does he speak?
-- <code>ya-lhan wa fa fethr?</code> — English: To whom are you speaking?
+- <code>si-lhan ta fe fethra?</code> — English: How did he speak?
+- <code>ti-lhan ta fa fethra?</code> — English: Where does he speak?
+- <code>ya-lhan wa fa fethra?</code> — English: To whom are you speaking?

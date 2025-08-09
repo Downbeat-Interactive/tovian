@@ -980,5 +980,3 @@ def main():
 if __name__ == "__main__":
     main()
     
-    from scripts import build_guide_manifest
-    build_guide_manifest.main()

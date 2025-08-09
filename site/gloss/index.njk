@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: Tovian Glosser & Translator
+permalink: /gloss/index.html
+---
+<section class="section" data-reveal>
+  <div class="container">
+    <h1>Glosser & Translator</h1>
+    <p class="muted">Paste Tovian to gloss it, or type English to draft a Tovian translation.</p>
+
+    <div class="grid2" style="align-items:start;">
+      <div class="box">
+        <h3>Gloss Tovian</h3>
+        <textarea id="glossInput" class="input" rows="6" placeholder="Paste Tovian text… e.g., la-driel fa mril ti-lo-shithil."></textarea>
+        <div class="row gap" style="margin-top:8px">
+          <button id="glossBtn" class="btn primary">Gloss</button>
+          <button id="clearGloss" class="btn ghost">Clear</button>
+        </div>
+        <div id="glossOut" class="table-wrap" style="margin-top:12px; overflow:auto;"></div>
+      </div>
+
+      <div class="box">
+        <h3>Translate (EN → Tovian)</h3>
+        <textarea id="tranInput" class="input" rows="6" placeholder="Type simple English… e.g., the person sees in the city."></textarea>
+        <div class="row gap" style="margin-top:8px">
+          <button id="tranBtn" class="btn">Translate</button>
+          <button id="clearTran" class="btn ghost">Clear</button>
+        </div>
+        <div id="tranOut" class="stack" style="margin-top:12px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="{{ '/gloss/gloss.js' | url }}" defer></script>
+

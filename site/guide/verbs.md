@@ -7,7 +7,7 @@ title: Verbs & Aspects | Tovian Guide
 
 Tovian uses a conjugated auxiliary + an infinitive main verb. The main verb remains an infinitive; only the auxiliary changes for aspect, tense, mood, and voice.
 
-Tense suffixes on the auxiliary
+## Tense suffixes on the auxiliary
 
 <table>
   <thead>
@@ -20,35 +20,35 @@ Tense suffixes on the auxiliary
   </tbody>
 </table>
 
-Common aspects (auxiliary roots)
+## Common aspects (auxiliary roots)
 
 <table>
   <thead>
     <tr><th>Aspect</th><th>Aux root</th><th>Present example</th></tr>
   </thead>
   <tbody>
-    <tr><td>Simple</td><td><code>f-</code></td><td><code>fa mril</code> “sees”</td></tr>
-    <tr><td>Imperfective</td><td><code>th-</code></td><td><code>tha mril</code> “is seeing”</td></tr>
-    <tr><td>Perfect</td><td><code>lh-</code></td><td><code>lha mril</code> “has seen”</td></tr>
-    <tr><td>Near</td><td><code>tl-</code></td><td><code>tla mril</code> “about to see”</td></tr>
-    <tr><td>Immediate</td><td><code>k-</code></td><td><code>ka mril</code> “seeing now”</td></tr>
-    <tr><td>Habitual</td><td><code>m-</code></td><td><code>ma mril</code> “sees regularly”</td></tr>
-    <tr><td>Progressive</td><td><code>s-</code></td><td><code>sa mril</code> “is seeing now”</td></tr>
-    <tr><td>Continuous</td><td><code>sh-</code></td><td><code>sha mril</code> “is seeing”</td></tr>
-    <tr><td>Iterative</td><td><code>n-</code></td><td><code>na mril</code> “sees repeatedly”</td></tr>
-    <tr><td>Inceptive</td><td><code>y-</code></td><td><code>ya mril</code> “begins seeing”</td></tr>
-    <tr><td>Cessative</td><td><code>p-</code></td><td><code>pa mril</code> “stops seeing”</td></tr>
-    <tr><td>Remote</td><td><code>h-</code></td><td><code>ha mril</code> “sees (remote)”</td></tr>
+    <tr><td>Simple</td><td><code>f-</code></td><td><code>fa mrila</code> “sees”</td></tr>
+    <tr><td>Imperfective</td><td><code>th-</code></td><td><code>tha mrila</code> “is seeing”</td></tr>
+    <tr><td>Perfect</td><td><code>lh-</code></td><td><code>lha mrila</code> “has seen”</td></tr>
+    <tr><td>Near</td><td><code>tl-</code></td><td><code>tla mrila</code> “about to see”</td></tr>
+    <tr><td>Immediate</td><td><code>k-</code></td><td><code>ka mrila</code> “seeing now”</td></tr>
+    <tr><td>Habitual</td><td><code>m-</code></td><td><code>ma mrila</code> “sees regularly”</td></tr>
+    <tr><td>Progressive</td><td><code>s-</code></td><td><code>sa mrila</code> “is seeing now”</td></tr>
+    <tr><td>Continuous</td><td><code>sh-</code></td><td><code>sha mrila</code> “is seeing”</td></tr>
+    <tr><td>Iterative</td><td><code>n-</code></td><td><code>na mrila</code> “sees repeatedly”</td></tr>
+    <tr><td>Inceptive</td><td><code>y-</code></td><td><code>ya mrila</code> “begins seeing”</td></tr>
+    <tr><td>Cessative</td><td><code>p-</code></td><td><code>pa mrila</code> “stops seeing”</td></tr>
+    <tr><td>Remote</td><td><code>h-</code></td><td><code>ha mrila</code> “sees (remote)”</td></tr>
   </tbody>
 </table>
 
-Examples
+## Examples
 
-- <code>fa mril.</code> — English: [He/She] sees. (simple present)
-- <code>sha fethr.</code> — English: is speaking. (continuous present)
+- <code>fa mrila.</code> — English: [He/She] sees. (simple present)
+- <code>sha fethra.</code> — English: is speaking. (continuous present)
 - <code>tlotema …</code> — English: should habitually … (obligative + habitual present)
 
-Agreement (subject person on auxiliary)
+Agreement (subject person on verb)
 
 <table>
   <thead>

@@ -11,6 +11,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'site/styles.css': 'styles.css' });
   eleventyConfig.addPassthroughCopy({ 'site/dictionary.csv': 'dictionary.csv' });
   eleventyConfig.addPassthroughCopy({ 'site/ipa_map.csv': 'ipa_map.csv' });
+  // Tools
+  eleventyConfig.addPassthroughCopy({ 'site/gloss/gloss.js': 'gloss/gloss.js' });
   // Only copy specific guide assets; templates in site/guide are rendered
   eleventyConfig.addPassthroughCopy({ 'site/guide/guide.js': 'guide/guide.js' });
   eleventyConfig.addPassthroughCopy({ 'site/guide/guide.pdf': 'guide/guide.pdf' });

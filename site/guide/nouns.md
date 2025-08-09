@@ -56,11 +56,11 @@ Speakers usually rely on context for definiteness, but optional prefixes can cla
 
 Examples (definiteness)
 
-- <code>i-la-driel fa mril a-ti-lo-shithil</code> — “The person sees in the city.”
-- <code>e-la-driel fa mril o-ti-lo-shithil</code> — “A person sees in a city.”
+- <code>i-la-driel fa mrila a-ti-lo-shithil</code> — “The person sees in the city.”
+- <code>e-la-driel fa mrila o-ti-lo-shithil</code> — “A person sees in a city.”
 
 ## Examples
 
-- <code>yu-la-driel</code> <code>fa</code> <code>mril</code> — English: [He/She] sees the person.
-- <code>ti-lo-shithil</code> <code>la-driel</code> <code>fa</code> <code>mril</code> — English: The person sees in the city.
+- <code>yu-la-driel</code> <code>fa</code> <code>mrila</code> — English: [He/She] sees the person.
+- <code>ti-lo-shithil</code> <code>la-driel</code> <code>fa</code> <code>mrila</code> — English: The person sees in the city.
 - <code>hi-la-driel</code> — English: of the person.

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <filter id="soften" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.4" />
+    </filter>
+  </defs>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1" filter="url(#soften)">
+    <!-- large contours -->
+    <path d="M80,200 C180,120 300,140 420,220 C520,290 640,300 720,240" />
+    <path d="M60,420 C180,340 320,360 460,440 C560,500 700,520 780,470" />
+    <path d="M20,640 C160,560 340,560 520,660 C640,730 760,740 820,700" />
+
+    <!-- mid contours -->
+    <path d="M120,160 C210,110 300,120 400,190 C480,245 600,250 680,210" />
+    <path d="M100,380 C210,320 340,330 470,400 C560,450 690,460 760,420" />
+    <path d="M60,600 C190,540 340,540 500,620 C600,675 740,690 800,660" />
+
+    <!-- small contours -->
+    <path d="M150,120 C220,90 300,95 380,150" />
+    <path d="M130,340 C220,300 320,305 420,360" />
+    <path d="M100,560 C210,520 320,520 440,580" />
+
+    <!-- islands -->
+    <path d="M520,120 C560,100 600,110 640,140" />
+    <path d="M560,320 C600,300 640,310 680,340" />
+    <path d="M540,520 C590,500 640,510 690,540" />
+  </g>
+</svg>

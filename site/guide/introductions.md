@@ -9,10 +9,10 @@ Polite self-introductions and first phrases. Memory and dreams now live in their
 
 ## Polite Name Request
 
-- `si-lhan wa tlotema nalora ti-le-elom hiwa?`  
+- `si-lhan wa tlotema nalori ti-le-elom hiwa?`  
   English: How should I bind myself in your memory?
 
-- `hletema nalora ti-le-elom hina: [Name/Epithet].`  
+- `hletema naloro ti-le-elom hina: [Name/Epithet].`  
   English: Please bind me in my memory as [Name/Epithet].
 
 
@@ -24,7 +24,7 @@ When meeting someone, a quick pattern is:
 
 Optionally add a friendly acknowledgement:
 
-- <code>wa fa fethr.</code> — You speak.
+- <code>wa fa fethro.</code> — You speak.
 
 Common quick question:
 

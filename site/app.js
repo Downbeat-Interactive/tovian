@@ -178,7 +178,7 @@
     // Load data and wire events
     async function init() {
       const isGuide = location.pathname.includes('/guide/');
-      const base = isGuide ? '../' : '';
+      const base = (window.__BASE || '/');
       // Load favorites
       try {
         const raw = localStorage.getItem('favorites') || '[]';
@@ -186,9 +186,9 @@
       } catch {}
       // Dictionary
       const csvText = await fetch(base + 'dictionary.csv').then((r) => r.text());
-      state.entries = parseCSV(csvText).filter((x) => x.english && x.tovian);
+      state.entries = parseCSV(csvText).filter((x) => x.english && x.tovian && !/\(obsolete\)/i.test(x.english));
       state.fuseDict = new Fuse(state.entries, { keys: ['english', 'tovian'], threshold: 0.3 });
-      renderDictCards(state.entries.slice(0, 120));
+      renderDictCards(state.entries.slice(0, 400));
       // Handle hash scrolling after dynamic content affects layout
       function scrollToHashIfAny() {
         if (!location.hash) return;
@@ -365,7 +365,7 @@
       dictInput?.addEventListener('input', () => {
         const q = dictInput.value.trim();
         if (!q) {
-          renderDictCards(state.entries.slice(0, 200));
+          renderDictCards(state.entries);
           filterTable('');
           return;
         }
@@ -380,8 +380,18 @@
       const cardsWrap = document.getElementById('dictCards');
       toggleBtn?.addEventListener('click', () => {
         const nowHidden = tableWrap.classList.toggle('hidden');
+        toggleBtn.setAttribute('aria-pressed', nowHidden ? 'false' : 'true');
         cardsWrap.style.display = nowHidden ? '' : 'none';
+        const more = document.getElementById('loadMoreBtn');
+        if (more) more.style.display = nowHidden ? (state.cardsShown < (document.getElementById('dictSearch')?.value?.trim() ? state.fuseDict.search(document.getElementById('dictSearch').value.trim()).length : state.entries.length) ? '' : 'none') : 'none';
         if (!nowHidden) { buildTableIfNeeded(); const q = dictInput?.value?.trim() || ''; if (q) { const table = document.getElementById('dictionaryTable'); if (table) { const rows = table.tBodies?.[0]?.rows || []; const needle = q.toLowerCase(); Array.from(rows).forEach((row) => { const txt = Array.from(row.cells).map(c => c.textContent.toLowerCase()).join(' '); row.style.display = needle && !txt.includes(needle) ? 'none' : ''; }); } } setTimeout(applyIpaVisibilityToTable, 0); }
+      });
+
+      // Load more button
+      document.getElementById('loadMoreBtn')?.addEventListener('click', () => {
+        const q = document.getElementById('dictSearch')?.value?.trim();
+        const list = q ? state.fuseDict.search(q) : state.entries;
+        appendMoreCards(list);
       });
   
       // Favorites toggle
@@ -393,7 +403,7 @@
           favBtn.setAttribute('aria-pressed', pressed ? 'false' : 'true');
           if (pressed) {
             const q = document.getElementById('dictSearch')?.value?.trim();
-            if (!q) renderDictCards(state.entries.slice(0, 200));
+            if (!q) renderDictCards(state.entries.slice(0, 400));
             else renderDictCards(state.fuseDict.search(q));
           } else {
             const favs = state.entries.filter(e => state.favorites.has(`${e.tovian}__${e.english}`));
@@ -403,8 +413,11 @@
       }
   
       // IPA toggle
-      document.getElementById('toggleIpaBtn')?.addEventListener('click', () => {
+      const ipaBtn = document.getElementById('toggleIpaBtn');
+      if (ipaBtn) ipaBtn.setAttribute('aria-pressed', state.showIPA ? 'true' : 'false');
+      ipaBtn?.addEventListener('click', () => {
         state.showIPA = !state.showIPA;
+        ipaBtn.setAttribute('aria-pressed', state.showIPA ? 'true' : 'false');
         const q = document.getElementById('dictSearch')?.value?.trim();
         if (!q) renderDictCards(state.entries.slice(0, 200));
         else renderDictCards(state.fuseDict.search(q));
