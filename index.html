@@ -25,12 +25,13 @@
       
       <a href="/tovian/guide/index.html">Guide</a>
       <a href="/tovian/index.html#ask">Ask</a>
+      <a href="/tovian/gloss/index.html">Translator</a>
       <a href="/tovian/guide/examples.html">Examples</a>
       <a href="/tovian/index.html#about">About</a>
     </nav>
     <div class="row gap" style="flex:1; justify-content:flex-end;">
       <input id="quickSearch" class="input" style="max-width:340px" placeholder="Quick search…" />
-      <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
+      <button id="themeToggle" class="btn ghost toggle" aria-label="Toggle theme" aria-pressed="false">Theme</button>
     </div>
   </div>
   <div class="container" style="padding-bottom:8px">
@@ -69,12 +70,15 @@
       <h2>Dictionary <span id="dictBadge" class="chip" aria-live="polite">0</span></h2>
       <div class="row gap">
         <input id="dictSearch" class="input" placeholder="Filter entries..." />
-        <button id="favoritesBtn" class="btn">★ Favorites</button>
-        <button id="toggleIpaBtn" class="btn">Toggle IPA</button>
-        <button id="toggleTableBtn" class="btn">Toggle Table View</button>
+        <button id="favoritesBtn" class="btn toggle" aria-pressed="false">Favorites ★</button>
+        <button id="toggleIpaBtn" class="btn toggle" aria-pressed="true">Show IPA</button>
+        <button id="toggleTableBtn" class="btn toggle" aria-pressed="false">Table View</button>
       </div>
     </div>
     <div id="dictCards" class="cards"></div>
+    <div class="row center" style="justify-content:center; margin-top:12px">
+      <button id="loadMoreBtn" class="btn" aria-live="polite">Load more</button>
+    </div>
     <div id="tableWrap" class="table-wrap hidden">
       <div id="dictionaryHolder"></div>
     </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pronouns &amp; Agreement | Tovian Guide</title>
+    <title>Tovian Glosser &amp; Translator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,9 +23,7 @@
       
       
       
-        
-      
-      <a href="/tovian/guide/index.html">Guide <span aria-hidden="true">🗣️</span></a>
+      <a href="/tovian/guide/index.html">Guide</a>
       <a href="/tovian/index.html#ask">Ask</a>
       <a href="/tovian/gloss/index.html">Translator</a>
       <a href="/tovian/guide/examples.html">Examples</a>
@@ -43,35 +41,35 @@
 
     <main>
       <section class="section" data-reveal>
-  <div class="container guide-layout">
-    <aside id="guideSidebar" class="guide-sidebar" data-reveal></aside>
-    <article class="guide-content" data-reveal>
-      <nav id="guideMiniNav" class="guide-mini-nav" aria-label="Guide pages"></nav>
-      <h1>Pronouns &amp; Agreement</h1>
-<p>Independent pronouns are often unnecessary because the auxiliary verb carries person via a suffix. Use full pronouns when emphasis or clarity is needed; otherwise, person is recoverable from the auxiliary.</p>
-<p>Person suffixes (on the auxiliary)</p>
-<table>
-  <thead>
-    <tr><th>Person</th><th>Suffix</th><th>Example</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1st</td><td><code>-i</code></td><td><code>sa nalhi</code> “I/we think” (context decides number)</td></tr>
-    <tr><td>2nd</td><td><code>-o</code></td><td><code>sa nalho</code> “you think”</td></tr>
-    <tr><td>3rd</td><td><code>-a</code></td><td><code>sa nalha</code> “he/she/they think”</td></tr>
-  </tbody>
-</table>
-<p>Notes</p>
-<ul>
-<li>Plurality appears on nouns with <code>-e</code> (e.g., <code>lothr → lothre</code>), not on verbs.</li>
-<li>Full pronouns may precede the verb for emphasis in formal or contrastive contexts; otherwise, rely on verbal agreement.</li>
-</ul>
+  <div class="container">
+    <h1>Glosser & Translator</h1>
+    <p class="muted">Paste Tovian to gloss it, or type English to draft a Tovian translation.</p>
 
-      <div id="guideNav" class="guide-nav" data-reveal></div>
-    </article>
+    <div class="grid2" style="align-items:start;">
+      <div class="box">
+        <h3>Gloss Tovian</h3>
+        <textarea id="glossInput" class="input" rows="6" placeholder="Paste Tovian text… e.g., la-driel fa mril ti-lo-shithil."></textarea>
+        <div class="row gap" style="margin-top:8px">
+          <button id="glossBtn" class="btn primary">Gloss</button>
+          <button id="clearGloss" class="btn ghost">Clear</button>
+        </div>
+        <div id="glossOut" class="table-wrap" style="margin-top:12px; overflow:auto;"></div>
+      </div>
+
+      <div class="box">
+        <h3>Translate (EN → Tovian)</h3>
+        <textarea id="tranInput" class="input" rows="6" placeholder="Type simple English… e.g., the person sees in the city."></textarea>
+        <div class="row gap" style="margin-top:8px">
+          <button id="tranBtn" class="btn">Translate</button>
+          <button id="clearTran" class="btn ghost">Clear</button>
+        </div>
+        <div id="tranOut" class="stack" style="margin-top:12px"></div>
+      </div>
+    </div>
   </div>
-  
 </section>
-<script src="/tovian/guide/guide.js" defer></script>
+<script src="/tovian/gloss/gloss.js" defer></script>
+
 
     </main>
     <footer class="site-footer">
