@@ -36,7 +36,7 @@ jobs:
         if: ${{ github.ref_name != 'gh-pages' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: main
-          publish_dir: ./docs
+          publish_branch: gh-pages
+          publish_dir: .
           destination_dir: docs
           commit_message: "deploy: ${{ github.sha }}"
