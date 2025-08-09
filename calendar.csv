@@ -62,312 +62,312 @@ Year,Translation,Roots,POS,Note
 6000,59 of winter/January 59,value+speaking,N,Velarum
 6000,60 of winter/January 60,star+home,N,Starhovel
 6000,February,three+cold,N,Nivost
-6000,61 of winter,cold+plant,N,Froshpea
-6000,62 of winter,bottom+darkness+stone,N,Nightcoal
-6000,63 of winter,darkness+tar,N,Shadowtar
-6000,64 of winter,star+stone,N,Starbrimstone
-6000,65 of winter,moon+dog,N,Moonhound
-6000,66 of winter,dream+flow,N,Dreamlava
-6000,67 of winter,earth+plant,N,Earthmoss
-6000,68 of winter,earth+food,N,Starfern
-6000,69 of winter,ice+dream,N,Frostniter
-6000,70 of winter,cold+tool,N,Winterflail
-6000,71 of winter,tool+darkness+stone,N,Nightstone
-6000,72 of winter,path+value,N,Numkar
-6000,73 of winter,darkness+stone,N,Shedowslate
-6000,74 of winter,earth+stone,N,Peatstone
-6000,75 of winter,ice+fruit,N,Frostbun
-6000,76 of winter,light+stone,N,Sparkstone
-6000,77 of winter,dream+earth,N,Dreamclay
-6000,78 of winter,moon+showing+fruit,N,Moonlime
-6000,79 of winter,star+dream,N,Starble
-6000,80 of winter,darkness+tool,N,Nighbasket
-6000,81 of winter,flower+stone,N,Dremgypsum
-6000,82 of winter,food+star,N,Starssalt
-6000,83 of winter,moon+stone,N,Mooniron
-6000,84 of winter,morning+metal,N,Dawnbrass
-6000,85 of winter,star+face,N,Starwhisker
-6000,86 of winter,twilight+metal,N,Twilighttin
-6000,87 of winter,darkness+metal,N,Shadowlead
-6000,88 of winter,twilight+???,N,Duskin
-6000,89 of winter,speed+metal,N,Quicksilver
-6000,90 of winter,ice+tool,N,Frostscreen
+6000,61 of winter/February 1,cold+plant,N,Froshpea
+6000,62 of winter/February 2,bottom+darkness+stone,N,Nightcoal
+6000,63 of winter/February 3,darkness+tar,N,Shadowtar
+6000,64 of winter/February 4,star+stone,N,Starbrimstone
+6000,65 of winter/February 5,moon+dog,N,Moonhound
+6000,66 of winter/February 6,dream+flow,N,Dreamlava
+6000,67 of winter/February 7,earth+plant,N,Earthmoss
+6000,68 of winter/February 8,earth+food,N,Starfern
+6000,69 of winter/February 9,ice+dream,N,Frostniter
+6000,70 of winter/February 10,cold+tool,N,Winterflail
+6000,71 of winter/February 11,tool+darkness+stone,N,Nightstone
+6000,72 of winter/February 12,path+value,N,Numkar
+6000,73 of winter/February 13,darkness+stone,N,Shedowslate
+6000,74 of winter/February 14,earth+stone,N,Peatstone
+6000,75 of winter/February 15,ice+fruit,N,Frostbun
+6000,76 of winter/February 16,light+stone,N,Sparkstone
+6000,77 of winter/February 17,dream+earth,N,Dreamclay
+6000,78 of winter/February 18,moon+showing+fruit,N,Moonlime
+6000,79 of winter/February 19,star+dream,N,Starble
+6000,80 of winter/February 20,darkness+tool,N,Nighbasket
+6000,81 of winter/February 1,flower+stone,N,Dremgypsum
+6000,82 of winter/February 22,food+star,N,Starssalt
+6000,83 of winter/February 23,moon+stone,N,Mooniron
+6000,84 of winter/February 24,morning+metal,N,Dawnbrass
+6000,85 of winter/February 25,star+face,N,Starwhisker
+6000,86 of winter/February 26,twilight+metal,N,Twilighttin
+6000,87 of winter/February 27,darkness+metal,N,Shadowlead
+6000,88 of winter/February 28,twilight+???,N,Duskin
+6000,89 of winter/February 29,speed+metal,N,Quicksilver
+6000,90 of winter/February 30,ice+tool,N,Frostscreen
 6000,March,one+plant,N,Vindrem
-6000,1 of spring,moon+vine,N,Lunevigne
-6000,2 of spring,sun+sharpness,N,Solspica
-6000,3 of spring,tool+fruit,N,Stellnut
-6000,4 of spring,flower+flower,N,Drembloom
-6000,5 of spring,wind+animal,N,Vindsteed
-6000,6 of spring,mystery+plant,N,Mystsap
-6000,7 of spring,sight+stone,N,Mrilgem
-6000,8 of spring,eternal+fire,N,Everflame
-6000,9 of spring,ice+root,N,Frostroot
-6000,10 of spring,eternal+beauty,N,Eternavial
-6000,11 of spring,darkness+bloom,N,Shadowbulb
-6000,12 of spring,rebirth+plant,N,Féenixflour
-6000,13 of spring,cold+fruit,N,Víntergourd
-6000,14 of spring,silver+???,N,Silvreséda
-6000,15 of spring,sky+branch,N,Skyaspe
-6000,16 of spring,darkness+beauty,N,Nightbelle
-6000,17 of spring,peace+plant,N,Tlafen
-6000,18 of spring,star+life,N,Starzin
-6000,19 of spring,sun+flower,N,Soldrem
-6000,20 of spring,star+sharpness,N,Starpress
-6000,21 of spring,flower+plant,N,Dremhemp
-6000,22 of spring,sky+flower,N,Skypech
-6000,23 of spring,ice+ship,N,Frostnave
-6000,24 of spring,star+flower,N,Starlilis
-6000,25 of spring,storm+animal,N,Stormbull
-6000,26 of spring,darkness+plant+dream,N,Nightshade
-6000,27 of spring,hotness+flower,N,Ascbloom
-6000,28 of spring,sun+fruit,N,Sunfruit
-6000,29 of spring,star+grain,N,Starbarley
-6000,30 of spring,mystery+container,N,Mystbarrel
+6000,1 of spring/March 1,moon+vine,N,Lunevigne
+6000,2 of spring/March 2,sun+sharpness,N,Solspica
+6000,3 of spring/March 3,tool+fruit,N,Stellnut
+6000,4 of spring/March 4,flower+flower,N,Drembloom
+6000,5 of spring/March 5,wind+animal,N,Vindsteed
+6000,6 of spring/March 6,mystery+plant,N,Mystsap
+6000,7 of spring/March 7,sight+stone,N,Mrilgem
+6000,8 of spring/March 8,eternal+fire,N,Everflame
+6000,9 of spring/March 9,ice+root,N,Frostroot
+6000,10 of spring/ March 10,eternal+beauty,N,Eternavial
+6000,11 of spring/ March 11,darkness+bloom,N,Shadowbulb
+6000,12 of spring/ March 12,rebirth+plant,N,Féenixflour
+6000,13 of spring/ March 13,cold+fruit,N,Víntergourd
+6000,14 of spring/ March 14,silver+???,N,Silvreséda
+6000,15 of spring/ March 15,sky+branch,N,Skyaspe
+6000,16 of spring/ March 16,darkness+beauty,N,Nightbelle
+6000,17 of spring/ March 17,peace+plant,N,Tlafen
+6000,18 of spring/ March 18,star+life,N,Starzin
+6000,19 of spring/ March 19,sun+flower,N,Soldrem
+6000,20 of spring/March 20,star+sharpness,N,Starpress
+6000,21 of spring/March 21,flower+plant,N,Dremhemp
+6000,22 of spring/March 22,sky+flower,N,Skypech
+6000,23 of spring/March 23,ice+ship,N,Frostnave
+6000,24 of spring/March 24,star+flower,N,Starlilis
+6000,25 of spring/March 25,storm+animal,N,Stormbull
+6000,26 of spring/March 26,darkness+plant+dream,N,Nightshade
+6000,27 of spring/March 27,hotness+flower,N,Ascbloom
+6000,28 of spring/March 28,sun+fruit,N,Sunfruit
+6000,29 of spring/March 29,star+grain,N,Starbarley
+6000,30 of spring/March 30,mystery+container,N,Mystbarrel
 6000,April,two+plant,N,Foegvel
-6000,31 of spring,sky+fruit,N,Skyfruit
-6000,32 of spring,moon+sharpness,N,Mooncrísp
-6000,33 of spring,storm+beauty,N,Thunderpearl
-6000,34 of spring,body+tree,N,Heartroot
-6000,35 of spring,storm+feather,N,Stormféther
-6000,36 of spring,sound+woods,N,Teshangor
-6000,37 of spring,flower+fruit,N,Drémfig
-6000,38 of spring,darkness+body,N,Níghtstalk
-6000,39 of spring,truth+tree,N,Wísertre
+6000,31 of spring/April 1,sky+fruit,N,Skyfruit
+6000,32 of spring/April 2,moon+sharpness,N,Mooncrísp
+6000,33 of spring/April 3,storm+beauty,N,Thunderpearl
+6000,34 of spring/April 4,body+tree,N,Heartroot
+6000,35 of spring/April 5,storm+feather,N,Stormféther
+6000,36 of spring/April 6,sound+woods,N,Teshangor
+6000,37 of spring/April 7,flower+fruit,N,Drémfig
+6000,38 of spring/April 8,darkness+body,N,Níghtstalk
+6000,39 of spring/April 9,truth+tree,N,Wísertre
 6000,40 of spring,sky+path,N,Cloudfurrow
-6000,41 of spring,twilight+face,N,Duskwhísker
-6000,42 of spring,moon+lake,N,Moonpool
-6000,43 of spring,sight+tree,N,Mrilaple
-6000,44 of spring,sky+speech,N,Skyfethr
-6000,45 of spring,storm+bird,N,Stormbird
-6000,46 of spring,star+root,N,Starroot
-6000,47 of spring,ice+water,N,Mooncress
-6000,48 of spring,ice+tooth,N,Frostdent
-6000,49 of spring,star+fruit,N,Starfruit
-6000,50 of spring,star+covering,N,Starharrow
-6000,51 of spring,mystery+water,N,Mystbach
-6000,52 of spring,darkness+berry,N,Nightberry
-6000,53 of spring,speaking+plant,N,Duskmadder
-6000,54 of spring,sun+present,N,Sunorb
-6000,55 of spring,sky+animal,N,Skyfowl
-6000,56 of spring,darkness+food+fruit,N,Nightnut
-6000,57 of spring,person+tool,N,Drielthorn
-6000,58 of spring,moon+fruit,N,Moonquince
-6000,59 of spring,branch+tree,N,Starwood
-6000,60 of spring,sky+movement,N,Cloudroll
+6000,41 of spring/April 11,twilight+face,N,Duskwhísker
+6000,42 of spring/April 12,moon+lake,N,Moonpool
+6000,43 of spring/April 13,sight+tree,N,Mrilaple
+6000,44 of spring/April 14,sky+speech,N,Skyfethr
+6000,45 of spring/April 15,storm+bird,N,Stormbird
+6000,46 of spring/April 16,star+root,N,Starroot
+6000,47 of spring/April 17,ice+water,N,Mooncress
+6000,48 of spring/April 18,ice+tooth,N,Frostdent
+6000,49 of spring/April 19,star+fruit,N,Starfruit
+6000,50 of spring/April 20,star+covering,N,Starharrow
+6000,51 of spring/April 21,mystery+water,N,Mystbach
+6000,52 of spring/April 22,darkness+berry,N,Nightberry
+6000,53 of spring/April 23,speaking+plant,N,Duskmadder
+6000,54 of spring/April 24,sun+present,N,Sunorb
+6000,55 of spring/April 25,sky+animal,N,Skyfowl
+6000,56 of spring/April 26,darkness+food+fruit,N,Nightnut
+6000,57 of spring/April 27,person+tool,N,Drielthorn
+6000,58 of spring/April 28,moon+fruit,N,Moonquince
+6000,59 of spring/April 29,branch+tree,N,Starwood
+6000,60 of spring/April 30,sky+movement,N,Cloudroll
 6000,May,three+plant,N,Luviosh
-6000,61 of spring,water+tree,N,Rainlaurel
-6000,62 of spring,plant+water,N,Dewmoss
-6000,63 of spring,flowing+dream,N,Mistthorn
-6000,64 of spring,ice+sharpness+tool,N,Snowpierce
-6000,65 of spring,death+animal,N,Stambul
-6000,66 of spring,air+plant,N,Rinthyme
-6000,67 of spring,protection+moon,N,Moonsponge
-6000,68 of spring,dusk+plant,N,Duskdaphne
-6000,69 of spring,lake+tree,N,Telpoplar
-6000,70 of spring,flowing+fruit,N,Mistquince
-6000,71 of spring,darkness+plant+light,N,Nightshade
-6000,72 of spring,trunk+mouth,N,Starstalk
-6000,73 of spring,???,N,Bayra
-6000,74 of spring,flowing+???,N,Misazel
-6000,75 of spring,moon+animal,N,Mooncalf
-6000,76 of spring,sky+food,N,Sky's Feed
-6000,77 of spring,branch+mouth,N,Starlichen
-6000,78 of spring,darkness+branch,N,Nightyew
-6000,79 of spring,moon+plant,N,Moongrass
-6000,80 of spring,flowing+hoe,N,Mistsickle
-6000,81 of spring,water+down,N,Raincress
-6000,82 of spring,flowing+bloom,N,Mistbloom
-6000,83 of spring,morning+plant,N,Dawngrass
-6000,84 of spring,water+vine,N,Rainvin
-6000,85 of spring,star+animal,N,Starhare
-6000,86 of spring,death+blue,N,Twiliwoad
-6000,87 of spring,moon+branch,N,Moonhazel
-6000,88 of spring,dawn+branch,N,Duslower
-6000,89 of spring,flowing+mouth,N,Starwort
-6000,90 of spring,ice+movement,N,Frostslide
+6000,61 of spring/May 1,water+tree,N,Rainlaurel
+6000,62 of spring/May 2,plant+water,N,Dewmoss
+6000,63 of spring/May 3,flowing+dream,N,Mistthorn
+6000,64 of spring/May 4,ice+sharpness+tool,N,Snowpierce
+6000,65 of spring/May 5,death+animal,N,Stambul
+6000,66 of spring/May 6,air+plant,N,Rinthyme
+6000,67 of spring/May 7,protection+moon,N,Moonsponge
+6000,68 of spring/May 8,dusk+plant,N,Duskdaphne
+6000,69 of spring/May 9,lake+tree,N,Telpoplar
+6000,70 of spring/May 10,flowing+fruit,N,Mistquince
+6000,71 of spring/May 11,darkness+plant+light,N,Nightshade
+6000,72 of spring/May 12,trunk+mouth,N,Starstalk
+6000,73 of spring/May 13,???,N,Bayra
+6000,74 of spring/May 14,flowing+???,N,Misazel
+6000,75 of spring/May 15,moon+animal,N,Mooncalf
+6000,76 of spring/May 16,sky+food,N,Sky's Feed
+6000,77 of spring/May 17,branch+mouth,N,Starlichen
+6000,78 of spring/May 18,darkness+branch,N,Nightyew
+6000,79 of spring/May 19,moon+plant,N,Moongrass
+6000,80 of spring/May 20,flowing+hoe,N,Mistsickle
+6000,81 of spring/May 21,water+down,N,Raincress
+6000,82 of spring/May 22,flowing+bloom,N,Mistbloom
+6000,83 of spring/May 23,morning+plant,N,Dawngrass
+6000,84 of spring/May 24,water+vine,N,Rainvin
+6000,85 of spring/May 25,star+animal,N,Starhare
+6000,86 of spring/May 26,death+blue,N,Twiliwoad
+6000,87 of spring/May 27,moon+branch,N,Moonhazel
+6000,88 of spring/May 28,dawn+branch,N,Duslower
+6000,89 of spring/May 29,flowing+mouth,N,Starwort
+6000,90 of spring/May 30,ice+movement,N,Frostslide
 6000,June,one+height+sun,N,Germspar
-6000,1 of summer,morning+bloom,N,Dawnbloom
-6000,2 of summer,sky+tree,N,Skybark
-6000,3 of summer,moon+tool,N,Moonspear
-6000,4 of summer,sun+branch,N,Sunpetal
-6000,5 of summer,morning+animal,N,Dawncluck
-6000,6 of summer,plant+leaf,N,Melorleaf
-6000,7 of summer,tree+star,N,Starbirch
-6000,8 of summer,light+container,N,Lightcup
-6000,9 of summer,sound+stone,N,Whisperald
-6000,10 of summer,home+protection,N,Nestkeep
-6000,11 of summer,sword+woods,N,Vekhangor
-6000,12 of summer,light+blue,N,Gleamwoad
-6000,13 of summer,darkness+food,N,Nightmush
-6000,14 of summer,wind+movement,N,Rithwil
-6000,15 of summer,writing+time,N,Felor Day
-6000,16 of summer,water+plant,N,Dewlettuce
-6000,17 of summer,warmth+tree,N,Frostlarch
-6000,18 of summer,darkness+dream+flower,N,Darkbloom
-6000,19 of summer,root+earth,N,Starroot
-6000,20 of summer,sweet+home,N,Honeyhall
-6000,21 of summer,plant+protection,N,Seedguard
-6000,22 of summer,flowing+leaf,N,Mistleaf
-6000,23 of summer,life+tree,N,Heartree
-6000,24 of summer,speed+plant,N,Swiftgreen
-6000,25 of summer,sky+feather,N,Skyfeather
-6000,26 of summer,death+smell,N,Duskscent
-6000,27 of summer,wind+flower,N,Windflower
-6000,28 of summer,thought+flower,N,Thoughtbloom
-6000,29 of summer,darkness+fruit,N,Nightberry
-6000,30 of summer,plant+???,N,Sproutbles
+6000,1 of summer/June 1,morning+bloom,N,Dawnbloom
+6000,2 of summer/June 2,sky+tree,N,Skybark
+6000,3 of summer/June 3,moon+tool,N,Moonspear
+6000,4 of summer/June 4,sun+branch,N,Sunpetal
+6000,5 of summer/June 5,morning+animal,N,Dawncluck
+6000,6 of summer/June 6,plant+leaf,N,Melorleaf
+6000,7 of summer/June 7,tree+star,N,Starbirch
+6000,8 of summer/June 8,light+container,N,Lightcup
+6000,9 of summer/June 9,sound+stone,N,Whisperald
+6000,10 of summer/June 10,home+protection,N,Nestkeep
+6000,11 of summer/June 11,sword+woods,N,Vekhangor
+6000,12 of summer/June 12,light+blue,N,Gleamwoad
+6000,13 of summer/June 13,darkness+food,N,Nightmush
+6000,14 of summer/June 14,wind+movement,N,Rithwil
+6000,15 of summer/June 15,writing+time,N,Felor Day
+6000,16 of summer/June 16,water+plant,N,Dewlettuce
+6000,17 of summer/June 17,warmth+tree,N,Frostlarch
+6000,18 of summer/June 18,darkness+dream+flower,N,Darkbloom
+6000,19 of summer/June 19,root+earth,N,Starroot
+6000,20 of summer/June 20,sweet+home,N,Honeyhall
+6000,21 of summer/June 21,plant+protection,N,Seedguard
+6000,22 of summer/June 22,flowing+leaf,N,Mistleaf
+6000,23 of summer/June 23,life+tree,N,Heartree
+6000,24 of summer/June 24,speed+plant,N,Swiftgreen
+6000,25 of summer/June 25,sky+feather,N,Skyfeather
+6000,26 of summer/June 26,death+smell,N,Duskscent
+6000,27 of summer/June 27,wind+flower,N,Windflower
+6000,28 of summer/June 28,thought+flower,N,Thoughtbloom
+6000,29 of summer/June 29,darkness+fruit,N,Nightberry
+6000,30 of summer/June 30,plant+???,N,Sproutbles
 6000,July,two+height+sun,N,Thermiblase
-6000,31 of summer,dream+star+grain,N,Startriticale
-6000,32 of summer,wisdom+plant,N,Moonmullen
-6000,33 of summer,sun+dream+fruit,N,Sanfruta
-6000,34 of summer,plant+tool+woods,N,Melorethangor
-6000,35 of summer,day+animal,N,Dayram
-6000,36 of summer,dawn+plant,N,Dawnfern
-6000,37 of summer,dream+darkness,N,Nightwood
-6000,38 of summer,sun+dream+plant,N,Sunthistle
-6000,39 of summer,berry+night,N,Twilightberry
-6000,40 of summer,water+protection,N,Rainkeeper
-6000,41 of summer,life+food,N,Heartbread
-6000,42 of summer,sea+stone,N,Seaspire
-6000,43 of summer,morning+writing,N,Dawnfelor
-6000,44 of summer,leaf+branch,N,Starherb
-6000,45 of summer,dream+moon+animal,N,Moonewe
-6000,46 of summer,dream+plant,N,Dreammallow
-6000,47 of summer,berry+branch,N,Starflax
-6000,48 of summer,sweet+fruit,N,Sweetnut
-6000,49 of summer,death+tree,N,Twilightroot
-6000,50 of summer,water+home,N,Wetgate
-6000,51 of summer,sun+circle,N,Sunwheel
-6000,52 of summer,dark+fruit,N,Duskberry
-6000,53 of summer,moon+wisdom,N,Moonlent
-6000,54 of summer,branch+plant,N,Staranise
-6000,55 of summer,water+tool,N,Waterwhisker
-6000,56 of summer,darkness+plant,N,Nightmyrtle
-6000,57 of summer,value+flower,N,Goldbloom
-6000,58 of summer,moon+bloom,N,Moonbloom
-6000,59 of summer,sky+person,N,Cloudmun
-6000,60 of summer,center+path+dream,N,Lhelnumly
+6000,31 of summer/July 1,dream+star+grain,N,Startriticale
+6000,32 of summer/July 2,wisdom+plant,N,Moonmullen
+6000,33 of summer/July 3,sun+dream+fruit,N,Sanfruta
+6000,34 of summer/July 4,plant+tool+woods,N,Melorethangor
+6000,35 of summer/July 5,day+animal,N,Dayram
+6000,36 of summer/July 6,dawn+plant,N,Dawnfern
+6000,37 of summer/July 7,dream+darkness,N,Nightwood
+6000,38 of summer/July 8,sun+dream+plant,N,Sunthistle
+6000,39 of summer/July 9,berry+night,N,Twilightberry
+6000,40 of summer/July 10,water+protection,N,Rainkeeper
+6000,41 of summer/July 11,life+food,N,Heartbread
+6000,42 of summer/July 12,sea+stone,N,Seaspire
+6000,43 of summer/July 13,morning+writing,N,Dawnfelor
+6000,44 of summer/July 14,leaf+branch,N,Starherb
+6000,45 of summer/July 15,dream+moon+animal,N,Moonewe
+6000,46 of summer/July 16,dream+plant,N,Dreammallow
+6000,47 of summer/July 17,berry+branch,N,Starflax
+6000,48 of summer/July 18,sweet+fruit,N,Sweetnut
+6000,49 of summer/July 19,death+tree,N,Twilightroot
+6000,50 of summer/July 20,water+home,N,Wetgate
+6000,51 of summer/July 21,sun+circle,N,Sunwheel
+6000,52 of summer/July 22,dark+fruit,N,Duskberry
+6000,53 of summer/July 23,moon+wisdom,N,Moonlent
+6000,54 of summer/July 24,branch+plant,N,Staranise
+6000,55 of summer/July 25,water+tool,N,Waterwhisker
+6000,56 of summer/July 26,darkness+plant,N,Nightmyrtle
+6000,57 of summer/July 27,value+flower,N,Goldbloom
+6000,58 of summer/July 28,moon+bloom,N,Moonbloom
+6000,59 of summer/July 29,sky+person,N,Cloudmun
+6000,60 of summer/July 30,center+path+dream,N,Lhelnumly
 6000,August,three+height+sun,N,Floreart
-6000,61 of summer,morning+flower,N,Dawnrose
-6000,62 of summer,sound+tree,N,Thunderoak
-6000,63 of summer,covering+plant,N,Veilfern
-6000,64 of summer,branch+sharpness,N,Starthorn
-6000,65 of summer,darkness+???,N,Nightahn
-6000,66 of summer,dream+tool,N,Drembell
-6000,67 of summer,moon+flower,N,Moonlily
-6000,68 of summer,earth+hat,N,Earthcap
-6000,69 of summer,water+flower,N,Rainblossom
-6000,70 of summer,star+action,N,Starharvest
-6000,71 of summer,twilight+tool,N,Dusktang
-6000,72 of summer,morning+sound,N,Dawnvox
-6000,73 of summer,sun+tool,N,Sunstaff
-6000,74 of summer,tree+sound,N,Palmwhisper
-6000,75 of summer,sweet+action,N,Silkspinner
-6000,76 of summer,life+flower,N,Healbloom
-6000,77 of summer,branch+tool,N,Starpim
-6000,78 of summer,value+joining,N,Goldweave
-6000,79 of summer,darkness+moon+plant,N,Shadegreen
-6000,80 of summer,leaf+tool,N,Leafcut
-6000,81 of summer,dream+flowing+flower,N,Tideflower
-6000,82 of summer,dusk+sound,N,Duskbell
-6000,83 of summer,person+light,N,Selitha
-6000,84 of summer,dream+tree,N,Dremroot
-6000,85 of summer,moon+memory,N,Tlunalorum
-6000,86 of summer,fire+tree,N,Charwood
-6000,87 of summer,air+dream+plant,N,Zephyrherb
-6000,88 of summer,darkness+blue,N,Nightblue
-6000,89 of summer,sun+death,N,Sunseed
-6000,90 of summer,leader+star,N,Shepherd's Star
+6000,61 of summer/August 1,morning+flower,N,Dawnrose
+6000,62 of summer/August 2,sound+tree,N,Thunderoak
+6000,63 of summer/August 3,covering+plant,N,Veilfern
+6000,64 of summer/August 4,branch+sharpness,N,Starthorn
+6000,65 of summer/August 5,darkness+???,N,Nightahn
+6000,66 of summer/August 6,dream+tool,N,Drembell
+6000,67 of summer/August 7,moon+flower,N,Moonlily
+6000,68 of summer/August 8,earth+hat,N,Earthcap
+6000,69 of summer/August 9,water+flower,N,Rainblossom
+6000,70 of summer/August 10,star+action,N,Starharvest
+6000,71 of summer/August 11,twilight+tool,N,Dusktang
+6000,72 of summer/August 12,morning+sound,N,Dawnvox
+6000,73 of summer/August 13,sun+tool,N,Sunstaff
+6000,74 of summer/August 14,tree+sound,N,Palmwhisper
+6000,75 of summer/August 15,sweet+action,N,Silkspinner
+6000,76 of summer/August 16,life+flower,N,Healbloom
+6000,77 of summer/August 17,branch+tool,N,Starpim
+6000,78 of summer/August 18,value+joining,N,Goldweave
+6000,79 of summer/August 19,darkness+moon+plant,N,Shadegreen
+6000,80 of summer/August 20,leaf+tool,N,Leafcut
+6000,81 of summer/August 21,dream+flowing+flower,N,Tideflower
+6000,82 of summer/August 22,dusk+sound,N,Duskbell
+6000,83 of summer/August 23,person+light,N,Selitha
+6000,84 of summer/August 24,dream+tree,N,Dremroot
+6000,85 of summer/August 25,moon+memory,N,Tlunalorum
+6000,86 of summer/August 26,fire+tree,N,Charwood
+6000,87 of summer/August 27,air+dream+plant,N,Zephyrherb
+6000,88 of summer/August 28,darkness+blue,N,Nightblue
+6000,89 of summer/August 29,sun+GEN+death,N,Sunseed
+6000,90 of summer/August 30,leader+star,N,Shepherd's Star
 6000,September,one+harvest,N,Messihold
-6000,1 of autumn,branch+grain,N,Starrye
-6000,2 of autumn,moon+grain,N,Moonoat
-6000,3 of autumn,darkness+moon+bloom,N,Nightbulb
-6000,4 of autumn,???,N,Daeronica
-6000,5 of autumn,star+earth,N,Starmul
-6000,6 of autumn,sun+mother,N,Sunmary
-6000,7 of autumn,moon+???,N,Mooncoke
-6000,8 of autumn,dusk+stopping,N,Duskshalt
-6000,9 of autumn,dream+sharpness,N,Dremthorn
-6000,10 of autumn,star+sword,N,Stareblad
-6000,11 of autumn,???,N,Ciantro
-6000,12 of autumn,place+tool,N,Earchoke
-6000,13 of autumn,sharpness+tool,N,Spicesta
-6000,14 of autumn,mist+???,N,Mistlaven
-6000,15 of autumn,???,N,Chamois
-6000,16 of autumn,air+sweet,N,Smokesweet
-6000,17 of autumn,fruit+goodness,N,Curranthum
-6000,18 of autumn,fruit+tree,N,Peawil
-6000,19 of autumn,sun+berry,N,Sunberry
-6000,20 of autumn,plain+place,N,Meadowrealm
-6000,21 of autumn,air+branch,N,Breezemint
-6000,22 of autumn,darkness+joining,N,Nightspice
-6000,23 of autumn,branch+fruit,N,Starbean
-6000,24 of autumn,morning+earth,N,Dawnborage
-6000,25 of autumn,???,N,Skuinea
-6000,26 of autumn,plant+plant,N,Hayherb
-6000,27 of autumn,top+dream,N,Sarlic
-6000,28 of autumn,???,N,Whivetch
-6000,29 of autumn,value+grain,N,Goldwheat
-6000,30 of autumn,air+sound,N,Windflute
+6000,1 of autumn/September 1,branch+grain,N,Starrye
+6000,2 of autumn/September 2,moon+grain,N,Moonoat
+6000,3 of autumn/September 3,darkness+moon+bloom,N,Nightbulb
+6000,4 of autumn/September 4,???,N,Daeronica
+6000,5 of autumn/September 5,star+earth,N,Starmul
+6000,6 of autumn/September 6,sun+mother,N,Sunmary
+6000,7 of autumn/September 7,moon+???,N,Mooncoke
+6000,8 of autumn/September 8,dusk+stopping,N,Duskshalt
+6000,9 of autumn/September 9,dream+sharpness,N,Dremthorn
+6000,10 of autumn/September 10,star+sword,N,Stareblad
+6000,11 of autumn/September 11,???,N,Ciantro
+6000,12 of autumn/September 12,place+tool,N,Earchoke
+6000,13 of autumn/September 13,sharpness+tool,N,Spicesta
+6000,14 of autumn/September 14,mist+???,N,Mistlaven
+6000,15 of autumn/September 15,???,N,Chamois
+6000,16 of autumn/September 16,air+sweet,N,Smokesweet
+6000,17 of autumn/September 17,fruit+goodness,N,Curranthum
+6000,18 of autumn/September 18,fruit+tree,N,Peawil
+6000,19 of autumn/September 19,sun+berry,N,Sunberry
+6000,20 of autumn/September 20,plain+place,N,Meadowrealm
+6000,21 of autumn/September 21,air+branch,N,Breezemint
+6000,22 of autumn/September 22,darkness+joining,N,Nightspice
+6000,23 of autumn/September 23,branch+fruit,N,Starbean
+6000,24 of autumn/September 24,morning+earth,N,Dawnborage
+6000,25 of autumn/September 25,???,N,Skuinea
+6000,26 of autumn/September 26,plant+plant,N,Hayherb
+6000,27 of autumn/September 27,top+dream,N,Sarlic
+6000,28 of autumn/September 28,???,N,Whivetch
+6000,29 of autumn/September 29,value+grain,N,Goldwheat
+6000,30 of autumn/September 30,air+sound,N,Windflute
 6000,October,two+harvest,N,Fructiwane
-6000,31 of autumn,harvest+fruit,N,Starplum
-6000,32 of autumn,vine+grain,N,Duskmillet
-6000,33 of autumn,???,N,Munpuf
-6000,34 of autumn,night+grain,N,Twilbar
-6000,35 of autumn,river+light,N,Rivshine
-6000,36 of autumn,moon+sharing,N,Tlunalis
-6000,37 of autumn,sweet+???,N,Sweetspore
-6000,38 of autumn,dream+flower,N,Dremblossom
-6000,39 of autumn,darkness+tree,N,Shadroot
-6000,40 of autumn,star+tool,N,Starladder
-6000,41 of autumn,moon+berry,N,Moonmelon
-6000,42 of autumn,branch+darkness,N,Starfennel
-6000,43 of autumn,sharpness+sweet,N,Thornsweet
-6000,44 of autumn,dusk+fruit,N,Dusknut
-6000,45 of autumn,???,N,Stamglith
-6000,46 of autumn,sun+action,N,Sunzest
-6000,47 of autumn,hoe+covering,N,Melorethangor
-6000,48 of autumn,morning+sharpness,N,Dawnthor
-6000,49 of autumn,value+tool,N,Golace
-6000,50 of autumn,pain+tool,N,Harsack
-6000,51 of autumn,forest+flower,N,Wildrose
-6000,52 of autumn,dream+moon+fruit,N,Monut
-6000,53 of autumn,tool+plant,N,Brewvine
-6000,54 of autumn,grain+value,N,Goldgrain
-6000,55 of autumn,river+sound,N,Rivercaw
-6000,56 of autumn,pain+mouth,N,Bitterpearl
-6000,57 of autumn,forest+branch,N,Starblum
-6000,58 of autumn,sun+plant,N,Sunstalk
-6000,59 of autumn,tree+fruit,N,Hovenut
-6000,60 of autumn,harvest+action,N,Harvesh
+6000,31 of autumn/October 1,harvest+fruit,N,Starplum
+6000,32 of autumn/October 2,vine+grain,N,Duskmillet
+6000,33 of autumn/October 3,???,N,Munpuf
+6000,34 of autumn/October 4,night+grain,N,Twilbar
+6000,35 of autumn/October 5,river+light,N,Rivshine
+6000,36 of autumn/October 6,moon+sharing,N,Tlunalis
+6000,37 of autumn/October 7,sweet+???,N,Sweetspore
+6000,38 of autumn/October 8,dream+flower,N,Dremblossom
+6000,39 of autumn/October 9,darkness+tree,N,Shadroot
+6000,40 of autumn/October 10,star+tool,N,Starladder
+6000,41 of autumn/October 11,moon+berry,N,Moonmelon
+6000,42 of autumn/October 12,branch+darkness,N,Starfennel
+6000,43 of autumn/October 13,sharpness+sweet,N,Thornsweet
+6000,44 of autumn/October 14,dusk+fruit,N,Dusknut
+6000,45 of autumn/October 15,???,N,Stamglith
+6000,46 of autumn/October 16,sun+action,N,Sunzest
+6000,47 of autumn/October 17,hoe+covering,N,Melorethangor
+6000,48 of autumn/October 18,morning+sharpness,N,Dawnthor
+6000,49 of autumn/October 19,value+tool,N,Golace
+6000,50 of autumn/October 20,pain+tool,N,Harsack
+6000,51 of autumn/October 21,forest+flower,N,Wildrose
+6000,52 of autumn/October 22,dream+moon+fruit,N,Monut
+6000,53 of autumn/October 23,tool+plant,N,Brewvine
+6000,54 of autumn/October 24,grain+value,N,Goldgrain
+6000,55 of autumn/October 25,river+sound,N,Rivercaw
+6000,56 of autumn/October 26,pain+mouth,N,Bitterpearl
+6000,57 of autumn/October 27,forest+branch,N,Starblum
+6000,58 of autumn/October 28,sun+plant,N,Sunstalk
+6000,59 of autumn/October 29,tree+fruit,N,Hovenut
+6000,60 of autumn/October 30,harvest+action,N,Harvesh
 6000,November,three+harvest,N,Prairilight
-6000,61 of autumn,star+food,N,Starfodder
-6000,62 of autumn,day+light,N,Dayglem
-6000,63 of autumn,pain+plant,N,Harclover
-6000,64 of autumn,moon+???,N,Moonerb
-6000,65 of autumn,lake+feather,N,Lakequill
-6000,66 of autumn,sweet+plant,N,Sweetbalm
-6000,67 of autumn,goodness+grain,N,Sugargrain
-6000,68 of autumn,death+hotness,N,Twilily
-6000,69 of autumn,air+root,N,Windthyme
-6000,70 of autumn,darkness+dream+tool,N,Shedscythe
-6000,71 of autumn,sharpness+berry,N,Stefbery
-6000,72 of autumn,forest+tree,N,Wildroot
-6000,73 of autumn,change+thought,N,Kanalh
-6000,74 of autumn,existence+goodness,N,Silshede
-6000,75 of autumn,morning+bird,N,Dawnquail
-6000,76 of autumn,showing+darkness+flower,N,Duflor
-6000,77 of autumn,night+flower,N,Niteblum
-6000,78 of autumn,dream+branch,N,Dremsweed
-6000,79 of autumn,star+leaf,N,Starlef
-6000,80 of autumn,light+tool,N,Glemfork
-6000,81 of autumn,???,N,Skoble
-6000,82 of autumn,???,N,Muncal
-6000,83 of autumn,sweet+life,N,Sweevin
-6000,84 of autumn,air+flower,N,Frothfloer
-6000,85 of autumn,dream+air,N,Depswe
-6000,86 of autumn,small+existence,N,Niwhis
-6000,87 of autumn,moon+dream,N,Munverbena
-6000,88 of autumn,sun+time,N,Sunethime
-6000,89 of autumn,pain+flower,N,Harpetal
-6000,90 of autumn,grain+plant,N,Sorgho
+6000,61 of autumn/November 1,star+food,N,Starfodder
+6000,62 of autumn/November 2,day+light,N,Dayglem
+6000,63 of autumn/November 3,pain+plant,N,Harclover
+6000,64 of autumn/November 4,moon+???,N,Moonerb
+6000,65 of autumn/November 5,lake+feather,N,Lakequill
+6000,66 of autumn/November 6,sweet+plant,N,Sweetbalm
+6000,67 of autumn/November 7,goodness+grain,N,Sugargrain
+6000,68 of autumn/November 8,death+hotness,N,Twilily
+6000,69 of autumn/November 9,air+root,N,Windthyme
+6000,70 of autumn/November 10,darkness+dream+tool,N,Shedscythe
+6000,71 of autumn/November 11,sharpness+berry,N,Stefbery
+6000,72 of autumn/November 12,forest+tree,N,Wildroot
+6000,73 of autumn/November 13,change+thought,N,Kanalh
+6000,74 of autumn/November 14,existence+goodness,N,Silshede
+6000,75 of autumn/November 15,morning+bird,N,Dawnquail
+6000,76 of autumn/November 16,showing+darkness+flower,N,Duflor
+6000,77 of autumn/November 17,night+flower,N,Niteblum
+6000,78 of autumn/November 18,dream+branch,N,Dremsweed
+6000,79 of autumn/November 19,star+leaf,N,Starlef
+6000,80 of autumn/November 20,light+tool,N,Glemfork
+6000,81 of autumn/November 21,???,N,Skoble
+6000,82 of autumn/November 22,???,N,Muncal
+6000,83 of autumn/November 23,sweet+life,N,Sweevin
+6000,84 of autumn/November 24,air+flower,N,Frothfloer
+6000,85 of autumn/November 25,dream+air,N,Depswe
+6000,86 of autumn/November 26,small+existence,N,Niwhis
+6000,87 of autumn/November 27,moon+dream,N,Munverbena
+6000,88 of autumn/November 28,sun+time,N,Sunethime
+6000,89 of autumn/November 29,pain+flower,N,Harpetal
+6000,90 of autumn/November 30,grain+plant,N,Sorgho

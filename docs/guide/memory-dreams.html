@@ -3,41 +3,64 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Memory & Dreams | Tovian Guide</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <title>Memory &amp; Dreams | Tovian Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <script defer src="../CsvToTable.js"></script>
-    <script defer src="../app.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="/CsvToTable.js"></script>
+    <script defer src="/app.js"></script>
   </head>
   <body>
     <header class="site-header">
-      <div class="container row between center">
-        <a class="brand" href="../">Tovian</a>
-        <nav class="nav row">
-          <a href="../index.html#dictionary">Dictionary</a>
-          <a href="./">Guide</a>
-          <a href="../index.html#ask">Ask</a>
-        </nav>
-        <div class="row gap" style="flex:1; justify-content:flex-end;">
-          <input id="quickSearch" class="input" style="max-width:340px" placeholder="Quick search…" />
-          <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
-        </div>
-      </div>
-    </header>
-    <main class="section">
-      <div class="container">
-        <div id="quickResults" class="list"></div>
-      </div>
-      <div class="container guide-layout">
-        <aside id="guideSidebar" class="guide-sidebar"></aside>
-        <article class="guide-content">
-          <div id="mdHost"></div>
-          <div id="guideNav" class="guide-nav"></div>
-        </article>
-      </div>
+  <div class="container row between center">
+    <a class="brand" href="/index.html#home">Tovian</a>
+    <nav class="nav row">
+      <a href="/index.html#dictionary">Dictionary</a>
+      
+      
+      
+      
+        
+      
+      <a href="/guide/index.html">Guide <span aria-hidden="true">💭</span></a>
+      <a href="/index.html#ask">Ask</a>
+      <a href="/guide/examples.html">Examples</a>
+      <a href="/index.html#about">About</a>
+    </nav>
+    <div class="row gap" style="flex:1; justify-content:flex-end;">
+      <input id="quickSearch" class="input" style="max-width:340px" placeholder="Quick search…" />
+      <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
+    </div>
+  </div>
+  <div class="container" style="padding-bottom:8px">
+    <div id="quickResults" class="list"></div>
+  </div>
+</header>
+
+    <main>
+      <section class="section" data-reveal>
+  <div class="container guide-layout">
+    <aside id="guideSidebar" class="guide-sidebar" data-reveal></aside>
+    <article class="guide-content" data-reveal>
+      <h1>Memory and Dreams</h1>
+<p>In Tovian culture, memory and dreams are central. This section will collect core vocabulary and common expressions used when speaking about remembrances and dream-signs.</p>
+<p>More examples and notes coming soon.</p>
+
+      <div id="guideNav" class="guide-nav" data-reveal></div>
+    </article>
+  </div>
+  
+</section>
+<script src="/guide/guide.js" defer></script>
+
     </main>
-    <script src="guide.js" defer></script>
+    <footer class="site-footer">
+  <div class="container row between wrap">
+    <span>&copy; 2025 Jackson Dean</span>
+  </div>
+</footer>
+
   </body>
   </html>
-

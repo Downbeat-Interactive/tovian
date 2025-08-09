@@ -6,11 +6,11 @@ import re
 SPACE_BETWEEN_ENTRIES = '15pt'
 FONT_SIZE = '20pt'
 
-consonants = 'pbmfvθðtdnrszlɬʃʒkgŋhjwƛ'
+consonants = 'pbmfvθðtdnrszlɬʃʒkgŋhħjwƛ'
 vowels = 'aeiouə'
 
 voiced_consonants = 'bdgmnlrvzʒŋ'
-voiceless_consonants = 'ptfθsʃkhƛɬ'
+voiceless_consonants = 'ptfθsʃkhħƛɬ'
 
 stops = 'ptkbdg'
 voiceless_stops = 'ptk'
@@ -20,7 +20,7 @@ glides = 'jw'
 liquids = 'lr'
 nasals = 'mnŋ'
 
-fricatives = 'fvθðszʒʃhɬ'
+fricatives = 'fvθðszʒʃhħɬ'
 affricates = 'ƛ'
 approximates = 'ɹj'
 
@@ -105,6 +105,9 @@ def vowel_loss_between_voiceless_consonants_unless_stressed(word):
     
     return unmark_stress(re.sub(pattern, replacement, stressed))
 
+
+def h_to_ħ(word):
+    return word.replace('h', 'ħ')
 
 def b_to_d(word):
     return word.replace('b', 'd')
@@ -634,6 +637,7 @@ sound_changes = [
     {'rule': 14000, 'description': 'No fricatives after affricates', 'function': no_fricatives_after_affricates},
     {'rule': 14001, 'description': 'No affricates after fricatives', 'function': no_affricates_after_fricatives},
     {'rule': 14005, 'description': 'Epenthesis and metathesis /ʃd/ → [ɬt]', 'function': shd_to_lht},
+    {'rule': 14006, 'description': 'Voiceless glottal fricative h to pharyngeal fricative ħ', 'function': h_to_ħ},
 ]
 
 # Function to apply all sound changes
@@ -714,6 +718,7 @@ def romanization(word):
         'ƛ': r'tl',
         'ə': r'e',
         'ɸ': r'f',
+        'ħ': r'h',
     }
     for roman_char, latex_char in replacements.items():
         word = word.replace(roman_char, latex_char)
@@ -923,7 +928,7 @@ def main():
         first_word = first_line.split('","')[0].strip('"').lower()
         pos = first_line.split(',')[3].strip('"')
         # if pos is 'case' or 'ps' or 'ns', put at end
-        if pos in ['CASE', 'CLASS', 'PLURAL', 'MOOD', 'VOICE', 'ASPECT']:
+        if pos in ['CASE', 'CLASS', 'PLURAL', 'MOOD', 'VOICE', 'ASPECT', 'PLACEHOLDER']:
             return 'zzz' + first_word
         if not first_word[0].isdigit():
             return first_word
@@ -947,8 +952,7 @@ def main():
     csv_filename = 'dictionary.csv'
     if args.max_year is not None:
         csv_filename = f'dictionary_{args.max_year}.csv'
-    #also save to 
-    pages_filename='docs/'+csv_filename
+    pages_filename='site/'+csv_filename
     for fname in [csv_filename, pages_filename]:
         with open(fname, 'w', encoding='utf-8') as file:
             file.write('English,Tovian,IPA,Roots\n')

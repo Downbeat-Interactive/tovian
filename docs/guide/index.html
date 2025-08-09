@@ -4,47 +4,73 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tovian Guide</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <script defer src="../CsvToTable.js"></script>
-    <script defer src="../app.js"></script>
+    <script defer src="/CsvToTable.js"></script>
+    <script defer src="/app.js"></script>
   </head>
   <body>
     <header class="site-header">
-      <div class="container row between center">
-        <a class="brand" href="../index.html#home">Tovian</a>
-        <nav class="nav row">
-          <a href="../index.html#dictionary">Dictionary</a>
-          <a href="./">Guide</a>
-          <a href="../index.html#ask">Ask</a>
-        </nav>
-        <div class="row gap" style="flex:1; justify-content:flex-end;">
-          <input id="quickSearch" class="input" style="max-width:340px" placeholder="Quick search…" />
-          <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
-        </div>
-      </div>
-    </header>
-    <main class="section">
-      <div class="container">
-        <h1>Tovian Guide</h1>
-        <p class="muted">From zero to fluency: structured pages you can expand. Use the sidebar in any guide page to jump between topics.</p>
-        <div class="cards" id="guideCards"></div>
-        <p style="margin-top:12px"><a class="btn" href="../guide.pdf" download>Download full PDF guide</a></p>
-        <div id="quickResults" class="list"></div>
-      </div>
+  <div class="container row between center">
+    <a class="brand" href="/index.html#home">Tovian</a>
+    <nav class="nav row">
+      <a href="/index.html#dictionary">Dictionary</a>
+      
+      
+      
+      
+        
+      
+      <a href="/guide/index.html">Guide</a>
+      <a href="/index.html#ask">Ask</a>
+      <a href="/guide/examples.html">Examples</a>
+      <a href="/index.html#about">About</a>
+    </nav>
+    <div class="row gap" style="flex:1; justify-content:flex-end;">
+      <input id="quickSearch" class="input" style="max-width:340px" placeholder="Quick search…" />
+      <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
+    </div>
+  </div>
+  <div class="container" style="padding-bottom:8px">
+    <div id="quickResults" class="list"></div>
+  </div>
+</header>
+
+    <main>
+      <section class="section">
+  <div class="container">
+    <h1>Tovian Guide</h1>
+    <p class="muted">From zero to fluency: Use the sidebar in any guide page to jump between topics.</p>
+    <p style="margin-top:12px"><a class="btn" href="/guide.pdf" download>Download full PDF guide</a></p>
+    <div class="cards" id="guideCards"></div>
+  </div>
+</section>
+<script>
+  const BASE = '/';
+  fetch(BASE + 'guide/manifest.json').then(r=>r.json()).then(list=>{
+    const wrap = document.getElementById('guideCards');
+    wrap.innerHTML = '';
+    const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns-cases':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
+    list.forEach(p=>{
+      const a = document.createElement('a');
+      a.className = 'card'; a.href = p.path;
+      const summary = p.summary || 'Overview and key concepts for this topic.';
+      const icon = ICONS[p.id] || '📄';
+      a.innerHTML = `<h3><span style=\"margin-right:6px\">${icon}</span>${p.title}</h3><p class=\"muted\">${summary}</p>`;
+      wrap.appendChild(a);
+    })
+  })
+</script>
+
     </main>
-    <script>
-      // Build landing cards from the manifest
-      fetch('manifest.json').then(r=>r.json()).then(list=>{
-        const wrap = document.getElementById('guideCards');
-        list.forEach(p=>{
-          const a = document.createElement('a');
-          a.className = 'card'; a.href = p.path;
-          const summary = p.summary || 'Overview and key concepts for this topic.';
-          a.innerHTML = `<h3>${p.title}</h3><p class="muted">${summary}</p>`;
-          wrap.appendChild(a);
-        })
-      })
-    </script>
+    <footer class="site-footer">
+  <div class="container row between wrap">
+    <span>&copy; 2025 Jackson Dean</span>
+  </div>
+</footer>
+
   </body>
   </html>

@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<section class="section">
+  <div class="container guide-layout">
+    <aside id="guideSidebar" class="guide-sidebar"></aside>
+    <article class="guide-content">
+      <div id="mdHost"></div>
+      <div id="guideNav" class="guide-nav"></div>
+    </article>
+  </div>
+</section>
+<script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="{{ '/guide/guide.js' | url }}" defer></script>

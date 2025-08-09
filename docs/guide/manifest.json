@@ -1,62 +1,101 @@
 [
+  
   {
     "id": "overview",
-    "path": "overview.html",
+    "path": "/guide/overview.html",
     "title": "Getting Started",
-    "summary": "Welcome. This guide takes you from zero experience to fluency in Tovian. Each section is short, focused, and linked in the sidebar."
+    "summary": "Core ideas: sounds, writing, and how words work."
   },
-  {
-    "id": "verbs",
-    "path": "verbs.html",
-    "title": "Verbs & Aspects",
-    "summary": "Tovian uses a conjugated auxiliary + an infinitive main verb."
-  },
-  {
-    "id": "mood-voice",
-    "path": "mood-voice.html",
-    "title": "Mood & Voice",
-    "summary": "Mood prefixes attach to the auxiliary:"
-  },
+  
   {
     "id": "phonology",
-    "path": "phonology.html",
+    "path": "/guide/phonology.html",
     "title": "Alphabet & Pronunciation",
-    "summary": "- Vowels: `a /a/`, `e /e/`, `i /i/`, `o /o/`, `u /u/`"
+    "summary": "Tovian sounds and how to pronounce them."
   },
-  {
-    "id": "phonotactics",
-    "path": "phonotactics.html",
-    "title": "Phonotactics & Stress",
-    "summary": "This section will cover allowable clusters, syllable patterns, and detailed stress rules with examples. (TODO)"
-  },
-  {
-    "id": "memory-dreams",
-    "path": "memory-dreams.html",
-    "title": "Memory and Dreams",
-    "summary": "In Tovian culture, memory and dreams are central. This section will collect core vocabulary and common expressions used when speaking about remembrances and dream-signs."
-  },
+  
   {
     "id": "nouns-cases",
-    "path": "nouns-cases.html",
+    "path": "/guide/nouns-cases.html",
     "title": "Noun Classes & Cases",
-    "summary": "- `la-`: animate (people, animals, plants) — e.g., `la-driel` “person”."
+    "summary": "Classes, cases, and how they compose meaning."
   },
+  
   {
-    "id": "introductions",
-    "path": "introductions.html",
-    "title": "Introductions",
-    "summary": "Polite self-introductions and first phrases. Memory and dreams now live in their own section."
+    "id": "pronouns",
+    "path": "/guide/pronouns.html",
+    "title": "Pronouns & Agreement",
+    "summary": "Reference and agreement in simple patterns."
   },
+  
+  {
+    "id": "verbs",
+    "path": "/guide/verbs.html",
+    "title": "Verbs & Aspects",
+    "summary": "Expressing events with auxiliaries and word order."
+  },
+  
+  {
+    "id": "mood-voice",
+    "path": "/guide/mood-voice.html",
+    "title": "Mood & Voice",
+    "summary": "Nuance: possibility, obligation, passive-like turns."
+  },
+  
   {
     "id": "questions",
-    "path": "questions.html",
+    "path": "/guide/questions.html",
     "title": "Forming Questions",
-    "summary": "Add `lhan` at the start of a declarative sentence."
+    "summary": "Yes/no and wh-questions with examples."
   },
+  
   {
     "id": "adjectives",
-    "path": "adjectives.html",
-    "title": "Attributive Nouns (Adjectives)",
-    "summary": "Descriptive qualities are expressed as nouns placed after the noun they modify. Order matters."
+    "path": "/guide/adjectives.html",
+    "title": "Attributive Nouns",
+    "summary": "Describing nouns using other nouns."
+  },
+  
+  {
+    "id": "syntax",
+    "path": "/guide/syntax.html",
+    "title": "Syntax & Word Order",
+    "summary": "Canonical order and emphatic alternatives."
+  },
+  
+  {
+    "id": "introductions",
+    "path": "/guide/introductions.html",
+    "title": "Introductions",
+    "summary": "Polite name exchange and first phrases."
+  },
+  
+  {
+    "id": "culture",
+    "path": "/guide/culture.html",
+    "title": "Culture",
+    "summary": "Cultural notes and common expressions."
+  },
+  
+  {
+    "id": "numbers",
+    "path": "/guide/numbers.html",
+    "title": "Numbers & Ordinals",
+    "summary": "Counting and order (auto from dictionary)."
+  },
+  
+  {
+    "id": "calendar",
+    "path": "/guide/calendar.html",
+    "title": "Calendar",
+    "summary": "Months and named dates (auto from dictionary)."
+  },
+  
+  {
+    "id": "examples",
+    "path": "/guide/examples.html",
+    "title": "Examples",
+    "summary": "Examples of increasing complexity."
   }
+  
 ]

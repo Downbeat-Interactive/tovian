@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<section class="section" data-reveal>
+  <div class="container guide-layout">
+    <aside id="guideSidebar" class="guide-sidebar" data-reveal></aside>
+    <article class="guide-content" data-reveal>
+      {{ content | safe }}
+      <div id="guideNav" class="guide-nav" data-reveal></div>
+    </article>
+  </div>
+  
+</section>
+<script src="{{ '/guide/guide.js' | url }}" defer></script>

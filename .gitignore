@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Node stuff
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # Distribution / packaging
 .Python
 build/
@@ -151,8 +157,6 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
-/site
 
 # mypy
 .mypy_cache/
