@@ -3,8 +3,7 @@ on: [push]
 
 jobs:
   build_deploy:
-    runs-on: self-hosted
-    # runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Create dir
         run: |
