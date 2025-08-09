@@ -1,25 +1,28 @@
-name: Eleventy Build
-on: [push]
+name: Build PR
+
+on:
+  pull_request:
+    branches: ['master']
 
 jobs:
-  build_deploy:
+  build:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: ['20']
+
     steps:
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Create dir
-        run: |
-            mkdir docs
       - uses: actions/checkout@v4
-      - name: Build
-        uses: TartanLlama/actions-eleventy@v1.3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          args: --output docs
-          install_dependencies: true
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          publish_dir: docs 
-          publish_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install packages
+        run: npm ci
+
+      - name: Run npm build
+        run: npm run build
