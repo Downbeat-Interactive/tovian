@@ -1,10 +1,10 @@
 name: Eleventy Build
 on: [push]
-runs-on: self-hosted
 
 jobs:
   build_deploy:
-    runs-on: ubuntu-18.04
+    runs-on: self-hosted
+    # runs-on: ubuntu-18.04
     steps:
       - name: Create dir
         run: |
