@@ -18,8 +18,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      -name: del docs/
+      
+
+      - name: clean
         run: rm -rf docs/
+
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
