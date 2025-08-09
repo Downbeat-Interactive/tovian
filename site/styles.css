@@ -191,6 +191,9 @@
   .guide-content table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 15px; }
   .guide-content th, .guide-content td { padding: 8px 10px; border: 1px solid var(--border); }
   .guide-content thead th { background: color-mix(in srgb, var(--panel) 85%, transparent); text-align: left; }
+  .guide-mini-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .guide-mini-nav a { display: inline-block; padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; text-decoration: none; color: var(--muted); }
+  .guide-mini-nav a.active, .guide-mini-nav a:hover { color: var(--text); border-color: var(--brand); }
   .guide-nav { margin-top: 16px; display: flex; justify-content: space-between; gap: 12px; }
   .guide-nav a { text-decoration: none; }
 

@@ -3,7 +3,7 @@
     <a class="brand" href="{{ '/index.html#home' | url }}">Tovian</a>
     <nav class="nav row">
       <a href="{{ '/index.html#dictionary' | url }}">Dictionary</a>
-      {% set guideIcons = { 'overview':'📘', 'phonology':'🔤', 'nouns-cases':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' } %}
+      {% set guideIcons = { 'overview':'📘', 'phonology':'🔤', 'nouns':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' } %}
       {% set slug = (page.url or '') | replace('/guide/','') | replace('.html','') %}
       {% set guideIcon = '' %}
       {% if page.url and (page.url | replace('/guide/','') != page.url) and slug != 'index' %}

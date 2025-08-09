@@ -3,7 +3,7 @@
     "id": "overview",
     "path": "overview.html",
     "title": "Getting Started",
-    "summary": "Welcome."
+    "summary": "Welcome. This guide takes you from zero experience to fluency in Tovian."
   },
   {
     "id": "verbs",
@@ -32,7 +32,7 @@
   },
   {
     "id": "nouns-cases",
-    "path": "nouns-cases.html",
+    "path": "nouns.html",
     "title": "Noun Classes & Cases",
     "summary": "- `la-`: animate (people, animals, plants) — e.g., `la-driel` “person”."
   },

@@ -15,7 +15,7 @@ title: Tovian Guide
   fetch(BASE + 'guide/manifest.json').then(r=>r.json()).then(list=>{
     const wrap = document.getElementById('guideCards');
     wrap.innerHTML = '';
-    const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns-cases':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
+    const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
     list.forEach(p=>{
       const a = document.createElement('a');
       a.className = 'card';

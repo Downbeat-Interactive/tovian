@@ -4,7 +4,7 @@ permalink: /guide/overview.html
 title: Getting Started
 ---
 
-# Getting Started
+## Getting Started
 
 Welcome. This guide will help you learn to speak Tovian.
 
@@ -22,6 +22,6 @@ Tip: the dictionary is always searchable. Try keywords like "questions", "cases"
 
 Suggested next pages:
 
-- [Alphabet & Pronunciation](/guide/phonology.html)
-- [Noun Classes & Cases](/guide/nouns-cases.html)
-- [Verbs & Aspects](/guide/verbs.html)
+- [Alphabet & Pronunciation](phonology.html)
+- [Noun Classes & Cases](nouns.html)
+- [Verbs & Aspects](verbs.html)
