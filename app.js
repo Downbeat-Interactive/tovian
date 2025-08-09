@@ -256,7 +256,12 @@
       let guideList = [];
       try {
         guideList = await fetch(base + 'guide/manifest.json').then((r) => r.json());
-        const resolveGuideHref = (p) => (p && p.startsWith('/') ? p : `${isGuide ? '' : 'guide/'}${p || ''}`);
+        const resolveGuideHref = (p) => {
+          if (!p) return '';
+          if (p.startsWith('/')) return (BASE + p.replace(/^\//, ''));
+          // Ensure we always include '/guide/' from the site root when linking from home
+          return (isGuide ? '' : (BASE + 'guide/')) + p;
+        };
         // Home guide links
         const gl = document.getElementById('guideLinks');
         if (gl) {
@@ -264,9 +269,11 @@
           guideList.forEach(p => {
             const a = document.createElement('a');
             const summary = p.summary || '';
-            const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns-cases':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
+            const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
             const icon = ICONS[p.id] || '📄';
-            a.className = 'card'; a.href = resolveGuideHref(p.path); a.innerHTML = `<h3><span style="margin-right:6px">${icon}</span>${p.title}</h3>${summary ? `<p class=\"muted\">${summary}</p>` : ''}`;
+            a.className = 'card';
+            a.href = resolveGuideHref(p.path);
+            a.innerHTML = `<h3><span style="margin-right:6px">${icon}</span>${p.title}</h3>${summary ? `<p class="muted">${summary}</p>` : ''}`;
             gl.appendChild(a);
           });
         }

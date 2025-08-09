@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tovian Guide</title>
-    <base href="/tovian/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -55,7 +54,7 @@
   fetch(BASE + 'guide/manifest.json').then(r=>r.json()).then(list=>{
     const wrap = document.getElementById('guideCards');
     wrap.innerHTML = '';
-    const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns-cases':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
+    const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
     list.forEach(p=>{
       const a = document.createElement('a');
       a.className = 'card';
