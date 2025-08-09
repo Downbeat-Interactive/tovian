@@ -5,6 +5,9 @@ jobs:
   build_deploy:
     runs-on: ubuntu-18.04
     steps:
+      - name: Create dir
+        run: |
+            mkdir docs
       - uses: actions/checkout@master
       - name: Build
         uses: TartanLlama/actions-eleventy@master
