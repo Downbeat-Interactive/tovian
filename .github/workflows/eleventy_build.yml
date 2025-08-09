@@ -1,5 +1,6 @@
 name: Eleventy Build
 on: [push]
+runs-on: self-hosted
 
 jobs:
   build_deploy:
