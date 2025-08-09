@@ -36,7 +36,7 @@ jobs:
       - name: Build site (Eleventy)
         run: npm run build
 
-      - name: Deploy to gh-pages/docs
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref_name != 'gh-pages' }}
         with:
