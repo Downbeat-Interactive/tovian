@@ -5,6 +5,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
   },
+  "engines": {
+    "node": ">=20"
+},
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve"
