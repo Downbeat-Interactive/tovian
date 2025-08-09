@@ -1,0 +1,61 @@
+---
+layout: base.njk
+title: Tovian | Learn, Search, Ask
+---
+<section id="home" class="section hero" data-reveal>
+  <div class="container grid2">
+    <div>
+      <div data-reveal>
+        <h1>Learn Tovian</h1>
+        <p>Search the dictionary or browse the complete guide. Quick navigation: <a href="#dictionary">Dictionary</a> · <a href="{{ '/guide/index.html' | url }}">Guide</a></p>
+      </div>
+      <div data-reveal>
+        <h2>Ask</h2>
+        <p class="muted">Type a keyword you’d look up (e.g., “questions”, “verbs”, “cases”, “dream”, “memory”). It searches the guide (titles) and dictionary.</p>
+        <div class="qa box">
+          <input id="askInput" class="input" placeholder="Search grammar or vocabulary (e.g., questions, locative, dream)" />
+          <div id="askResults" class="stack"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-reveal>
+      <h3>Word of the Day <span id="wotdChip" class="chip"></span></h3>
+      <div id="wotd"></div>
+      <div class="muted" id="dictStats" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="dictionary" class="section">
+  <div class="container">
+    <div class="row between center">
+      <h2>Dictionary <span id="dictBadge" class="chip" aria-live="polite">0</span></h2>
+      <div class="row gap">
+        <input id="dictSearch" class="input" placeholder="Filter entries..." />
+        <button id="favoritesBtn" class="btn">★ Favorites</button>
+        <button id="toggleIpaBtn" class="btn">Toggle IPA</button>
+        <button id="toggleTableBtn" class="btn">Toggle Table View</button>
+      </div>
+    </div>
+    <div id="dictCards" class="cards"></div>
+    <div id="tableWrap" class="table-wrap hidden">
+      <div id="dictionaryHolder"></div>
+    </div>
+  </div>
+</section>
+
+<section id="guide" class="section alt" data-reveal>
+  <div class="container">
+    <h2>Complete Guide</h2>
+    <p class="muted">From zero experience to fluency. All sections below are easy to edit (Markdown). <a class="btn" href="{{ '/guide.pdf' | url }}" download>Download full PDF guide</a></p>
+    <div id="guideLinks" class="cards"></div>
+  </div>
+</section>
+
+
+<section id="about" class="section alt" data-reveal>
+  <div class="container">
+    <h2>About</h2>
+    <p>This placeholder will introduce the Tovian language: its phonology, core grammar ideas, and cultural context. [WIP].</p>
+  </div>
+</section>

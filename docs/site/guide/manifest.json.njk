@@ -1,0 +1,14 @@
+---
+permalink: /guide/manifest.json
+eleventyExcludeFromCollections: true
+---
+[
+  {% for p in guidePages %}
+  {
+    "id": {{ p.id | dump | safe }},
+    "path": {{ ('/guide/' + p.path) | dump | safe }},
+    "title": {{ p.title | dump | safe }},
+    "summary": {{ p.summary | dump | safe }}
+  }{% if not loop.last %},{% endif %}
+  {% endfor %}
+]

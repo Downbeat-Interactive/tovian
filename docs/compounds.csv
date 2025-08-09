@@ -1,0 +1,84 @@
+Year,Translation,Roots,POS,Note
+100,speaking,showing+thought,N,_
+500,sharing,joining+possession,N,_
+50,plant,life+action,N,_
+1500,instrument,sound+tool,N,_
+50,sword,tool+PUR+killing,N,_
+50,knife,small+sharpness+tool,N,_
+2000,hoe,plant+tool,N,_
+10,house/home,person+place,N,_
+10,wind/breath,movement+COM+air,N,_
+10,writing/painting,showing+action,N,_
+10,tie/bind/knot,joining+action,N,_
+3000,boat/ship/canoe,water+traveling,N,_
+10,future,front+path,Ns,_
+10,past,behind+path,Ns,_
+10,present,path+center,Ns,_
+10,sky,air+place,N,_
+50,plain,flatness+place,N,_
+50,tar,stickiness+joining,N,_
+50,discovery,make+wisdom,N,_
+1000,meat,tasting+GEN+blood,N,_
+10,floor/ground,down+foot,N,_
+10,food,INS+eating,N,_
+10,waking dreamer,walking+dream,N,_
+0,child,small+person,N,_
+0,young,not+old,N,_
+10,year,small+cycle,N,_
+0,first,ESS+one,N,_
+0,second,ESS+two,Ns,_
+0,becoming,arriving+change,N,_
+400,smile,happy+mouth,N,_
+400,frown,sad+mouth,N,_
+0,full,empty+not,N,_
+7200,report/confession,truth+speech,N,_
+6000,city,wakefulness+place,N,_
+500,river,flow+water,N,_
+1000,sand,flow+ground,N, Same as "flowing"
+1000,desert,sand+place,N,_
+1000,forest,tree+place,N,_
+0,council,thinking+joining,N,_
+0,washing,water+action,N,_
+0,dance,movement+action,N,_
+0,present/demonstrate,action+showing,N,_
+0,teaching,knowledge+showing,N,_
+4000,thirteen/13,twelve+one,N,_
+4000,fourteen/14,twelve+two,N,_
+4000,fifteen/15,twelve+three,N,_
+4000,sixteen/16,twelve+four,N,_
+4000,twenty/20,twelve+eight,N,_
+4000,twenty four/24,two+twelve,N,_
+4000,twenty five/25,twenty four+one,N,_
+4000,twenty six/26,twenty four+two,N,_
+4000,thirty/30,twenty four+six,N,_
+4000,thirty six/36,three+twelve,N,_
+4000,forty eight/48,four+twelve,N,_
+4000,one hundred forty four/144,twelve+twelve,N,_
+4000,week,ten+day,N,_
+0,month,small+small+cycle,N,_
+642,grandfather,old+father,N,_
+3024,hat,head+covering,N,_
+402,jealousy,wickedness+comparison,N,_
+500,dawn/morning,first+light,N,_
+500,dusk/evening/sunset,last+light,N,_
+500,shadow/twilight,darkness+light,N,_
+500,star,small+light,N,_
+400,sweet,GEN+fruit,N,_
+1000,berry,fruit+small,N,_
+1000,fog,tar+air,N,_
+1000,season,air+cycle,N,_
+1000,harvest,plant+cutting,N,_
+1000,metal,tool+GEN+rock,N,_
+1000,bloom,flower+showing,N,_
+50,storm,wind+water,N,_
+100,thunder,storm+sound,N,_
+200,vine,arm+plant,N,_
+50,birth,bringing+light,N,_
+1500,rebirth,second+birth,N,_
+4000,silver,metal+light,N,_
+6000,grain,plant+food,N,_
+500,smell,air+action,N,_
+100,mist,fog+small,N,_
+100,bird,air+animal,N,_
+100,spring vegetable,plant+first,N,_
+1000,adventure,going+unknown,N,_
