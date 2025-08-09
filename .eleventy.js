@@ -29,6 +29,6 @@ module.exports = function(eleventyConfig) {
     templateFormats: [
       'njk', 'md', 'html'
     ],
-    pathPrefix: "/tovian"
+    pathPrefix: '/tovian/'
   };
 };

@@ -5,7 +5,7 @@ title: Tovian Guide
 <section class="section">
   <div class="container">
     <h1>Tovian Guide</h1>
-    <p class="muted">From zero to fluency: Use the sidebar in any guide page to jump between topics.</p>
+    <p class="muted">Learn to speak Tovian.</p>
     <p style="margin-top:12px"><a class="btn" href="{{ '/guide.pdf' | url }}" download>Download full PDF guide</a></p>
     <div class="cards" id="guideCards"></div>
   </div>
@@ -18,7 +18,12 @@ title: Tovian Guide
     const ICONS = { 'overview':'📘', 'phonology':'🔤', 'nouns-cases':'📦', 'pronouns':'🗣️', 'verbs':'⚙️', 'mood-voice':'🎛️', 'questions':'❓', 'adjectives':'🏷️', 'syntax':'🧭', 'introductions':'👋', 'memory-dreams':'💭', 'numbers':'🔢', 'calendar':'📅', 'examples':'🧪' };
     list.forEach(p=>{
       const a = document.createElement('a');
-      a.className = 'card'; a.href = p.path;
+      a.className = 'card';
+      // Ensure links always include the '/guide/' prefix under the site base
+      const href = p.path && p.path.startsWith('/')
+        ? (BASE + p.path.replace(/^\//, ''))
+        : (BASE + 'guide/' + (p.path || ''));
+      a.href = href;
       const summary = p.summary || 'Overview and key concepts for this topic.';
       const icon = ICONS[p.id] || '📄';
       a.innerHTML = `<h3><span style=\"margin-right:6px\">${icon}</span>${p.title}</h3><p class=\"muted\">${summary}</p>`;

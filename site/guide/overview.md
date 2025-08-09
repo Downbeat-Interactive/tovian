@@ -6,7 +6,7 @@ title: Getting Started
 
 # Getting Started
 
-Welcome. This guide takes you from zero experience to fluency in Tovian.
+Welcome. This guide will help you learn to speak Tovian.
 
 - [Alphabet & pronunciation](phonology.html): how to read sounds.
 - [Noun classes and cases](nouns.html): how nouns mark role.

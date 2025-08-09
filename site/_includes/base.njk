@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title or 'Tovian' }}</title>
+    <base href="{{ '/' | url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/styles.css' | url }}" />
+    <script>window.__BASE = '{{ '/' | url }}';</script>
     <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     <script defer src="{{ '/CsvToTable.js' | url }}"></script>
     <script defer src="{{ '/app.js' | url }}"></script>
