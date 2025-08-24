@@ -459,7 +459,7 @@ def medial_vowel_loss(word):
 
 
 def simplify_sonorant_clusters_excluding_initial_mr(word):
-      # e.g. lr → r, ln → n
+    # e.g. lr → r, ln → n
     # Simplify sonorant+sonorant (l/r/m/n) sequences where awkward
     # return re.sub(fr'([{sonorants}])([{sonorants}])', r'\2', word)
     # except when initial mr
@@ -560,6 +560,29 @@ def epenthesize_initial_nθ(word):
 def nasal_assimilation_mθ_to_nθ(word):
     return re.sub(r'mθ', 'nθ', word)
 
+def simplify_dg_cluster(word):
+    return word.replace('dg', 'g') 
+
+def unstressed_ie_to_e(word):
+    stressed = mark_stress(word)
+    return unmark_stress(re.sub(r'(?<!ˈ)ie', 'e', stressed))
+
+def stressed_ie_to_long_i(word):
+    stressed = mark_stress(word)
+    return unmark_stress(re.sub(r'iˈe', 'i:', stressed))
+
+def glide_epenthesis_after_unstressed_i(word):
+    word = re.sub(fr'(?<!ˈ)i([{vowels}])', r'ij\1', word)
+    return word
+
+def glide_epenthesis_after_unstressed_u(word):
+    word = re.sub(fr'(?<!ˈ)u([{vowels}])', r'uw\1', word)
+    return word
+
+def epenthesis_initial_n_sh_z(word):
+    word = re.sub(r'^nʃ', 'anʃ', word)
+    word = re.sub(r'^nʒ', 'anʒ', word)
+    return word
 
 # List of sound changes
 sound_changes = [
@@ -567,9 +590,13 @@ sound_changes = [
     {'rule': 2000, 'description': 'Voiceless stop between voiced sounds become voiced', 'function': voiceless_stop_to_voiced_between_voiced},
     {'rule': 2100, 'description': 'Vowel loss before affricate', 'function': vowel_loss_before_approximate},
     {'rule': 2200, 'description': 'Velar hardening k > k', 'function': velar_hardening},
+    {'rule': 2201, 'description': 'Glide epenthesis after unstressed i', 'function': glide_epenthesis_after_unstressed_i},
+    {'rule': 2202, 'description': 'Glide epenthesis after unstressed u', 'function': glide_epenthesis_after_unstressed_u},
     {'rule': 2300, 'description': 'ə lost', 'function': schwa_deletion},
     {'rule': 3000, 'description': 'No voiceless stops in clusters', 'function': no_voiceless_stops_in_clusters},
     {'rule': 3200, 'description': 'Medial vowel loss', 'function': medial_vowel_loss}, # huge change
+    {'rule': 3201, 'description': 'Unstressed ie to e', 'function': unstressed_ie_to_e},
+    {'rule': 3202, 'description': 'Stressed ie to long i', 'function': stressed_ie_to_long_i},
     {'rule': 3500, 'description': 'ɟ to j', 'function': change_bardotlessj},
     {'rule': 3501, 'description': 'Rhotacism GsG > GrG and GʒG > GrG', 'function': rhotacism_between_glides},
     {'rule': 3502, 'description': 'Rhotacism VsV > VrV to VʒV > VrV', 'function': rhotacism_between_vowels},
@@ -603,6 +630,7 @@ sound_changes = [
     {'rule': 8000, 'description': 'θr unless stressed', 'function': theta_r},
     {'rule': 8500, 'description': 'No stops after nasals', 'function': no_stops_after_nasals_except_when_split_syllable},
     {'rule': 8750, 'description': 'No stops after any sonorant', 'function': no_stops_after_sonorants},
+    {'rule': 8760, 'description': 'epenthesis_initial_n_sh_z', 'function': epenthesis_initial_n_sh_z},
     {'rule': 9200, 'description': 'Reduplicant vowel reduction', 'function': reduplicant_vowel_reduction}, # big change
     {'rule': 9300, 'description': 'Epenthesis in ƛd clusters', 'function': epenthesis_in_ƛd_cluster},
     {'rule': 9500, 'description': 'Word-final vowel loss', 'function': word_final_vowel_loss_unless_stressed},
@@ -629,6 +657,7 @@ sound_changes = [
     {'rule': 12500, 'description': 'Simplify fricative-liquid clusters', 'function': simplify_fricative_liquid_clusters},
     {'rule': 12501, 'description': 'Dissimilate fricative reduplication', 'function': dissimilate_fricative_reduplication},
     {'rule': 12502, 'description': 'Simplify lθ → l', 'function': simplify_lθ_to_θ},
+    {'rule': 12503, 'description': 'Simplify dg → g', 'function': simplify_dg_cluster},
     {'rule': 13000, 'description': 'No fricative clusters', 'function': no_fricative_clusters},
     {'rule': 13001, 'description': 'Simplify final consonant clusters to single consonant', 'function': simplify_final_clusters},
     {'rule': 13002, 'description': 'Simplify fricative-nasal clusters', 'function': simplify_fricative_nasal_clusters},
@@ -638,6 +667,7 @@ sound_changes = [
     {'rule': 14001, 'description': 'No affricates after fricatives', 'function': no_affricates_after_fricatives},
     {'rule': 14005, 'description': 'Epenthesis and metathesis /ʃd/ → [ɬt]', 'function': shd_to_lht},
     {'rule': 14006, 'description': 'Voiceless glottal fricative h to pharyngeal fricative ħ', 'function': h_to_ħ},
+    {'rule': 15000, 'description': 'No repeated consonants', 'function': no_double_consonants},
 ]
 
 # Function to apply all sound changes
@@ -682,7 +712,7 @@ def format_for_latex(word):
         'j': r'y',
         'ɸ': r'{\textphi}',
         't': r'{\textsubbridge{t}}',
-        # Add more replacements as necessary
+        ':': r'{\textlengthmark}',
     }
 
     for ipa_char, latex_char in replacements.items():
@@ -719,6 +749,8 @@ def romanization(word):
         'ə': r'e',
         'ɸ': r'f',
         'ħ': r'h',
+        'ˈ': r'\'',
+        ':': r':',
     }
     for roman_char, latex_char in replacements.items():
         word = word.replace(roman_char, latex_char)

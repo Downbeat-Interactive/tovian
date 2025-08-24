@@ -21,7 +21,8 @@ Year,Translation,Roots,POS,Note
 1000,meat,tasting+GEN+blood,N,_
 10,floor/ground,down+foot,N,_
 10,food,INS+eating,N,_
-10,waking dreamer,walking+dream,N,_
+10,dreambringer,dream+COM+walking+person,N,_
+10,waking dreambringer,dream+COM+alertness,N,_
 0,child,small+person,N,_
 0,young,not+old,N,_
 10,year,small+cycle,N,_
@@ -82,3 +83,4 @@ Year,Translation,Roots,POS,Note
 100,bird,air+animal,N,_
 100,spring vegetable,plant+first,N,_
 1000,adventure,going+unknown,N,_
+0,returning,not+arriving,N,_

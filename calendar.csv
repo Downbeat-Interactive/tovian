@@ -1,4 +1,10 @@
 Year,Translation,Roots,POS,Note
+0,Spring,present+plant,N,_
+0,Autumn,present+harvest,N,_
+0,Summer,present+heat,N,_
+0,Winter,present+cold,N,_
+
+
 6000,December,one+cold,N,Ventiosh
 6000,1 of winter/december 1,breath+flower,N,Rithwildrem
 6000,2 of winter/december 2,death+berry,N,Galbery

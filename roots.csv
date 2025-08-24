@@ -1,7 +1,7 @@
 Year,Word,Translation,Roots,POS,Note
 -1,???,???,_,PLACEHOLDER,_
 -1,i-,NOM/nomative case marker,_,CASE,_
--1,yu-,ACC/accusative case marker,_,CASE,_
+-1,ju-,ACC/accusative case marker,_,CASE,_
 -1,hi-,GEN/genitive case marker,_,CASE,_
 -1,mi-,DAT/dative case marker,_,CASE,_
 -1,ti-,LOC/locative case marker,_,CASE,_
@@ -9,7 +9,7 @@ Year,Word,Translation,Roots,POS,Note
 -1,si-,INS/instrumental case marker,_,CASE,_
 -1,ɬu-,PUR/purpose case marker/for,_,CASE,_
 -1,di-,ABL/ablative case marker/away from,_,CASE,_
--1,yi-,COM/comlative case marker/with/together with,_,CASE,_
+-1,ji-,COM/comlative case marker/with/together with,_,CASE,_
 -1,su-,ALL/allative case marker,_,CASE,_
 -1,pu-,ESS/essive case marker,_,CASE,_
 -1,-e,plural marker,_,PLURAL,_
@@ -149,6 +149,7 @@ Year,Word,Translation,Roots,POS,Note
 0,panor,end/final/last,_,N,_
 0,elakorim,memory,_,N,_
 -1,elakorim,god of memory,_,N,_
+-1,korim,memory-soul,_,N,_
 0,oneremia,empty/hollow,_,N,_
 0,do,opposite/not/un-,_,N,_
 0,sil,being/existence/created thing,_,N,_
@@ -166,8 +167,8 @@ Year,Word,Translation,Roots,POS,Note
 0,aθ,eight/8,_,N,_
 0,ki,nine/9,_,N,_
 0,tir,ten/10,_,N,_
-0,beyar,eleven/11,_,N,_
-0,ɬiya,twelve/12,_,N,_
+0,bejar,eleven/11,_,N,_
+0,ɬija,twelve/12,_,N,_
 0,ɬan,who,_,INT,_
 0,ɬan,what,_,INT,_
 0,ɬan,where,_,INT,_
