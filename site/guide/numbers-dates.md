@@ -15,7 +15,7 @@ Plural nouns take <code>-e</code>. Verbs do not agree with number.
   </thead>
   <tbody>
     <tr><td><code>nor</code> “sea”</td><td><code>nore</code> “seas”</td></tr>
-    <tr><td><code>driel</code> “person”</td><td><code>driele</code> “people”</td></tr>
+    <tr><td><code>yel</code> “person”</td><td><code>yele</code> “people”</td></tr>
   </tbody>
 </table>
 

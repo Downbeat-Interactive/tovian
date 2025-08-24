@@ -12,7 +12,7 @@ title: Noun Classes & Cases | Tovian Guide
     <tr><th>Prefix</th><th>Class</th><th>Example</th></tr>
   </thead>
   <tbody>
-    <tr><td><code>la-</code></td><td>animate (people, animals, plants)</td><td><code>la-driel</code> “person”</td></tr>
+    <tr><td><code>la-</code></td><td>animate (people, animals, plants)</td><td><code>la-yel</code> “person”</td></tr>
     <tr><td><code>lo-</code></td><td>inanimate / places</td><td><code>lo-shithil</code> “city”</td></tr>
     <tr><td><code>le-</code></td><td>abstract</td><td><code>le-yeol</code> “wisdom”</td></tr>
   </tbody>
@@ -56,11 +56,11 @@ Speakers usually rely on context for definiteness, but optional prefixes can cla
 
 Examples (definiteness)
 
-- <code>i-la-driel fa mrila a-ti-lo-shithil</code> — “The person sees in the city.”
-- <code>e-la-driel fa mrila o-ti-lo-shithil</code> — “A person sees in a city.”
+- <code>i-la-yel fa mril a-ti-lo-shithil</code> — “The person sees in the city.”
+- <code>e-la-yel fa mril o-ti-lo-shithil</code> — “A person sees in a city.”
 
 ## Examples
 
-- <code>yu-la-driel</code> <code>fa</code> <code>mrila</code> — English: [He/She] sees the person.
-- <code>ti-lo-shithil</code> <code>la-driel</code> <code>fa</code> <code>mrila</code> — English: The person sees in the city.
-- <code>hi-la-driel</code> — English: of the person.
+- <code>yu-la-yel</code> <code>fa</code> <code>mril</code> — English: [He/She] sees the person.
+- <code>ti-lo-shithil</code> <code>la-yel</code> <code>fa</code> <code>mril</code> — English: The person sees in the city.
+- <code>hi-la-yel</code> — English: of the person.

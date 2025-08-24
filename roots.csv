@@ -102,7 +102,7 @@ Year,Word,Translation,Roots,POS,Note
 0,heta,left,_,N,_
 0,ɬoja,right,_,N,_
 0,θera,up,_,N,_
-0,θok,down,_,N,_
+0,θok,down/underside/bottom,_,N,_
 0,ɬel,center,_,N,_
 0,lare,north,_,N,_
 0,tal,east,_,N,_
@@ -127,6 +127,7 @@ Year,Word,Translation,Roots,POS,Note
 0,rum,hardness/strength,_,N,_
 0,inga,stickiness,_,N,_
 0,oma,completeness/wholeness,_,N,_
+0,ileriala,commonness/mundanity/normality,_,N,_
 0,ɬena,dream/spirit/soul,_,N,_
 0,driks,blood,_,N,_
 0,ʃot,foot,_,N,_   
@@ -198,3 +199,4 @@ Year,Word,Translation,Roots,POS,Note
 0,ojal,evil/wickedness/badness,_,N,_
 0,ŋoŋabi,surpassing/exceeding/overwhelming,_,N,_
 0,ʒola,fruit,_,N,_
+0,ʒemeno,newness,_,N,_

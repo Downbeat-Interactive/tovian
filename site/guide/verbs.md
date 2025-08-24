@@ -5,7 +5,7 @@ title: Verbs & Aspects | Tovian Guide
 ---
 # Verbs & Aspects
 
-Tovian uses a conjugated auxiliary + an infinitive main verb. The main verb remains an infinitive; only the auxiliary changes for aspect, tense, mood, and voice.
+Tovian uses a conjugated auxiliary + a bare main verb. The main verb stays uninflected; all marking for person, tense, aspect, mood, and voice appears on the auxiliary.
 
 ## Tense suffixes on the auxiliary
 
@@ -27,37 +27,38 @@ Tovian uses a conjugated auxiliary + an infinitive main verb. The main verb rema
     <tr><th>Aspect</th><th>Aux root</th><th>Present example</th></tr>
   </thead>
   <tbody>
-    <tr><td>Simple</td><td><code>f-</code></td><td><code>fa mrila</code> “sees”</td></tr>
-    <tr><td>Imperfective</td><td><code>th-</code></td><td><code>tha mrila</code> “is seeing”</td></tr>
-    <tr><td>Perfect</td><td><code>lh-</code></td><td><code>lha mrila</code> “has seen”</td></tr>
-    <tr><td>Near</td><td><code>tl-</code></td><td><code>tla mrila</code> “about to see”</td></tr>
-    <tr><td>Immediate</td><td><code>k-</code></td><td><code>ka mrila</code> “seeing now”</td></tr>
-    <tr><td>Habitual</td><td><code>m-</code></td><td><code>ma mrila</code> “sees regularly”</td></tr>
-    <tr><td>Progressive</td><td><code>s-</code></td><td><code>sa mrila</code> “is seeing now”</td></tr>
-    <tr><td>Continuous</td><td><code>sh-</code></td><td><code>sha mrila</code> “is seeing”</td></tr>
-    <tr><td>Iterative</td><td><code>n-</code></td><td><code>na mrila</code> “sees repeatedly”</td></tr>
-    <tr><td>Inceptive</td><td><code>y-</code></td><td><code>ya mrila</code> “begins seeing”</td></tr>
-    <tr><td>Cessative</td><td><code>p-</code></td><td><code>pa mrila</code> “stops seeing”</td></tr>
-    <tr><td>Remote</td><td><code>h-</code></td><td><code>ha mrila</code> “sees (remote)”</td></tr>
+    <tr><td>Simple</td><td><code>f-</code></td><td><code>fa mril</code> “see(s)”</td></tr>
+    <tr><td>Imperfective</td><td><code>th-</code></td><td><code>tha mril</code> “be seeing”</td></tr>
+    <tr><td>Perfect</td><td><code>lh-</code></td><td><code>lha mril</code> “have seen”</td></tr>
+    <tr><td>Near</td><td><code>tl-</code></td><td><code>tla mril</code> “about to see”</td></tr>
+    <tr><td>Immediate</td><td><code>k-</code></td><td><code>ka mril</code> “seeing now”</td></tr>
+    <tr><td>Habitual</td><td><code>m-</code></td><td><code>ma mril</code> “see(s) regularly”</td></tr>
+    <tr><td>Progressive</td><td><code>s-</code></td><td><code>sa mril</code> “be seeing now”</td></tr>
+    <tr><td>Continuous</td><td><code>sh-</code></td><td><code>sha mril</code> “be seeing”</td></tr>
+    <tr><td>Iterative</td><td><code>n-</code></td><td><code>na mril</code> “see(s) repeatedly”</td></tr>
+    <tr><td>Inceptive</td><td><code>y-</code></td><td><code>ya mril</code> “begin seeing”</td></tr>
+    <tr><td>Cessative</td><td><code>p-</code></td><td><code>pa mril</code> “stop seeing”</td></tr>
+    <tr><td>Remote</td><td><code>h-</code></td><td><code>ha mril</code> “see(s) (remote)”</td></tr>
   </tbody>
 </table>
 
 ## Examples
 
-- <code>fa mrila.</code> — English: [He/She] sees. (simple present)
-- <code>sha fethra.</code> — English: is speaking. (continuous present)
+- <code>fa mril.</code> — English: [He/She] sees. (simple present)
+- <code>sha fethr.</code> — English: is speaking. (continuous present)
 - <code>tlotema …</code> — English: should habitually … (obligative + habitual present)
+- <code>osefa gith.</code> — English: Return! (2nd person imperative; person + mood on auxiliary)
 
-Agreement (subject person on verb)
+Agreement (subject person on auxiliary)
 
 <table>
   <thead>
-    <tr><th>Person</th><th>Suffix</th></tr>
+    <tr><th>Person</th><th>Auxiliary prefix</th><th>Example</th></tr>
   </thead>
   <tbody>
-    <tr><td>1st</td><td><code>-i</code></td></tr>
-    <tr><td>2nd</td><td><code>-o</code></td></tr>
-    <tr><td>3rd</td><td><code>-a</code></td></tr>
+    <tr><td>1st</td><td><code>i-</code></td><td><code>ifa mril</code> “I/we see”</td></tr>
+    <tr><td>2nd</td><td><code>o-</code></td><td><code>ofa fethr</code> “you speak”</td></tr>
+    <tr><td>3rd</td><td><em>unmarked</em> (optionally <code>a-</code>)</td><td><code>fa mril</code> “he/she/they see”</td></tr>
   </tbody>
 </table>
 

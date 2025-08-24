@@ -9,7 +9,7 @@
     "id": "verbs",
     "path": "verbs.html",
     "title": "Verbs & Aspects",
-    "summary": "Tovian uses a conjugated auxiliary + an infinitive main verb."
+    "summary": "Tovian uses a conjugated auxiliary + a bare main verb."
   },
   {
     "id": "mood-voice",
@@ -34,7 +34,7 @@
     "id": "nouns-cases",
     "path": "nouns.html",
     "title": "Noun Classes & Cases",
-    "summary": "- `la-`: animate (people, animals, plants) — e.g., `la-driel` “person”."
+    "summary": "- `la-`: animate (people, animals, plants) — e.g., `la-yel` “person”."
   },
   {
     "id": "introductions",

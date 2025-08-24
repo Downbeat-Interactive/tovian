@@ -24,7 +24,7 @@ When meeting someone, a quick pattern is:
 
 Optionally add a friendly acknowledgement:
 
-- <code>wa fa fethro.</code> — You speak.
+- <code>wa ofa fethr.</code> — You speak.
 
 Common quick question:
 

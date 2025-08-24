@@ -39,4 +39,8 @@ Voice prefixes:
   </tbody>
 </table>
 
-Note: mood + voice can combine, with mood prefix before voice prefix on the auxiliary.
+Note: person + mood + voice can combine on the auxiliary. Order is person prefix, then mood, then voice, followed by the aspect/tense-marked auxiliary root.
+
+Example:
+
+- <code>osefa gith</code> — 2nd person imperative “Return!” (o- person, se- imperative, fa simple aspect)
