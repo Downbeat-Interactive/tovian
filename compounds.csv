@@ -88,3 +88,6 @@ Year,Translation,Roots,POS,Note
 5000,shine,light+action,N,_
 14000,undershine,GEN+bottom+light,N,_
 1300,openness,not+closure,N,_
+0,hanging,putting+up,N,_
+0,friend/ally/friendship,GEN+person+goodness,N,_
+0,enemy,GEN+person+evil,N,_

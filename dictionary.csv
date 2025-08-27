@@ -7,6 +7,8 @@ air,rith, / rˈiθ / ,_
 
 alertness,shith, / ʃˈiθ / ,_
 
+ally,yelalh, / jˈel.aɬ / ,GEN + person + goodness
+
 ancient,nan, / nˈan / ,_
 
 animal,tlan, / ƛˈan / ,_
@@ -207,8 +209,6 @@ change,kan, / kˈan / ,_
 
 child,melhen, / mˈeɬ.en / ,newness + dream
 
-circle,tot, / tˈot / ,_
-
 city,shithil, / ʃˈiθ.il / ,wakefulness + place
 
 closeness,sor, / sˈor / ,_
@@ -249,7 +249,7 @@ curiosity,thraf, / θrˈaf / ,_
 
 cutting,shith, / ʃˈiθ / ,_
 
-cycle,tot, / tˈot / ,_
+cycle,elakorim, / el.ak.ˈor.im / ,_
 
 dance,lor, / lˈor / ,movement + action
 
@@ -366,6 +366,8 @@ eleven,myar, / mjˈar / ,_
 empty,remi, / rˈem.i / ,_
 
 end,par, / pˈar / ,_
+
+enemy,yey, / jˈej / ,GEN + person + evil
 
 eternal,tod, / tˈod / ,_
 
@@ -487,6 +489,10 @@ four,tev, / tˈev / ,_
 
 fourteen,lhyalo, / ɬjˈal.o / ,twelve + two
 
+friend,yelalh, / jˈel.aɬ / ,GEN + person + goodness
+
+friendship,yelalh, / jˈel.aɬ / ,GEN + person + goodness
+
 front,heth, / ħˈeθ / ,_
 
 frost,shush, / ʃˈuʃ / ,_
@@ -530,6 +536,8 @@ ground,thok, / θˈok / ,down + foot
 hair,amal, / ˈam.al / ,_
 
 hand,thang, / θˈaŋ / ,_
+
+hanging,nither, / nˈiθ.er / ,putting + up
 
 happy,mat, / mˈat / ,_
 
@@ -669,7 +677,7 @@ July 2,yeomlor, / je.ˈoml.or / ,wisdom + plant
 
 July 20,selyethil, / selj.ˈeθ.il / ,water + home
 
-July 21,efot, / ˈef.ot / ,sun + circle
+July 21,felakorim, / fel.ak.ˈor.im / ,sun + cycle
 
 July 22,mralshol, / mrˈalʃ.ol / ,dark + fruit
 
@@ -935,7 +943,7 @@ metal,men, / mˈen / ,tool + GEN + rock
 
 mist,tlurinin, / ƛur.ˈin.in / ,fog + small
 
-month,nanin, / nˈan.in / ,small + small + cycle
+month,nunalom, / nun.ˈal.om / ,small + small + cycle
 
 moon,ay, / ˈaj / ,_
 
@@ -1129,6 +1137,8 @@ person,yel, / jˈel / ,_
 
 place,thil, / θˈil / ,_
 
+placing,man, / mˈan / ,_
+
 plain,til, / tˈil / ,flatness + place
 
 plant,melor, / mˈel.or / ,life + action
@@ -1146,6 +1156,8 @@ present,nume, / nˈum.e / ,path + center
 protection,munan, / mˈun.an / ,_
 
 proximity,sor, / sˈor / ,_
+
+putting,man, / mˈan / ,_
 
 reaching,kith, / kˈiθ / ,_
 
@@ -1179,7 +1191,7 @@ scales,anad, / ˈan.ad / ,_
 
 sea,nor, / nˈor / ,_
 
-season,rith, / rˈiθ / ,air + cycle
+season,rithagom, / riθ.ˈag.om / ,air + cycle
 
 second,mloe, / mlˈo.e / ,ESS + two
 
@@ -1483,7 +1495,7 @@ woods,glar, / glˈar / ,_
 
 writing,for, / fˈor / ,showing + action
 
-year,nin, / nˈin / ,small + cycle
+year,nalom, / nˈal.om / ,small + cycle
 
 you (plural),we, / wˈe / ,_
 
@@ -2017,7 +2029,7 @@ with,yi-, / jˈi / ,_
 
 51 of spring,shimisel, / ʃim.ˈis.el / ,mystery + water
 
-51 of summer,efot, / ˈef.ot / ,sun + circle
+51 of summer,felakorim, / fel.ak.ˈor.im / ,sun + cycle
 
 51 of winter,nanaglar, / nan.ˈagl.ar / ,star + tree
 

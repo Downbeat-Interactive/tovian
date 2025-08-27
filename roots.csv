@@ -9,7 +9,7 @@ Year,Word,Translation,Roots,POS,Note
 -1,si-,INS/instrumental case marker,_,CASE,_
 -1,ɬu-,PUR/purpose case marker/for,_,CASE,_
 -1,di-,ABL/ablative case marker/away from,_,CASE,_
--1,ji-,COM/comlative case marker/with/together with,_,CASE,_
+-1,ji-,COM/comitative case marker/with/together with,_,CASE,_
 -1,su-,ALL/allative case marker,_,CASE,_
 -1,pu-,ESS/essive case marker,_,CASE,_
 -1,-e,plural marker,_,PLURAL,_
@@ -73,6 +73,7 @@ Year,Word,Translation,Roots,POS,Note
 0,ʒilate,width,_,N,_
 0,sildabore,stomach,_,N,_
 0,hujʒa,throwing,_,N,_
+0,hemmani,putting/placing,_,N,_
 0,trelahet,person skin,_,N,_
 0,amalur,hair/person hair,_,N,_
 0,anatur,non-person hair/fur/hide/skin/scales,_,N,_
@@ -146,10 +147,9 @@ Year,Word,Translation,Roots,POS,Note
 0,falor,leader,_,N,_
 0,eifol,sun,_,N,_
 0,alius,moon,_,N,_
-0,tot,circle/cycle,_,N,_
 0,panor,end/final/last,_,N,_
 0,elakorim,memory,_,N,_
--1,elakorim,god of memory,_,N,_
+-1,elakorim,god of memory/cycle,_,N,_
 -1,korim,memory-soul,_,N,_
 0,oneremiha,empty/hollow,_,N,_
 0,do,opposite/not/un-,_,N,_
